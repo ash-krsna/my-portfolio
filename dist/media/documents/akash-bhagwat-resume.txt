@@ -1,0 +1,33 @@
+AKASH BHAGWAT
+Creative Developer | Frontend Builder | Future Cinematic Storyteller
+
+SUMMARY
+Creative developer focused on premium interfaces, responsive systems, stronger visual presentation, and the long-term blend of technology with cinematic storytelling.
+
+CORE SKILLS
+- React
+- JavaScript
+- Python
+- SQL
+- Responsive UI
+- UI and UX thinking
+- Creative direction
+- Security-aware learning
+
+EXPERIENCE
+Trainee HTML Programmer
+Aptara
+- Accessibility-aware document and content workflows
+- Structured digital content preparation
+- Attention to semantic organization and usability
+
+PROJECTS
+- Vehicle Tracker
+- Lift Management
+- BSB International School Website
+
+CONTACT
+GitHub: https://github.com/ash-krsna
+LinkedIn: https://www.linkedin.com/in/akash-gita-bhagwat
+Instagram: https://www.instagram.com/duskveil_______/
+Email: akashohalkar300@gmail.com

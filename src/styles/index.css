@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page-bg: #f5f0ea;
+  --page-bg-soft: #ece2d8;
+  --panel-bg: rgba(255, 255, 255, 0.74);
+  --panel-border: rgba(18, 18, 22, 0.08);
+  --text-primary: #111116;
+  --spot-1: rgba(255, 96, 98, 0.18);
+  --spot-2: rgba(141, 169, 255, 0.18);
+  --grid-color: rgba(16, 16, 24, 0.08);
+}
+
+.dark {
+  color-scheme: dark;
+  --page-bg: #07070c;
+  --page-bg-soft: #0f1016;
+  --panel-bg: rgba(255, 255, 255, 0.04);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #f8f5ef;
+  --spot-1: rgba(255, 77, 79, 0.2);
+  --spot-2: rgba(216, 231, 255, 0.15);
+  --grid-color: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(255, 96, 98, 0.24);
+}
+
+.glass-panel,
+.premium-card,
+.section-shell {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  backdrop-filter: blur(24px);
+}
+
+.section-shell {
+  @apply mx-auto mt-6 max-w-7xl rounded-[2.4rem] px-4 py-20 shadow-glow md:px-6 lg:px-8;
+}
+
+.premium-card {
+  @apply rounded-[2rem] shadow-glow;
+}
+
+.input-shell {
+  @apply w-full rounded-[1.3rem] border border-black/10 bg-white/70 px-4 py-3 text-zinc-900 outline-none transition focus:border-zinc-950 focus:ring-2 focus:ring-zinc-950/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:focus:border-white dark:focus:ring-white/10;
+}
+
+.cursor-glow {
+  position: fixed;
+  left: calc(var(--x, 50vw) - 180px);
+  top: calc(var(--y, 50vh) - 180px);
+  width: 360px;
+  height: 360px;
+  pointer-events: none;
+  z-index: 25;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), rgba(255, 77, 79, 0.08), transparent 70%);
+  mix-blend-mode: screen;
+  filter: blur(28px);
+}
+
+.magnetic-button {
+  will-change: transform;
+}
+
+.gallery-shot img {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .section-shell {
+    @apply rounded-[2rem] py-16;
+  }
+
+  .cursor-glow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    @apply mt-4 rounded-[1.6rem] px-4 py-14;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
