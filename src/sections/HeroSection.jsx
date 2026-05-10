@@ -47,7 +47,7 @@ export function HeroSection() {
             className="mt-10 flex flex-wrap gap-4"
           >
             <MagneticButton href="#projects">View Work</MagneticButton>
-            <MagneticButton href="/media/documents/akash-bhagwat-resume.txt" secondary download>
+            <MagneticButton href="/media/documents/akash-ohalkar-resume.pdf" secondary download>
               Resume
             </MagneticButton>
             <MagneticButton href="#contact" secondary>

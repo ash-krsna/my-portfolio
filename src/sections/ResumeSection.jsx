@@ -19,7 +19,7 @@ export function ResumeSection() {
             Includes a concise written summary, core skills, current experience context, and primary project references.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <MagneticButton href="/media/documents/akash-bhagwat-resume.txt" download>
+            <MagneticButton href="/media/documents/akash-ohalkar-resume.pdf" download>
               Download Resume
             </MagneticButton>
             <MagneticButton href="#contact" secondary>
