@@ -12,7 +12,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { AboutSection } from "./sections/AboutSection";
 import { ProjectsSection } from "./sections/ProjectsSection";
 import { GallerySection } from "./sections/GallerySection";
-import { CinematicSection } from "./sections/CinematicSection";
+import { LabSection } from "./sections/LabSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { ResumeSection } from "./sections/ResumeSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
@@ -144,7 +144,7 @@ function App() {
         <AboutSection />
         <ProjectsSection />
         <GallerySection />
-        <CinematicSection />
+        <LabSection />
         <CertificationsSection />
         <SkillsSection />
         <ResumeSection />

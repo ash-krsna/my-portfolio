@@ -9,30 +9,30 @@ export const navItems = [
 ];
 
 export const heroHighlights = [
-  "Creative Developer",
-  "Future Cinematic Storyteller",
-  "Photography Explorer",
+  "Frontend Engineer",
+  "Raspberry Pi Curious",
+  "Photography Hobbyist",
   "Security-Aware Builder"
 ];
 
 export const aboutTimeline = [
   {
     year: "Now",
-    title: "Frontend craft + product sense",
+    title: "Frontend craft + engineering feel",
     description:
-      "Sharpening interfaces that feel premium, responsive, and memorable instead of disposable."
+      "Sharpening interfaces that feel responsive, reliable, and purposeful instead of decorative for the sake of it."
   },
   {
     year: "Learning arc",
-    title: "React, automation, and systems",
+    title: "React, automation, Raspberry Pi, and systems",
     description:
-      "Going deeper into scalable frontend architecture, automation thinking, APIs, and cleaner product structure."
+      "Going deeper into scalable frontend architecture, automation thinking, APIs, hardware curiosity, and cleaner product structure."
   },
   {
     year: "Next chapter",
-    title: "Cinema-driven storytelling",
+    title: "Builder with range",
     description:
-      "Building toward short films, cinematic edits, and visual stories where code and emotion meet."
+      "Growing toward a stronger developer identity that mixes code, interface quality, experimentation, and technical curiosity."
   }
 ];
 
@@ -169,9 +169,30 @@ export const skills = [
   { name: "Python", value: 72 },
   { name: "SQL", value: 70 },
   { name: "UI/UX", value: 85 },
-  { name: "Video Editing", value: 58 },
+  { name: "Raspberry Pi", value: 62 },
   { name: "Creative Direction", value: 76 },
   { name: "Problem Solving", value: 87 }
+];
+
+export const labExperiments = [
+  {
+    title: "Raspberry Pi curiosity",
+    copy:
+      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight systems, and practical experimentation.",
+    icon: "bi-cpu"
+  },
+  {
+    title: "Code + interface thinking",
+    copy:
+      "Interested in software that is not only functional, but clear to use, visually structured, and enjoyable to navigate.",
+    icon: "bi-code-slash"
+  },
+  {
+    title: "Games and playful systems",
+    copy:
+      "Drawn to interactive ideas, game-like flows, and small experimental builds that make technical work feel alive.",
+    icon: "bi-controller"
+  }
 ];
 
 export const galleryImages = [
@@ -192,7 +213,7 @@ export const testimonials = [
     author: "Future collaborators"
   },
   {
-    quote: "Code, motion, and visual storytelling are all becoming part of the same language here.",
+    quote: "Code, systems, and technical curiosity are all part of the same identity here.",
     author: "Portfolio note"
   }
 ];

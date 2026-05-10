@@ -66,11 +66,11 @@ textarea {
 }
 
 .section-shell {
-  @apply mx-auto mt-6 max-w-7xl rounded-[2.6rem] px-4 py-24 shadow-glow md:px-6 lg:px-8;
+  @apply mx-auto mt-5 max-w-7xl rounded-[2.2rem] px-4 py-16 shadow-glow md:px-6 lg:px-8;
 }
 
 .premium-card {
-  @apply rounded-[2rem] shadow-glow;
+  @apply rounded-[1.5rem] shadow-glow;
 }
 
 .section-shell,
@@ -129,7 +129,7 @@ textarea {
 
 @media (max-width: 1024px) {
   .section-shell {
-    @apply rounded-[2rem] py-16;
+    @apply rounded-[1.8rem] py-14;
   }
 
   .cursor-glow {
@@ -139,7 +139,7 @@ textarea {
 
 @media (max-width: 640px) {
   .section-shell {
-    @apply mt-4 rounded-[1.6rem] px-4 py-14;
+    @apply mt-4 rounded-[1.4rem] px-4 py-12;
   }
 }
 
