@@ -23,6 +23,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState("about");
   const { theme, isDark, toggleTheme } = useTheme();
   useLenis();
 
@@ -55,6 +56,31 @@ function App() {
     return () => ctx.revert();
   }, [loading]);
 
+  useEffect(() => {
+    const sections = navItems
+      .map((item) => document.getElementById(item.id))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target?.id) {
+          setActiveSection(visible.target.id);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -55% 0px",
+        threshold: [0.2, 0.45, 0.7]
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen bg-[var(--page-bg)] text-[var(--text-primary)] transition-colors duration-500">
       <Loader visible={loading} />
@@ -64,20 +90,38 @@ function App() {
       <div className="fixed inset-0 -z-20 opacity-[0.08] [background-size:48px_48px] [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]" />
 
       <header className="fixed inset-x-0 top-0 z-50">
-        <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between gap-4 rounded-full border border-black/10 bg-white/70 px-4 py-3 shadow-glow backdrop-blur-xl dark:border-white/10 dark:bg-[#09090f]/70 md:px-6">
+        <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between gap-4 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-6">
           <a href="#home" className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#ff4d4f,#911515)] font-display text-lg font-bold text-white">A</span>
+            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#ff4d4f,#911515)] font-display text-lg font-bold text-white shadow-[0_18px_40px_rgba(255,77,79,0.28)]">A</span>
             <div>
               <p className="font-display text-lg text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Creative developer</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer • future cinema</p>
             </div>
           </a>
 
-          <nav className="hidden items-center gap-5 lg:flex">
+          <nav className="nav-dock hidden items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] lg:flex">
             {navItems.map((item) => (
-              <a key={item.id} href={`#${item.id}`} className="text-sm text-zinc-600 transition hover:text-zinc-950 dark:text-white/55 dark:hover:text-white">
-                {item.label}
-              </a>
+              <motion.a
+                key={item.id}
+                href={`#${item.id}`}
+                whileHover={{ y: -4, scale: 1.03 }}
+                whileTap={{ y: 0, scale: 0.92 }}
+                transition={{ type: "spring", stiffness: 420, damping: 16 }}
+                className={`relative rounded-full px-4 py-2.5 text-sm font-medium transition ${
+                  activeSection === item.id
+                    ? "text-zinc-950 dark:text-white"
+                    : "text-zinc-600 hover:text-zinc-950 dark:text-white/55 dark:hover:text-white"
+                }`}
+              >
+                {activeSection === item.id ? (
+                  <motion.span
+                    layoutId="nav-pill"
+                    className="absolute inset-0 rounded-full border border-black/10 bg-white shadow-[0_10px_24px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/10 dark:shadow-none"
+                    transition={{ type: "spring", stiffness: 380, damping: 26 }}
+                  />
+                ) : null}
+                <span className="relative z-10">{item.label}</span>
+              </motion.a>
             ))}
           </nav>
 
@@ -87,7 +131,7 @@ function App() {
               href="https://github.com/ash-krsna"
               target="_blank"
               rel="noreferrer"
-              className="hidden rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm font-semibold text-zinc-900 transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/5 dark:text-white md:inline-flex"
+              className="hidden rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm font-semibold text-zinc-900 transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/5 dark:text-white md:inline-flex"
             >
               GitHub
             </a>
