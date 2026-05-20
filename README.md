@@ -31,6 +31,17 @@ http://localhost:4173
 npm run build
 ```
 
+## Vercel email setup
+
+Add this environment variable in Vercel:
+
+```text
+RESEND_API_KEY=your_resend_api_key
+```
+
+The portfolio contact forms use the serverless endpoint in `api/contact.js`.
+For production, replace the sender address in that file with an email from your verified Resend domain.
+
 ## Deploy
 
 1. Install dependencies with `npm install`.

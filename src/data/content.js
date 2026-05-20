@@ -1,17 +1,17 @@
 export const navItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
-  { id: "gallery", label: "Frames" },
   { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
   { id: "resume", label: "Resume" },
+  { id: "hire", label: "Hire Me" },
   { id: "contact", label: "Contact" }
 ];
 
 export const heroHighlights = [
   "Frontend Engineer",
   "Raspberry Pi Curious",
-  "Photography Hobbyist",
+  "Systems Explorer",
   "Security-Aware Builder"
 ];
 
@@ -195,18 +195,6 @@ export const labExperiments = [
   }
 ];
 
-export const galleryImages = [
-  { src: "/media/photos/street-01.jpeg", category: "Street", title: "Passing rhythm" },
-  { src: "/media/photos/street-02.jpeg", category: "Street", title: "Quiet movement" },
-  { src: "/media/photos/nature-01.jpeg", category: "Nature", title: "Still light" },
-  { src: "/media/photos/nature-02.jpeg", category: "Nature", title: "Open air" },
-  { src: "/media/photos/portrait-01.jpeg", category: "Portrait", title: "Texture study" },
-  { src: "/media/photos/portrait-02.jpeg", category: "Portrait", title: "Color focus" },
-  { src: "/media/photos/random-01.jpeg", category: "Random moments", title: "Machine mood" },
-  { src: "/media/photos/random-02.jpeg", category: "Random moments", title: "Detail memory" },
-  { src: "/media/photos/random-03.jpeg", category: "Random moments", title: "Caught frame" }
-];
-
 export const testimonials = [
   {
     quote: "The next version of this space is being built for the people who will remember the details.",
@@ -221,6 +209,24 @@ export const testimonials = [
 export const socialLinks = [
   { label: "GitHub", href: "https://github.com/ash-krsna", icon: "bi-github" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/akash-gita-bhagwat", icon: "bi-linkedin" },
-  { label: "Instagram", href: "https://www.instagram.com/duskveil_______/", icon: "bi-instagram" },
+  { label: "Instagram Profile", href: "https://www.instagram.com/duskveil_______/", icon: "bi-instagram" },
   { label: "Email", href: "mailto:akashohalkar300@gmail.com", icon: "bi-envelope" }
+];
+
+export const hireMeOffers = [
+  {
+    title: "Frontend development",
+    copy: "Responsive interfaces, polished layouts, and cleaner product presentation for web experiences that need to feel sharp and usable.",
+    icon: "bi-window"
+  },
+  {
+    title: "Portfolio and landing pages",
+    copy: "Personal brands, product pages, and presentation-focused websites with stronger visual hierarchy and modern interaction quality.",
+    icon: "bi-layout-text-window"
+  },
+  {
+    title: "Tech experimentation",
+    copy: "Developer-focused builds, interface concepts, automation-minded ideas, and playful systems work shaped by curiosity and clarity.",
+    icon: "bi-cpu"
+  }
 ];

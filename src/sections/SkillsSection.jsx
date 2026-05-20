@@ -15,7 +15,7 @@ export function SkillsSection() {
         <div className="premium-card p-8">
           <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Floating strengths</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            {["React", "Motion", "UI Polish", "Storytelling", "Security", "Photography", "Design Taste", "Creative Code"].map((item) => (
+            {["React", "Motion", "UI Polish", "Security", "Raspberry Pi", "Systems Thinking", "Design Taste", "Creative Code"].map((item) => (
               <span key={item} className="rounded-full border border-black/10 bg-black/5 px-4 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-white/72">
                 {item}
               </span>

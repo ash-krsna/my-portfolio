@@ -32,7 +32,7 @@ export function ResumeSection() {
           {[
             ["Aptara", "Trainee HTML Programmer", "Accessibility-aware digital content workflows and structured document production."],
             ["Current Growth", "React + Product Systems", "Building toward stronger component systems, APIs, automation, and polished frontend execution."],
-            ["Next Horizon", "Cinema + Story Worlds", "Preparing to expand from still frames into cinematic edits and visual storytelling."],
+            ["Next Horizon", "Technical Growth", "Preparing for stronger engineering depth, better systems thinking, and more complete technical builds."],
           ].map(([company, role, copy]) => (
             <div key={company} className="premium-card p-6">
               <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/40">{company}</p>

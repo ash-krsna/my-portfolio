@@ -11,11 +11,11 @@ import { navItems } from "./data/content";
 import { HeroSection } from "./sections/HeroSection";
 import { AboutSection } from "./sections/AboutSection";
 import { ProjectsSection } from "./sections/ProjectsSection";
-import { GallerySection } from "./sections/GallerySection";
 import { LabSection } from "./sections/LabSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { ResumeSection } from "./sections/ResumeSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
+import { HireSection } from "./sections/HireSection";
 import { ContactSection } from "./sections/ContactSection";
 import { CertificationsSection } from "./sections/CertificationsSection";
 
@@ -92,10 +92,14 @@ function App() {
       <header className="fixed inset-x-0 top-0 z-50">
         <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between gap-4 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-6">
           <a href="#home" className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#ff4d4f,#911515)] font-display text-lg font-bold text-white shadow-[0_18px_40px_rgba(255,77,79,0.28)]">A</span>
+            <span className="brand-emblem flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-[0_18px_40px_rgba(72,194,141,0.2)]">
+              <span className="brand-emblem__core">
+                <span className="brand-emblem__glyph">A</span>
+              </span>
+            </span>
             <div>
               <p className="font-display text-lg text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer • future cinema</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer • tech systems</p>
             </div>
           </a>
 
@@ -143,12 +147,12 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
-        <GallerySection />
         <LabSection />
         <CertificationsSection />
         <SkillsSection />
         <ResumeSection />
         <TestimonialsSection />
+        <HireSection />
         <ContactSection />
       </main>
 
@@ -158,7 +162,7 @@ function App() {
         viewport={{ once: true }}
         className="mx-auto flex max-w-7xl flex-col gap-4 px-4 pb-10 pt-4 text-sm text-zinc-500 dark:text-white/42 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
       >
-        <p>Built as a cinematic digital experience for recruiters, collaborators, and future story worlds.</p>
+        <p>Built as a focused technical portfolio for recruiters, collaborators, and product-minded teams.</p>
         <p className="uppercase tracking-[0.22em]">Theme: {theme}</p>
       </motion.footer>
     </div>
