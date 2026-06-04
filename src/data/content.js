@@ -1,6 +1,7 @@
 export const navItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
+  { id: "case-studies", label: "Notes" },
   { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
   { id: "resume", label: "Resume" },
@@ -279,6 +280,61 @@ export const labExperiments = [
     copy:
       "Drawn to interactive ideas, game-like flows, and small experiments that make technical work feel alive instead of flat.",
     icon: "bi-controller"
+  }
+];
+
+export const perspectiveCaseStudies = [
+  {
+    title: "AI interfaces should become calmer, not louder",
+    topic: "AI Product Design",
+    status: "Observation",
+    note:
+      "A lot of AI products still try to prove they are intelligent by throwing too much UI at the screen. I think the better direction is calmer surfaces, clearer states, and stronger guidance around what the system is actually doing.",
+    problem:
+      "Fast-growing AI products often confuse capability with clarity. Users see powerful features, but they do not always understand trust, limits, or next actions.",
+    solution:
+      "Design the interface around confidence: better prompts, visible system state, focused actions, and feedback that explains what changed. The experience should feel more dependable than magical.",
+    perspective:
+      "My take is that the next strong AI products will win through restraint. Better structure, fewer distractions, and clearer interaction loops will matter more than decorative complexity."
+  },
+  {
+    title: "Developer tools are becoming experience products",
+    topic: "Dev Tools",
+    status: "Current trend",
+    note:
+      "The newer generation of developer tools is not just about capability. It is also about speed, better defaults, and the feeling that the tool respects the developer's time.",
+    problem:
+      "Many technical tools are powerful but still feel rough around onboarding, visibility, and repeated workflows. That friction slows down adoption.",
+    solution:
+      "Treat developer tools like product systems: great empty states, transparent feedback, strong shortcuts, clean layout, and clear mental models for what's happening under the hood.",
+    perspective:
+      "I think this is where frontend engineering becomes especially valuable. A technical product feels stronger when the interface helps people think faster, not just click faster."
+  },
+  {
+    title: "Edge-fast websites still need storytelling discipline",
+    topic: "Frontend Performance",
+    status: "What I believe",
+    note:
+      "Modern deployment stacks have made performance easier to reach, but speed alone does not create quality. Good structure, good hierarchy, and good content flow still decide whether a website feels premium.",
+    problem:
+      "Teams sometimes over-focus on framework choice or benchmark numbers while the actual user experience remains generic or hard to scan.",
+    solution:
+      "Pair performance thinking with authored presentation: intentional sections, meaningful motion, responsive layout stability, and content that earns the user's attention quickly.",
+    perspective:
+      "My view is that the best frontend work sits between engineering and editorial judgment. It should be fast, yes, but also memorable because it is well-composed."
+  },
+  {
+    title: "Small hardware projects build better software instincts",
+    topic: "Raspberry Pi and Hardware",
+    status: "Personal note",
+    note:
+      "Even small hardware experiments change the way I think about software. They make systems feel more real because inputs, outputs, delays, and constraints become tangible.",
+    problem:
+      "Software learning can stay too abstract when everything happens only inside the browser or editor.",
+    solution:
+      "Use Raspberry Pi style projects and physical computing as a way to sharpen systems thinking, debugging patience, and practical reasoning about state and behavior.",
+    perspective:
+      "I think hardware curiosity makes me better at frontend too. It encourages cleaner thinking about flow, feedback, and the relationship between what a system does and what a user sees."
   }
 ];
 

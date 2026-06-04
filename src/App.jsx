@@ -11,6 +11,7 @@ import { navItems } from "./data/content";
 import { HeroSection } from "./sections/HeroSection";
 import { AboutSection } from "./sections/AboutSection";
 import { ProjectsSection } from "./sections/ProjectsSection";
+import { CaseStudiesSection } from "./sections/CaseStudiesSection";
 import { LabSection } from "./sections/LabSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { ResumeSection } from "./sections/ResumeSection";
@@ -165,6 +166,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
+        <CaseStudiesSection />
         <LabSection />
         <CertificationsSection />
         <SkillsSection />
