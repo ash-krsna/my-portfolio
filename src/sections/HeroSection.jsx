@@ -1,33 +1,35 @@
 import { motion } from "framer-motion";
 import { MagneticButton } from "../components/MagneticButton";
-import { heroHighlights, socialLinks } from "../data/content";
+import { heroHighlights, heroStats, heroTerminalLines, socialLinks } from "../data/content";
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden pt-28">
-      <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_16%,rgba(255,77,79,0.18),transparent_18%),radial-gradient(circle_at_82%_18%,rgba(155,178,255,0.18),transparent_18%),radial-gradient(circle_at_56%_92%,rgba(145,255,176,0.12),transparent_24%)]" />
-      <div className="absolute inset-x-[10%] top-24 -z-10 h-[34rem] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1),transparent_62%)] blur-3xl dark:bg-[radial-gradient(circle,rgba(255,255,255,0.06),transparent_64%)]" />
+    <section id="home" className="hero-shell relative min-h-screen overflow-hidden pt-28">
+      <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_16%_18%,rgba(41,182,246,0.16),transparent_22%),radial-gradient(circle_at_84%_12%,rgba(45,212,191,0.16),transparent_20%),radial-gradient(circle_at_52%_78%,rgba(99,102,241,0.12),transparent_24%)]" />
+      <div className="hero-noise absolute inset-0 -z-10 opacity-40" />
 
-      <div className="mx-auto grid min-h-[82vh] max-w-7xl gap-10 px-4 pb-10 md:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
+      <div className="mx-auto grid min-h-[84vh] max-w-7xl gap-10 px-4 pb-10 md:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
         <div className="flex flex-col justify-center">
-          <motion.span
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="inline-flex w-fit rounded-full border border-black/10 bg-white/70 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/60"
+            transition={{ duration: 0.75 }}
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/72 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/60"
           >
-            Frontend developer • tech explorer • systems-minded builder
-          </motion.span>
+            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(74,222,128,0.8)]" />
+            Frontend developer · tech explorer · systems-minded builder
+          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.08 }}
-            className="mt-8 max-w-4xl font-display text-5xl font-semibold leading-[0.9] tracking-[-0.04em] text-zinc-950 dark:text-white md:text-7xl lg:text-[6rem]"
+            className="mt-8 max-w-5xl font-display text-5xl font-semibold leading-[0.92] text-zinc-950 dark:text-white md:text-7xl lg:text-[6rem]"
           >
-            I Build Technical Experiences.
-            <span className="mt-4 block bg-[linear-gradient(90deg,#ff6163,#8dd4ff,#9cffaf)] bg-clip-text text-transparent">
-              With Code, Systems, and Sharp UI.
+            Building clean,
+            <span className="mt-2 block">fast, technical products</span>
+            <span className="hero-gradient-title mt-4 block bg-clip-text text-transparent">
+              for the modern web.
             </span>
           </motion.h1>
 
@@ -35,23 +37,23 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.18 }}
-            className="mt-8 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-white/66"
+            className="mt-8 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-white/68"
           >
-            A tech-first portfolio for a developer who cares about clean interfaces, stronger engineering feel, practical builds, Raspberry Pi curiosity, and software that looks thoughtful without losing clarity.
+            I build frontend experiences that feel precise, responsive, and engineered with intent. The focus is modern UI, practical systems, API-driven work, and technical polish that holds up across screens.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.28 }}
+            transition={{ duration: 0.9, delay: 0.26 }}
             className="mt-10 flex flex-wrap gap-4"
           >
             <MagneticButton href="#projects">View Work</MagneticButton>
             <MagneticButton href="/media/documents/akash-ohalkar-resume.pdf" secondary download>
               Resume
             </MagneticButton>
-            <MagneticButton href="#contact" secondary>
-              Contact
+            <MagneticButton href="#hire" secondary>
+              Hire Me
             </MagneticButton>
           </motion.div>
 
@@ -62,7 +64,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.18 + index * 0.07 }}
-                className="rounded-2xl border border-black/8 bg-black/[0.03] px-4 py-3 text-sm text-zinc-600 dark:border-white/10 dark:bg-white/6 dark:text-white/66"
+                className="hero-chip rounded-2xl px-4 py-3 text-sm text-zinc-700 dark:text-white/72"
               >
                 {item}
               </motion.span>
@@ -73,47 +75,84 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.96, y: 22 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1.1, delay: 0.14 }}
+          transition={{ duration: 1.05, delay: 0.12 }}
           className="relative flex items-center justify-center"
         >
-          <div className="glass-panel relative w-full max-w-[32rem] overflow-hidden rounded-[2rem] p-3 shadow-premium">
-            <div className="absolute inset-3 rounded-[1.5rem] bg-hero-grid bg-[length:2.6rem_2.6rem] opacity-[0.08]" />
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#08090f]">
-              <img
-                src="/media/photos/profile-main.jpeg"
-                alt="Akash Bhagwat portrait"
-                className="h-[31rem] w-full object-cover object-center"
-                loading="eager"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(8,9,15,0.15),rgba(8,9,15,0.88))]" />
-              <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-                <p className="text-xs uppercase tracking-[0.28em] text-white/50">Now building</p>
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-[1.3rem] border border-white/10 bg-white/6 p-4 backdrop-blur">
-                    <p className="text-sm text-white/60">Focus</p>
-                    <p className="mt-2 text-base font-semibold">Frontend engineering + UI polish</p>
-                  </div>
-                  <div className="rounded-[1.3rem] border border-white/10 bg-white/6 p-4 backdrop-blur">
-                    <p className="text-sm text-white/60">Current curiosity</p>
-                    <p className="mt-2 text-base font-semibold">Raspberry Pi, systems, playful builds</p>
-                  </div>
+          <div className="relative grid w-full max-w-[34rem] gap-4">
+            <div className="hero-console premium-card overflow-hidden p-4 md:p-5">
+              <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                <div className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
                 </div>
+                <p className="text-[11px] uppercase tracking-[0.28em] text-white/42">system status</p>
+              </div>
+
+              <div className="mt-4 space-y-3 font-mono text-[13px] leading-6 text-emerald-100/88">
+                {heroTerminalLines.map((line) => (
+                  <div key={line} className="flex gap-3">
+                    <span className="text-cyan-300">$</span>
+                    <span>{line}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {heroStats.map((item) => (
+                  <div key={item.label} className="hero-stat rounded-2xl p-4">
+                    <p className="text-[11px] uppercase tracking-[0.24em] text-white/42">{item.label}</p>
+                    <p className="mt-2 text-base font-semibold text-white">{item.value}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl border border-black/10 bg-white/80 px-4 py-3 text-sm text-zinc-700 transition hover:-translate-y-0.5 hover:border-black/20 dark:border-white/10 dark:bg-white/6 dark:text-white/70"
-                >
-                  <i className={`bi ${link.icon}`} />
-                  {link.label}
-                </a>
-              ))}
+            <div className="grid gap-4 md:grid-cols-[1.08fr_0.92fr]">
+              <div className="hero-signal premium-card p-4 md:p-5">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-zinc-500 dark:text-white/42">Build signal</p>
+                <div className="mt-4 space-y-3">
+                  <div className="rounded-2xl border border-black/10 bg-black/[0.03] px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                    <div className="mb-2 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-zinc-500 dark:text-white/42">
+                      <span>Frontend quality</span>
+                      <span>91%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-black/8 dark:bg-white/10">
+                      <div className="hero-meter h-full w-[91%] rounded-full" />
+                    </div>
+                  </div>
+                  <div className="rounded-2xl border border-black/10 bg-black/[0.03] px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                    <div className="mb-2 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-zinc-500 dark:text-white/42">
+                      <span>System thinking</span>
+                      <span>84%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-black/8 dark:bg-white/10">
+                      <div className="hero-meter h-full w-[84%] rounded-full" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="premium-card p-4 md:p-5">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-zinc-500 dark:text-white/42">Connect</p>
+                <div className="mt-4 grid gap-3">
+                  {socialLinks.map((link) => (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hero-social inline-flex items-center justify-between rounded-2xl px-4 py-3 text-sm text-zinc-700 transition dark:text-white/74"
+                    >
+                      <span className="inline-flex items-center gap-2">
+                        <i className={`bi ${link.icon}`} />
+                        {link.label}
+                      </span>
+                      <i className="bi bi-arrow-up-right text-xs opacity-60" />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>

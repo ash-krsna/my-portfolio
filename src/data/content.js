@@ -10,29 +10,44 @@ export const navItems = [
 
 export const heroHighlights = [
   "Frontend Engineer",
+  "React + Vite",
   "Raspberry Pi Curious",
   "Systems Explorer",
   "Security-Aware Builder"
 ];
 
+export const heroStats = [
+  { label: "Focus", value: "UI Engineering" },
+  { label: "Current", value: "React Systems" },
+  { label: "Learning", value: "APIs + Hardware" },
+  { label: "Mode", value: "Build Fast" }
+];
+
+export const heroTerminalLines = [
+  "boot portfolio --profile akash",
+  "stack: react, js, python, sql, responsive-ui",
+  "signal: frontend precision + systems curiosity",
+  "next: stronger products, cleaner interfaces, deeper experiments"
+];
+
 export const aboutTimeline = [
   {
     year: "Now",
-    title: "Frontend craft + engineering feel",
+    title: "Frontend craft with stronger system thinking",
     description:
-      "Sharpening interfaces that feel responsive, reliable, and purposeful instead of decorative for the sake of it."
+      "Sharpening interfaces that feel fast, responsive, and dependable while paying closer attention to maintainability and product structure."
   },
   {
     year: "Learning arc",
-    title: "React, automation, Raspberry Pi, and systems",
+    title: "React, APIs, automation, Raspberry Pi, and systems",
     description:
-      "Going deeper into scalable frontend architecture, automation thinking, APIs, hardware curiosity, and cleaner product structure."
+      "Going deeper into scalable frontend architecture, API integration, automation thinking, hardware curiosity, and cleaner interface systems."
   },
   {
     year: "Next chapter",
-    title: "Builder with range",
+    title: "Builder with technical range",
     description:
-      "Growing toward a stronger developer identity that mixes code, interface quality, experimentation, and technical curiosity."
+      "Growing toward a stronger developer identity that mixes code quality, interface discipline, experimentation, and technical curiosity."
   }
 ];
 
@@ -42,10 +57,10 @@ export const projects = [
     title: "Vehicle Tracker",
     label: "Featured Build",
     description:
-      "A responsive frontend experience centered on interaction, cleaner presentation, and premium visual polish for technical ideas.",
+      "A responsive frontend experience centered on interaction design, clean structure, and polished presentation for technical workflows.",
     impact:
-      "Built to show stronger interface discipline, smoother motion, and better screen-to-screen composition.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive UI"],
+      "Built to show stronger interface discipline, smoother motion, and better screen-to-screen composition with practical dashboard energy.",
+    stack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Dashboard UI"],
     links: [
       { label: "Live Demo", href: "https://ash-krsna.github.io/codex-" },
       { label: "GitHub", href: "https://github.com/ash-krsna" }
@@ -57,10 +72,10 @@ export const projects = [
     title: "Lift Management",
     label: "Live Web App",
     description:
-      "A practical workflow-focused web experience designed around clarity, responsive layout behavior, and a smoother user journey.",
+      "A workflow-focused web experience designed around clarity, responsive layout behavior, and a smoother operations-oriented user journey.",
     impact:
-      "Shows my interest in useful digital products with more thoughtful interaction flow and cleaner interface logic.",
-    stack: ["Responsive UI", "Interaction Flow", "Frontend Logic", "Usability"],
+      "Shows my interest in useful digital products with thoughtful interaction flow, clearer interface logic, and a more practical product mindset.",
+    stack: ["Responsive UI", "Interaction Flow", "Frontend Logic", "Usability", "Operations UI"],
     links: [{ label: "Open Demo", href: "https://ash-krsna.github.io/Lift-Management/?v=demo2" }]
   },
   {
@@ -68,10 +83,10 @@ export const projects = [
     title: "BSB International School Website",
     label: "Client-Style Build",
     description:
-      "A dynamic school website built to surface academics, student growth, and institutional transparency in a clear digital experience.",
+      "A dynamic school website built to surface academics, student growth, and institutional transparency through a clear digital experience.",
     impact:
       "Includes secure student result access, weekly progress visibility, digital academic records, and a responsive parent-friendly structure.",
-    stack: ["Information Design", "Secure Access", "Performance", "Responsive UX"],
+    stack: ["Information Design", "Secure Access", "Performance", "Responsive UX", "Data Visibility"],
     links: [
       { label: "Gallery Page", href: "https://ash-krsna.github.io/BSB-International-School/gallery.html" },
       { label: "Main Site", href: "https://ash-krsna.github.io/BSB-International-School/index.html" }
@@ -82,10 +97,10 @@ export const projects = [
     title: "Future Startup Ideas",
     label: "Pipeline",
     description:
-      "A growing set of ideas spanning automation tools, creative software, and products that blend utility with stronger experience design.",
+      "A growing set of ideas spanning automation tools, internal products, and software concepts that blend utility with stronger experience design.",
     impact:
-      "Reserved for future experiments where I can combine code, visual direction, and storytelling into memorable launches.",
-    stack: ["Product Thinking", "Automation", "UI Systems", "Creative Direction"],
+      "Reserved for future experiments where I can combine code, product thinking, interface systems, and sharper launch-ready execution.",
+    stack: ["Product Thinking", "Automation", "UI Systems", "Technical Direction"],
     links: []
   }
 ];
@@ -164,33 +179,33 @@ export const certificates = [
 ];
 
 export const skills = [
-  { name: "React", value: 82 },
-  { name: "JavaScript", value: 88 },
-  { name: "Python", value: 72 },
-  { name: "SQL", value: 70 },
-  { name: "UI/UX", value: 85 },
-  { name: "Raspberry Pi", value: 62 },
-  { name: "Creative Direction", value: 76 },
-  { name: "Problem Solving", value: 87 }
+  { name: "React", value: 84 },
+  { name: "JavaScript", value: 89 },
+  { name: "Python", value: 74 },
+  { name: "SQL", value: 72 },
+  { name: "UI Engineering", value: 87 },
+  { name: "API Integration", value: 76 },
+  { name: "Raspberry Pi", value: 64 },
+  { name: "Problem Solving", value: 88 }
 ];
 
 export const labExperiments = [
   {
     title: "Raspberry Pi curiosity",
     copy:
-      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight systems, and practical experimentation.",
+      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight systems, GPIO curiosity, and practical experimentation.",
     icon: "bi-cpu"
   },
   {
-    title: "Code + interface thinking",
+    title: "Code + interface systems",
     copy:
-      "Interested in software that is not only functional, but clear to use, visually structured, and enjoyable to navigate.",
+      "Interested in software that is not only functional, but also structured well, readable at a glance, and enjoyable to navigate.",
     icon: "bi-code-slash"
   },
   {
-    title: "Games and playful systems",
+    title: "Playful technical builds",
     copy:
-      "Drawn to interactive ideas, game-like flows, and small experimental builds that make technical work feel alive.",
+      "Drawn to interactive ideas, game-like flows, and small experiments that make technical work feel alive instead of flat.",
     icon: "bi-controller"
   }
 ];

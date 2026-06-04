@@ -99,11 +99,11 @@ function App() {
             </span>
             <div>
               <p className="font-display text-lg text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer • tech systems</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer · tech systems</p>
             </div>
           </a>
 
-          <nav className="nav-dock hidden items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] lg:flex">
+          <nav className="nav-dock hidden items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] xl:flex">
             {navItems.map((item) => (
               <motion.a
                 key={item.id}
@@ -142,6 +142,24 @@ function App() {
           </div>
         </div>
       </header>
+
+      <div className="header-mobile-nav fixed inset-x-0 top-[5.5rem] z-40 px-4 md:px-6 xl:hidden">
+        <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto rounded-full border border-black/10 bg-white/72 px-2 py-2 backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition ${
+                activeSection === item.id
+                  ? "border border-black/10 bg-white text-zinc-950 dark:border-white/10 dark:bg-white/10 dark:text-white"
+                  : "text-zinc-600 dark:text-white/58"
+              }`}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </div>
 
       <main className="overflow-hidden">
         <HeroSection />

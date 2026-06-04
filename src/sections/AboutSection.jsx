@@ -7,8 +7,8 @@ export function AboutSection() {
     <section id="about" className="section-shell">
       <SectionHeading
         eyebrow="About me"
-        title="Code with atmosphere. Design with intent. Build with the ambition to direct stories next."
-        copy="I care about digital work that feels authored. Not just functional. My path sits between frontend engineering, visual taste, product clarity, and a growing pull toward cinematic storytelling."
+        title="Frontend engineering with product taste, technical curiosity, and a builder mindset."
+        copy="I care about digital work that feels authored and solid. Not just functional, and not just pretty. The aim is strong frontend execution, clearer product thinking, and systems that feel dependable."
       />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -18,9 +18,9 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="premium-card p-8"
         >
-          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Personal manifesto</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Working style</p>
           <p className="mt-6 text-2xl leading-[1.5] text-zinc-900 dark:text-white">
-            I want the final mix to be developer precision, visual direction, emotional tone, and the confidence to make work that people remember.
+            I like interfaces that feel intentional, code that stays readable, and products that make sense quickly. The goal is to build things that look sharp because they are thought through well.
           </p>
         </motion.div>
 
@@ -35,7 +35,7 @@ export function AboutSection() {
               className="premium-card flex gap-5 p-6"
             >
               <div className="relative mt-1 flex flex-col items-center">
-                <span className="h-3 w-3 rounded-full bg-[linear-gradient(135deg,#ff5f5f,#d6b57c)]" />
+                <span className="h-3 w-3 rounded-full bg-[linear-gradient(135deg,#22d3ee,#34d399)]" />
                 {index !== aboutTimeline.length - 1 ? (
                   <span className="mt-3 h-full w-px bg-black/10 dark:bg-white/10" />
                 ) : null}

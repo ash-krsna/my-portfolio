@@ -7,15 +7,15 @@ export function SkillsSection() {
     <section id="skills" className="section-shell">
       <SectionHeading
         eyebrow="Skills"
-        title="A stack shaped by frontend precision, visual curiosity, and future storytelling."
-        copy="These are the capabilities I want visitors to feel immediately: practical engineering, product taste, and a growing creative edge."
+        title="A stack shaped by frontend precision, interface systems, and practical technical growth."
+        copy="The strongest signal I want the portfolio to give is this: I care about how things work, how they feel to use, and how cleanly they can scale."
       />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="premium-card p-8">
-          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Floating strengths</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Core strengths</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            {["React", "Motion", "UI Polish", "Security", "Raspberry Pi", "Systems Thinking", "Design Taste", "Creative Code"].map((item) => (
+            {["React", "Vite", "Motion", "UI Systems", "Security-Aware", "Raspberry Pi", "APIs", "Problem Solving"].map((item) => (
               <span key={item} className="rounded-full border border-black/10 bg-black/5 px-4 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-white/72">
                 {item}
               </span>
@@ -35,7 +35,7 @@ export function SkillsSection() {
                   whileInView={{ width: `${skill.value}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: index * 0.07 }}
-                  className="h-full rounded-full bg-[linear-gradient(90deg,#ff5f5f,#d6b57c,#dce7ff)]"
+                  className="h-full rounded-full bg-[linear-gradient(90deg,#22d3ee,#34d399,#818cf8)]"
                 />
               </div>
             </div>
