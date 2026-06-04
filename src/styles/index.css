@@ -345,6 +345,11 @@ textarea {
     0 18px 44px rgba(34, 211, 238, 0.1);
 }
 
+.project-card img,
+.premium-card img {
+  display: block;
+}
+
 .gallery-shot img {
   display: block;
 }

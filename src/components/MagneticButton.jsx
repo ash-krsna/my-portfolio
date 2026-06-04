@@ -28,8 +28,8 @@ export function MagneticButton({ href, children, className, secondary = false, d
       className={clsx(
         "magnetic-button inline-flex items-center justify-center gap-3 rounded-full px-5 py-3 text-sm font-semibold transition duration-300",
         secondary
-          ? "border border-white/15 bg-white/6 text-zinc-900 dark:text-white"
-          : "bg-[linear-gradient(135deg,#ff4d4f,#9c1717)] text-white shadow-[0_20px_50px_rgba(255,77,79,0.28)]",
+          ? "border border-black/10 bg-white/70 text-zinc-900 dark:border-white/15 dark:bg-white/6 dark:text-white"
+          : "bg-[linear-gradient(135deg,#22d3ee,#14b8a6,#6366f1)] text-white shadow-[0_20px_50px_rgba(34,211,238,0.24)]",
         className
       )}
     >

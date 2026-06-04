@@ -11,14 +11,14 @@ export const navItems = [
 export const heroHighlights = [
   "Frontend Engineer",
   "React + Vite",
-  "Raspberry Pi Curious",
   "Systems Explorer",
+  "API Integrator",
   "Security-Aware Builder"
 ];
 
 export const heroStats = [
   { label: "Focus", value: "UI Engineering" },
-  { label: "Current", value: "React Systems" },
+  { label: "Current", value: "Live Products" },
   { label: "Learning", value: "APIs + Hardware" },
   { label: "Mode", value: "Build Fast" }
 ];
@@ -27,7 +27,7 @@ export const heroTerminalLines = [
   "boot portfolio --profile akash",
   "stack: react, js, python, sql, responsive-ui",
   "signal: frontend precision + systems curiosity",
-  "next: stronger products, cleaner interfaces, deeper experiments"
+  "deploy: vercel, github, practical client-ready work"
 ];
 
 export const aboutTimeline = [
@@ -53,19 +53,66 @@ export const aboutTimeline = [
 
 export const projects = [
   {
-    id: "vehicle-tracker",
-    title: "Vehicle Tracker",
-    label: "Featured Build",
+    id: "bsb-school",
+    title: "BSB International School Website",
+    label: "Featured Live Build",
     description:
-      "A responsive frontend experience centered on interaction design, clean structure, and polished presentation for technical workflows.",
+      "A live school platform designed to present academics, student growth, and institutional transparency through a clear digital experience for parents, students, and administrators.",
     impact:
-      "Built to show stronger interface discipline, smoother motion, and better screen-to-screen composition with practical dashboard energy.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Dashboard UI"],
+      "Structured to balance public presentation with role-based access to student information, while keeping the experience responsive and easy to navigate.",
+    stack: ["HTML", "CSS", "JavaScript", "Responsive UX", "Information Design"],
+    cover: "/media/photos/portrait-01.jpeg",
+    metrics: ["Live on Vercel", "Parent-friendly UX", "Secure result flow"],
+    caseStudy: {
+      problem:
+        "The school needed a trustworthy web presence that could communicate academics and school culture while also supporting access to sensitive student-related information.",
+      analysis: [
+        "Parents need quick access to results and progress information without getting lost.",
+        "Public and private information require different levels of visibility.",
+        "The site has to feel welcoming on phones as well as on larger screens used for admin tasks."
+      ],
+      solution:
+        "Designed a multi-surface school website with clearer navigation, live sections for achievements and updates, and structured result-access flows that separate sensitive student views from general public content.",
+      outcomes: [
+        "Created a more organized information hierarchy for academics, events, and updates.",
+        "Improved trust through cleaner layout and institutional presentation.",
+        "Made the experience usable across devices for parents, visitors, and staff."
+      ]
+    },
     links: [
-      { label: "Live Demo", href: "https://ash-krsna.github.io/codex-" },
-      { label: "GitHub", href: "https://github.com/ash-krsna" }
+      { label: "Live Site", href: "https://bsb-international-school.vercel.app/" },
+      { label: "Legacy Gallery", href: "https://ash-krsna.github.io/BSB-International-School/gallery.html" }
     ],
     featured: true
+  },
+  {
+    id: "pandurang-pratishthan",
+    title: "Pandurang Pratishthan",
+    label: "Live Organization Site",
+    description:
+      "A public-facing website built to communicate mission, activities, and key sections clearly for visitors while keeping the overall experience lightweight and accessible.",
+    impact:
+      "Focused on making the organization feel credible online through cleaner content flow, approachable layout, and responsive presentation.",
+    stack: ["Frontend UI", "Responsive Design", "Public Website", "Content Layout"],
+    cover: "/media/photos/nature-01.jpeg",
+    metrics: ["Live on Vercel", "Public-facing site", "Mobile-friendly flow"],
+    caseStudy: {
+      problem:
+        "The organization needed a digital presence that felt more structured and trustworthy than a simple static page, while still staying lightweight and easy for visitors to use.",
+      analysis: [
+        "Visitors need important information quickly without visual clutter.",
+        "The message and identity of the organization should come across clearly.",
+        "Mobile browsing matters because many users arrive through phones."
+      ],
+      solution:
+        "Built a cleaner responsive layout with a simpler content hierarchy, direct section flow, and a more polished frontend treatment to help visitors understand the organization quickly.",
+      outcomes: [
+        "Improved readability and structure across sections.",
+        "Made the site easier to browse on smaller screens.",
+        "Strengthened the visual credibility of the organization online."
+      ]
+    },
+    links: [{ label: "Live Site", href: "https://pandurang-pratishthan.vercel.app/#home" }]
   },
   {
     id: "lift-management",
@@ -76,32 +123,57 @@ export const projects = [
     impact:
       "Shows my interest in useful digital products with thoughtful interaction flow, clearer interface logic, and a more practical product mindset.",
     stack: ["Responsive UI", "Interaction Flow", "Frontend Logic", "Usability", "Operations UI"],
-    links: [{ label: "Open Demo", href: "https://ash-krsna.github.io/Lift-Management/?v=demo2" }]
+    cover: "/media/photos/random-01.jpeg",
+    metrics: ["Live demo", "Operations-oriented UI", "Clear workflow structure"],
+    caseStudy: {
+      problem:
+        "Operational interfaces often become visually heavy and difficult to scan, which slows down decision-making and repeated actions.",
+      analysis: [
+        "Users need a layout that helps them scan and act quickly.",
+        "The interface should avoid unnecessary visual noise.",
+        "Responsive behavior matters because operations dashboards still get opened on smaller screens."
+      ],
+      solution:
+        "Created a cleaner frontend flow with a more deliberate layout, better spacing, and interaction patterns that keep the experience focused on task completion.",
+      outcomes: [
+        "Improved clarity across workflow steps.",
+        "Made the demo feel more like a usable product than a loose concept.",
+        "Showed stronger product thinking in the interface decisions."
+      ]
+    },
+    links: [{ label: "Live Demo", href: "https://ash-krsna.github.io/Lift-Management/?v=demo2" }]
   },
   {
-    id: "bsb-school",
-    title: "BSB International School Website",
-    label: "Client-Style Build",
+    id: "vehicle-tracker",
+    title: "Vehicle Tracker",
+    label: "Live Demo",
     description:
-      "A dynamic school website built to surface academics, student growth, and institutional transparency through a clear digital experience.",
+      "A responsive frontend experience centered on interaction design, clean structure, and polished presentation for technical workflows.",
     impact:
-      "Includes secure student result access, weekly progress visibility, digital academic records, and a responsive parent-friendly structure.",
-    stack: ["Information Design", "Secure Access", "Performance", "Responsive UX", "Data Visibility"],
+      "Built to show stronger interface discipline, smoother motion, and better screen-to-screen composition with practical dashboard energy.",
+    stack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Dashboard UI"],
+    cover: "/media/photos/street-01.jpeg",
+    metrics: ["Responsive demo", "Dashboard direction", "Interaction polish"],
+    caseStudy: {
+      problem:
+        "Tracking interfaces can become dense and generic, making it hard to communicate state, movement, and system clarity at a glance.",
+      analysis: [
+        "The interface should feel technical without becoming cold or cluttered.",
+        "Information grouping matters more than decoration in tracking-style products.",
+        "Motion can help orient the user when used carefully."
+      ],
+      solution:
+        "Built a cleaner visual language with stronger composition, tighter spacing, and interaction patterns that make the experience feel more product-like and easier to scan.",
+      outcomes: [
+        "Improved presentation quality for a technical concept.",
+        "Demonstrated stronger UI hierarchy and screen composition.",
+        "Made the build feel more aligned with modern dashboard expectations."
+      ]
+    },
     links: [
-      { label: "Gallery Page", href: "https://ash-krsna.github.io/BSB-International-School/gallery.html" },
-      { label: "Main Site", href: "https://ash-krsna.github.io/BSB-International-School/index.html" }
+      { label: "Live Demo", href: "https://ash-krsna.github.io/codex-" },
+      { label: "GitHub", href: "https://github.com/ash-krsna" }
     ]
-  },
-  {
-    id: "future-products",
-    title: "Future Startup Ideas",
-    label: "Pipeline",
-    description:
-      "A growing set of ideas spanning automation tools, internal products, and software concepts that blend utility with stronger experience design.",
-    impact:
-      "Reserved for future experiments where I can combine code, product thinking, interface systems, and sharper launch-ready execution.",
-    stack: ["Product Thinking", "Automation", "UI Systems", "Technical Direction"],
-    links: []
   }
 ];
 
@@ -212,12 +284,12 @@ export const labExperiments = [
 
 export const testimonials = [
   {
-    quote: "The next version of this space is being built for the people who will remember the details.",
-    author: "Future collaborators"
+    quote: "The next version of this space is being built for the people who notice both the interface and the engineering behind it.",
+    author: "Portfolio note"
   },
   {
-    quote: "Code, systems, and technical curiosity are all part of the same identity here.",
-    author: "Portfolio note"
+    quote: "Code, systems, and product clarity are all part of the same identity here.",
+    author: "Future collaborators"
   }
 ];
 
@@ -225,7 +297,7 @@ export const socialLinks = [
   { label: "GitHub", href: "https://github.com/ash-krsna", icon: "bi-github" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/akash-gita-bhagwat", icon: "bi-linkedin" },
   { label: "Instagram Profile", href: "https://www.instagram.com/duskveil_______/", icon: "bi-instagram" },
-  { label: "Email", href: "mailto:akashohalkar300@gmail.com", icon: "bi-envelope" }
+  { label: "Email", href: "mailto:akash.gita.bhagwat@gmail.com", icon: "bi-envelope" }
 ];
 
 export const hireMeOffers = [

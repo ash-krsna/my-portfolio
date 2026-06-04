@@ -12,8 +12,8 @@ export function ProjectsSection() {
     <section id="projects" className="section-shell">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected builds with cleaner structure, stronger UI logic, and practical product direction."
-        copy="A tighter set of projects focused on interface clarity, useful workflows, and frontend decisions that feel grounded instead of ornamental."
+        title="Live projects with clearer structure, stronger UI logic, and deeper case-study thinking."
+        copy="Each project is shown as a real build, not just a title card. Open a case study to see the problem, the decisions behind the interface, and the live result."
       />
 
       <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-12">
