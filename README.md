@@ -1,55 +1,247 @@
 # Akash Bhagwat Portfolio
 
-A cinematic React + Vite portfolio experience built around premium motion, photography, achievements, and future filmmaking direction.
+<div align="center">
 
-## Stack
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:0f172a,100:2563eb&height=210&section=header&text=Akash%20Bhagwat&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Frontend%20Engineer%20%7C%20React%20%2B%20Vite%20%7C%20Security-Aware%20Builder&descAlignY=58&animation=fadeIn" alt="Akash Bhagwat Portfolio header" />
 
-- React
-- Vite
-- Tailwind CSS
-- Bootstrap Icons
-- Framer Motion
-- GSAP
-- Lenis
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&pause=1100&color=22D3EE&center=true&vCenter=true&width=900&lines=Building+modern+frontend+experiences;Designing+clean+and+responsive+interfaces;Exploring+APIs%2C+systems%2C+and+security-aware+development;Shipping+practical+portfolio-ready+web+products" alt="Typing SVG" />
 
-## Run locally
+<br />
+
+<img src="https://img.shields.io/badge/React-18.3.1-111827?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React badge" />
+<img src="https://img.shields.io/badge/Vite-5.4.10-111827?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite badge" />
+<img src="https://img.shields.io/badge/Tailwind-3.4.14-111827?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS badge" />
+<img src="https://img.shields.io/badge/Vercel-Ready-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel badge" />
+
+<br /><br />
+
+<a href="https://ash-krsna.github.io/codex-">
+  <img src="https://img.shields.io/badge/Live_Portfolio-Visit_Site-14b8a6?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Live portfolio" />
+</a>
+<a href="https://github.com/ash-krsna">
+  <img src="https://img.shields.io/badge/GitHub-ash--krsna-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" />
+</a>
+<a href="https://www.linkedin.com/in/akash-gita-bhagwat">
+  <img src="https://img.shields.io/badge/LinkedIn-Akash%20Bhagwat-2563eb?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn profile" />
+</a>
+
+</div>
+
+---
+
+## Portfolio Snapshot
+
+This is a cinematic React + Vite portfolio built around premium motion, responsive UI, photography, achievements, project case studies, and a security-aware developer identity.
+
+<table>
+  <tr>
+    <td width="58%">
+
+### What This Portfolio Shows
+
+- Frontend engineering with React, JavaScript, and modern UI patterns
+- Project case studies with live demos and product-style presentation
+- Certificates, achievements, resume, and professional contact flow
+- Smooth motion using Framer Motion, GSAP, and Lenis
+- Responsive design tuned for desktop and mobile viewing
+
+  </td>
+    <td width="42%">
+
+```bash
+> whoami
+Akash Bhagwat
+
+> focus
+Frontend Engineering + UI Systems
+
+> stack
+React, Vite, Tailwind, JavaScript
+
+> status
+Open to projects and collaboration
+```
+
+  </td>
+  </tr>
+</table>
+
+---
+
+## Experience Highlights
+
+| Area | Details |
+| --- | --- |
+| Frontend | React, JavaScript, responsive layouts, polished visual systems |
+| Motion | Framer Motion, GSAP, Lenis smooth scrolling |
+| Product Thinking | Case studies, project impact, interface clarity, content structure |
+| Security Awareness | Cybersecurity certificates, secure development mindset, web risk curiosity |
+| Deployment | Vite build pipeline with Vercel-ready configuration |
+
+---
+
+## Featured Projects
+
+| Project | Type | Live Link |
+| --- | --- | --- |
+| BSB International School Website | School website and public information platform | [Visit site](https://bsb-international-school.vercel.app/) |
+| Pandurang Pratishthan | Organization website | [Visit site](https://pandurang-pratishthan.vercel.app/#home) |
+| Lift Management | Operations-focused web app demo | [Open demo](https://ash-krsna.github.io/Lift-Management/?v=demo2) |
+| Vehicle Tracker | Responsive dashboard-style frontend demo | [Open demo](https://ash-krsna.github.io/codex-) |
+
+---
+
+## Tech Stack
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,tailwind,nodejs,mongodb,mysql,linux,github,vscode&theme=dark" alt="Tech stack icons" />
+</div>
+
+<br />
+
+| Category | Tools |
+| --- | --- |
+| Core | React, Vite, JavaScript |
+| Styling | Tailwind CSS, Bootstrap Icons, custom CSS |
+| Motion | Framer Motion, GSAP, Lenis |
+| Backend Utility | Vercel serverless function, Resend |
+| Learning Areas | APIs, SQL, MongoDB, Linux, web security fundamentals |
+
+---
+
+## Project Structure
+
+```text
+.
+|-- api/
+|   `-- contact.js
+|-- public/
+|   `-- media/
+|       |-- documents/
+|       `-- photos/
+|-- src/
+|   |-- components/
+|   |-- data/
+|   |-- hooks/
+|   |-- sections/
+|   |-- App.jsx
+|   `-- main.jsx
+|-- index.html
+|-- package.json
+|-- tailwind.config.js
+|-- vercel.json
+`-- vite.config.js
+```
+
+---
+
+## Run Locally
+
+### 1. Clone The Repository
+
+```bash
+git clone https://github.com/ash-krsna/my-Portfolio.git
+cd my-Portfolio
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
+```
+
+### 3. Start Development Server
+
+```bash
 npm run dev
 ```
 
-Default dev URL:
+The local Vite server usually runs at:
 
 ```text
-http://localhost:4173
+http://localhost:5173
 ```
 
-## Build
+### 4. Build For Production
 
 ```bash
 npm run build
 ```
 
-## Vercel email setup
+### 5. Preview Production Build
 
-Add this environment variable in Vercel:
+```bash
+npm run preview
+```
+
+---
+
+## Contact Form Setup
+
+The portfolio contact form uses the serverless endpoint in:
+
+```text
+api/contact.js
+```
+
+For Vercel deployment, add this environment variable:
 
 ```text
 RESEND_API_KEY=your_resend_api_key
 ```
 
-The portfolio contact forms use the serverless endpoint in `api/contact.js`.
-For production, replace the sender address in that file with an email from your verified Resend domain.
+For production, replace the sender address in `api/contact.js` with an email from your verified Resend domain.
 
-## Deploy
+---
+
+## Deployment
+
+This project is already configured for Vercel:
+
+```json
+{
+  "framework": "vite",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
+```
+
+Deployment flow:
 
 1. Install dependencies with `npm install`.
 2. Build with `npm run build`.
 3. Deploy the generated `dist/` folder to Vercel, Netlify, GitHub Pages, or any static hosting platform.
 
-## Replace later
+---
 
-- Add a final PDF resume in `public/media/documents/`
-- Rename Microsoft Learn achievement cards with exact badge titles if needed
-- Replace or expand gallery images in `public/media/photos/`
+## Achievements Included
+
+- Deloitte Cybersecurity Virtual Experience Program
+- BCG Virtual Experience Program
+- Commonwealth Cyber Security Certificate
+- Commonwealth Certificate
+- Microsoft Learn achievements
+- Resume and supporting portfolio documents
+
+---
+
+## Future Improvements
+
+- Add final updated resume PDF in `public/media/documents/`
+- Rename Microsoft Learn achievement cards with exact badge titles
+- Expand the project gallery with more high-quality screenshots
+- Add more case study detail for live projects
+- Improve SEO metadata and Open Graph preview assets
+
+---
+
+<div align="center">
+
+## Build Philosophy
+
+> Build clean interfaces, keep learning fast, and make every project feel useful, thoughtful, and ready to show.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0f172a,100:2563eb&height=120&section=footer" alt="Footer wave" />
+
+</div>
