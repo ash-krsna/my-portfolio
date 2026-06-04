@@ -5,7 +5,7 @@ export const navItems = [
   { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
   { id: "resume", label: "Resume" },
-  { id: "hire", label: "Hire Me" },
+  { id: "hire", label: "Hire" },
   { id: "contact", label: "Contact" }
 ];
 

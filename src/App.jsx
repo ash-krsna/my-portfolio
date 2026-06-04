@@ -91,20 +91,20 @@ function App() {
       <div className="fixed inset-0 -z-20 opacity-[0.08] [background-size:48px_48px] [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]" />
 
       <header className="fixed inset-x-0 top-0 z-50">
-        <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between gap-4 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-6">
-          <a href="#home" className="flex items-center gap-3">
+        <div className="mx-auto mt-3 flex max-w-[96rem] items-center justify-between gap-3 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-5 xl:gap-5">
+          <a href="#home" className="flex min-w-0 items-center gap-3 xl:max-w-[22rem]">
             <span className="brand-emblem flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-[0_18px_40px_rgba(72,194,141,0.2)]">
               <span className="brand-emblem__core">
                 <span className="brand-emblem__glyph">A</span>
               </span>
             </span>
-            <div>
-              <p className="font-display text-lg text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-xs uppercase tracking-[0.24em] text-zinc-500 dark:text-white/38">Developer · tech systems</p>
+            <div className="min-w-0">
+              <p className="truncate font-display text-[1.05rem] text-zinc-950 dark:text-white">Akash Bhagwat</p>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer · Tech Systems</p>
             </div>
           </a>
 
-          <nav className="nav-dock hidden items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] xl:flex">
+          <nav className="nav-dock hidden flex-1 items-center justify-center gap-1.5 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] xl:flex xl:max-w-[67rem]">
             {navItems.map((item) => (
               <motion.a
                 key={item.id}
@@ -112,7 +112,7 @@ function App() {
                 whileHover={{ y: -4, scale: 1.03 }}
                 whileTap={{ y: 0, scale: 0.92 }}
                 transition={{ type: "spring", stiffness: 420, damping: 16 }}
-                className={`relative rounded-full px-4 py-2.5 text-sm font-medium transition ${
+                className={`relative rounded-full px-3.5 py-2.5 text-[0.95rem] font-medium transition ${
                   activeSection === item.id
                     ? "text-zinc-950 dark:text-white"
                     : "text-zinc-600 hover:text-zinc-950 dark:text-white/55 dark:hover:text-white"
@@ -125,18 +125,18 @@ function App() {
                     transition={{ type: "spring", stiffness: 380, damping: 26 }}
                   />
                 ) : null}
-                <span className="relative z-10">{item.label}</span>
+                <span className="relative z-10 whitespace-nowrap">{item.label}</span>
               </motion.a>
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 xl:gap-3">
             <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <a
               href="https://github.com/ash-krsna"
               target="_blank"
               rel="noreferrer"
-              className="hidden rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm font-semibold text-zinc-900 transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/5 dark:text-white md:inline-flex"
+              className="hidden rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm font-semibold text-zinc-900 transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/5 dark:text-white xl:inline-flex"
             >
               GitHub
             </a>
