@@ -7,8 +7,8 @@ export function LabSection() {
     <section className="section-shell">
       <SectionHeading
         eyebrow="Tech Lab"
-        title="A developer profile gets stronger when curiosity shows up in the work."
-        copy="Beyond projects, this is the layer that gives the portfolio personality: experiments, lightweight systems, interface thinking, and the kind of technical play that keeps skills moving forward."
+        title="A developer profile gets stronger when current technology curiosity shows up in the work."
+        copy="Beyond projects, this is the layer that gives the portfolio personality: agent-ready interfaces, edge experiments, AI security thinking, lightweight systems, and technical play that keeps skills moving forward."
       />
 
       <div className="mt-12 grid gap-4 md:grid-cols-3">

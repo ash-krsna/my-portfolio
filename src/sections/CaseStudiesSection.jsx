@@ -6,9 +6,9 @@ export function CaseStudiesSection() {
   return (
     <section id="case-studies" className="section-shell">
       <SectionHeading
-        eyebrow="Case study notes"
-        title="How I think about fast-moving tech, product quality, and where good interfaces are heading."
-        copy="This section is less about shipped projects and more about technical perspective. I wanted it to feel like handwritten working notes: what I notice, what I think is broken, and how I would approach it."
+        eyebrow="Tech notes"
+        title="How I think about 2026 technology signals, product quality, and where useful interfaces are heading."
+        copy="This section is less about shipped projects and more about technical perspective. It tracks current themes like agentic AI, AI security, inference cost, edge systems, and the interface patterns that make fast-moving technology easier to trust."
       />
 
       <div className="notes-grid mt-12 grid gap-5 xl:grid-cols-2">

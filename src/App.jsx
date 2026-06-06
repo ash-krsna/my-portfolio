@@ -100,7 +100,7 @@ function App() {
             </span>
             <div className="min-w-0">
               <p className="truncate font-display text-[1.05rem] text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer · Tech Systems</p>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer · AI + Tech Systems</p>
             </div>
           </a>
 

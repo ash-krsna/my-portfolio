@@ -17,7 +17,7 @@ export function HeroSection() {
             className="inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/72 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/60"
           >
             <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(74,222,128,0.8)]" />
-            Frontend developer · live products · systems-minded builder
+            Frontend developer · AI-aware products · systems-minded builder
           </motion.div>
 
           <motion.h1
@@ -27,7 +27,7 @@ export function HeroSection() {
             className="mt-8 max-w-5xl font-display text-5xl font-semibold leading-[0.92] text-zinc-950 dark:text-white md:text-7xl lg:text-[6rem]"
           >
             Building clean,
-            <span className="mt-2 block">fast, technical products</span>
+            <span className="mt-2 block">fast, AI-aware products</span>
             <span className="hero-gradient-title mt-4 block bg-clip-text text-transparent">
               with real project depth.
             </span>
@@ -39,7 +39,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, delay: 0.18 }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-white/68"
           >
-            I build frontend experiences that feel precise, responsive, and engineered with intent. The focus is modern UI, practical systems, case-study thinking, and live work that visitors can actually explore.
+            I build frontend experiences that feel precise, responsive, and engineered with intent. The focus is modern UI, practical systems, AI-era product thinking, security awareness, and live work that visitors can actually explore.
           </motion.p>
 
           <motion.div
@@ -91,7 +91,7 @@ export function HeroSection() {
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(7,16,24,0.16),rgba(7,16,24,0.88))]" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <p className="text-[11px] uppercase tracking-[0.26em] text-white/45">Akash Bhagwat</p>
-                    <p className="mt-2 text-base font-semibold">Frontend developer with a stronger systems and product mindset.</p>
+                    <p className="mt-2 text-base font-semibold">Frontend developer with a stronger AI, systems, and product mindset.</p>
                   </div>
                 </div>
               </div>

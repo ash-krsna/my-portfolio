@@ -1,7 +1,7 @@
 export const navItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
-  { id: "case-studies", label: "Notes" },
+  { id: "case-studies", label: "Tech Notes" },
   { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
   { id: "resume", label: "Resume" },
@@ -12,43 +12,44 @@ export const navItems = [
 export const heroHighlights = [
   "Frontend Engineer",
   "React + Vite",
-  "Systems Explorer",
-  "API Integrator",
+  "AI-Aware UI",
+  "API + Agent Flows",
   "Security-Aware Builder"
 ];
 
 export const heroStats = [
   { label: "Focus", value: "UI Engineering" },
-  { label: "Current", value: "Live Products" },
-  { label: "Learning", value: "APIs + Hardware" },
-  { label: "Mode", value: "Build Fast" }
+  { label: "Current", value: "AI-Era Products" },
+  { label: "Learning", value: "Agents + Edge" },
+  { label: "Mode", value: "Build Smart" }
 ];
 
 export const heroTerminalLines = [
   "boot portfolio --profile akash",
-  "stack: react, js, python, sql, responsive-ui",
-  "signal: frontend precision + systems curiosity",
+  "stack: react, js, python, sql, ai-aware-ui",
+  "signal: frontend precision + agentic product thinking",
+  "watchlist: ai security, edge ai, robotics, inference cost",
   "deploy: vercel, github, practical client-ready work"
 ];
 
 export const aboutTimeline = [
   {
     year: "Now",
-    title: "Frontend craft with stronger system thinking",
+    title: "Frontend craft for AI-era products",
     description:
-      "Sharpening interfaces that feel fast, responsive, and dependable while paying closer attention to maintainability and product structure."
+      "Sharpening interfaces that can explain system state, guide user decisions, and stay dependable as AI tools, APIs, and automation enter everyday products."
   },
   {
     year: "Learning arc",
-    title: "React, APIs, automation, Raspberry Pi, and systems",
+    title: "React, APIs, agents, edge devices, and systems",
     description:
-      "Going deeper into scalable frontend architecture, API integration, automation thinking, hardware curiosity, and cleaner interface systems."
+      "Going deeper into scalable frontend architecture, API integration, agent workflows, Raspberry Pi style edge experiments, and cleaner observable interface systems."
   },
   {
     year: "Next chapter",
-    title: "Builder with technical range",
+    title: "Builder with technical range and security awareness",
     description:
-      "Growing toward a stronger developer identity that mixes code quality, interface discipline, experimentation, and technical curiosity."
+      "Growing toward a stronger developer identity that mixes code quality, AI-aware product thinking, interface discipline, experimentation, and responsible security habits."
   }
 ];
 
@@ -254,87 +255,87 @@ export const certificates = [
 export const skills = [
   { name: "React", value: 84 },
   { name: "JavaScript", value: 89 },
-  { name: "Python", value: 74 },
-  { name: "SQL", value: 72 },
+  { name: "AI-Aware UI", value: 78 },
   { name: "UI Engineering", value: 87 },
-  { name: "API Integration", value: 76 },
-  { name: "Raspberry Pi", value: 64 },
+  { name: "API Integration", value: 80 },
+  { name: "Cyber Security Basics", value: 76 },
+  { name: "Edge + IoT Curiosity", value: 68 },
   { name: "Problem Solving", value: 88 }
 ];
 
 export const labExperiments = [
   {
-    title: "Raspberry Pi curiosity",
+    title: "Edge AI + Raspberry Pi curiosity",
     copy:
-      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight systems, GPIO curiosity, and practical experimentation.",
+      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight automation, sensor thinking, and small edge-computing experiments.",
     icon: "bi-cpu"
   },
   {
-    title: "Code + interface systems",
+    title: "Agent-ready interface systems",
     copy:
-      "Interested in software that is not only functional, but also structured well, readable at a glance, and enjoyable to navigate.",
-    icon: "bi-code-slash"
+      "Designing UI patterns that make AI and automation easier to understand: clear states, visible feedback, human review, and strong action boundaries.",
+    icon: "bi-diagram-3"
   },
   {
-    title: "Playful technical builds",
+    title: "AI security mindset",
     copy:
-      "Drawn to interactive ideas, game-like flows, and small experiments that make technical work feel alive instead of flat.",
-    icon: "bi-controller"
+      "Learning how modern products should handle trust, identity, prompt safety, sensitive data, and stronger user-side security awareness.",
+    icon: "bi-shield-lock"
   }
 ];
 
 export const perspectiveCaseStudies = [
   {
-    title: "AI interfaces should become calmer, not louder",
-    topic: "AI Product Design",
-    status: "Observation",
+    title: "Agentic AI needs human-centered control panels",
+    topic: "Agentic AI",
+    status: "2026 signal",
     note:
-      "A lot of AI products still try to prove they are intelligent by throwing too much UI at the screen. I think the better direction is calmer surfaces, clearer states, and stronger guidance around what the system is actually doing.",
+      "AI agents are moving from demos into real workflows, but the interface challenge is still very human: users need to know what the agent is doing, what it changed, and when to approve or stop it.",
     problem:
-      "Fast-growing AI products often confuse capability with clarity. Users see powerful features, but they do not always understand trust, limits, or next actions.",
+      "Autonomous tools can feel powerful but unclear. Without visible state, permissions, audit trails, and fallback actions, users may not trust the system even when the model is capable.",
     solution:
-      "Design the interface around confidence: better prompts, visible system state, focused actions, and feedback that explains what changed. The experience should feel more dependable than magical.",
+      "Build agent interfaces with timeline views, review checkpoints, confidence signals, clear cancel paths, and plain-language summaries of decisions before important actions happen.",
     perspective:
-      "My take is that the next strong AI products will win through restraint. Better structure, fewer distractions, and clearer interaction loops will matter more than decorative complexity."
+      "My take is that frontend developers will be important in making AI feel dependable. The best agent products will not just automate work; they will make automation understandable."
   },
   {
-    title: "Developer tools are becoming experience products",
-    topic: "Dev Tools",
-    status: "Current trend",
+    title: "AI security is becoming product design work",
+    topic: "Cyber Security",
+    status: "Current affair",
     note:
-      "The newer generation of developer tools is not just about capability. It is also about speed, better defaults, and the feeling that the tool respects the developer's time.",
+      "As AI becomes part of normal apps, security is no longer only a backend checklist. The product surface has to help users avoid leaking data, trusting bad outputs, or approving risky actions.",
     problem:
-      "Many technical tools are powerful but still feel rough around onboarding, visibility, and repeated workflows. That friction slows down adoption.",
+      "AI tools introduce new behavior risks: prompt injection, unclear data handling, over-permissioned agents, and users pasting sensitive information into systems they do not fully understand.",
     solution:
-      "Treat developer tools like product systems: great empty states, transparent feedback, strong shortcuts, clean layout, and clear mental models for what's happening under the hood.",
+      "Design safer flows with permission scopes, data-use warnings, output verification patterns, secure defaults, and UI that separates suggestion from confirmed action.",
     perspective:
-      "I think this is where frontend engineering becomes especially valuable. A technical product feels stronger when the interface helps people think faster, not just click faster."
+      "This matches my cybersecurity interest: strong products should not only look polished, they should guide safer decisions at the exact moment users need that guidance."
   },
   {
-    title: "Edge-fast websites still need storytelling discipline",
-    topic: "Frontend Performance",
-    status: "What I believe",
+    title: "Inference cost will shape frontend decisions",
+    topic: "AI Infrastructure",
+    status: "Tech trend",
     note:
-      "Modern deployment stacks have made performance easier to reach, but speed alone does not create quality. Good structure, good hierarchy, and good content flow still decide whether a website feels premium.",
+      "The AI conversation is shifting from experimentation to cost, latency, and reliability. That matters for frontend too because the interface decides when AI calls happen and how users experience waiting.",
     problem:
-      "Teams sometimes over-focus on framework choice or benchmark numbers while the actual user experience remains generic or hard to scan.",
+      "A product can become expensive or slow if every interaction triggers a heavy model call. Users also lose confidence when loading states are vague or repeated AI responses feel unnecessary.",
     solution:
-      "Pair performance thinking with authored presentation: intentional sections, meaningful motion, responsive layout stability, and content that earns the user's attention quickly.",
+      "Use smarter UX patterns: progressive disclosure, cached results, draft previews, lightweight local logic, streaming feedback, and clear states that make latency feel intentional.",
     perspective:
-      "My view is that the best frontend work sits between engineering and editorial judgment. It should be fast, yes, but also memorable because it is well-composed."
+      "I want my frontend work to understand the cost behind the screen. Good UI can reduce waste, improve trust, and make advanced systems feel calmer."
   },
   {
-    title: "Small hardware projects build better software instincts",
-    topic: "Raspberry Pi and Hardware",
-    status: "Personal note",
+    title: "Physical AI makes hardware curiosity useful again",
+    topic: "Robotics + Edge",
+    status: "Emerging",
     note:
-      "Even small hardware experiments change the way I think about software. They make systems feel more real because inputs, outputs, delays, and constraints become tangible.",
+      "AI is moving beyond chat boxes into robotics, devices, cameras, sensors, and real-world environments. That makes edge computing and hardware curiosity more valuable for software builders.",
     problem:
-      "Software learning can stay too abstract when everything happens only inside the browser or editor.",
+      "Pure web projects can hide the real constraints of systems: sensor delay, unreliable inputs, limited compute, device safety, and the need for feedback that users can trust quickly.",
     solution:
-      "Use Raspberry Pi style projects and physical computing as a way to sharpen systems thinking, debugging patience, and practical reasoning about state and behavior.",
+      "Use small hardware experiments, Raspberry Pi projects, and device-style thinking to learn how software behaves when it meets real inputs, physical constraints, and edge decisions.",
     perspective:
-      "I think hardware curiosity makes me better at frontend too. It encourages cleaner thinking about flow, feedback, and the relationship between what a system does and what a user sees."
+      "This is why I like mixing frontend with systems curiosity. The stronger I understand real-world inputs, the better I can design interfaces that explain them clearly."
   }
 ];
 
@@ -358,18 +359,18 @@ export const socialLinks = [
 
 export const hireMeOffers = [
   {
-    title: "Frontend development",
-    copy: "Responsive interfaces, polished layouts, and cleaner product presentation for web experiences that need to feel sharp and usable.",
+    title: "Modern frontend development",
+    copy: "Responsive interfaces, polished layouts, and cleaner product presentation for web experiences that need to feel sharp, usable, and current.",
     icon: "bi-window"
   },
   {
-    title: "Portfolio and landing pages",
-    copy: "Personal brands, product pages, and presentation-focused websites with stronger visual hierarchy and modern interaction quality.",
+    title: "AI-aware portfolio and product pages",
+    copy: "Personal brands, product pages, and presentation-focused websites with stronger visual hierarchy, modern interaction quality, and smarter technical positioning.",
     icon: "bi-layout-text-window"
   },
   {
     title: "Tech experimentation",
-    copy: "Developer-focused builds, interface concepts, automation-minded ideas, and playful systems work shaped by curiosity and clarity.",
+    copy: "Developer-focused builds, interface concepts, automation-minded ideas, edge experiments, and practical systems work shaped by curiosity and clarity.",
     icon: "bi-cpu"
   }
 ];
