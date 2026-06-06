@@ -1,7 +1,7 @@
 export const navItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
-  { id: "case-studies", label: "Tech Notes" },
+  { id: "notes", label: "Notes Space" },
   { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
   { id: "resume", label: "Resume" },
@@ -284,7 +284,7 @@ export const labExperiments = [
   }
 ];
 
-export const perspectiveCaseStudies = [
+export const notesSpaceItems = [
   {
     title: "Agentic AI needs human-centered control panels",
     topic: "Agentic AI",

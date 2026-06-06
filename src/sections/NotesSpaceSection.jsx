@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "../components/SectionHeading";
-import { perspectiveCaseStudies } from "../data/content";
+import { notesSpaceItems } from "../data/content";
 
-export function CaseStudiesSection() {
+export function NotesSpaceSection() {
   return (
-    <section id="case-studies" className="section-shell">
+    <section id="notes" className="section-shell">
       <SectionHeading
-        eyebrow="Tech notes"
-        title="How I think about 2026 technology signals, product quality, and where useful interfaces are heading."
-        copy="This section is less about shipped projects and more about technical perspective. It tracks current themes like agentic AI, AI security, inference cost, edge systems, and the interface patterns that make fast-moving technology easier to trust."
+        eyebrow="My notes space"
+        title="Handwritten-style thoughts on technology, security, AI, and product direction."
+        copy="A separate space for my working notes: quick observations, current technology signals, what I think is changing, and how I would approach those ideas as a frontend developer."
       />
 
       <div className="notes-grid mt-12 grid gap-5 xl:grid-cols-2">
-        {perspectiveCaseStudies.map((item, index) => (
+        {notesSpaceItems.map((item, index) => (
           <motion.article
             key={item.title}
             initial={{ opacity: 0, y: 24, rotate: index % 2 === 0 ? -1 : 1 }}
