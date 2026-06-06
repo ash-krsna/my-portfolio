@@ -336,6 +336,58 @@ export const perspectiveCaseStudies = [
       "Use small hardware experiments, Raspberry Pi projects, and device-style thinking to learn how software behaves when it meets real inputs, physical constraints, and edge decisions.",
     perspective:
       "This is why I like mixing frontend with systems curiosity. The stronger I understand real-world inputs, the better I can design interfaces that explain them clearly."
+  },
+  {
+    title: "Digital provenance will become part of everyday trust",
+    topic: "Digital Trust",
+    status: "2026 signal",
+    note:
+      "As AI-generated text, images, video, and synthetic media become normal, products will need better ways to show where content came from, how it changed, and whether it should be trusted.",
+    problem:
+      "Users can no longer judge authenticity only by how polished something looks. A convincing image, message, or dashboard output may still be incomplete, manipulated, or generated without context.",
+    solution:
+      "Add provenance-aware UI patterns: source labels, change history, verified badges with real meaning, content lineage, confidence notes, and clear separation between original data and AI-generated output.",
+    perspective:
+      "I think trust will become a visible interface feature. Good frontend work will help people understand not just what they are seeing, but why they should believe it."
+  },
+  {
+    title: "Post-quantum security is a future problem starting now",
+    topic: "Quantum Security",
+    status: "Security watch",
+    note:
+      "Post-quantum cryptography is becoming a real planning topic because organizations need time to identify old encryption, update systems, and build crypto agility before quantum risk becomes urgent.",
+    problem:
+      "Security migrations are slow. Even if quantum attacks are not a daily threat yet, long-lived data and outdated cryptography can create risk years before teams are ready to replace them.",
+    solution:
+      "Start with inventory thinking: know where encryption is used, avoid hard-coded assumptions, design systems that can swap algorithms, and keep security decisions visible to technical teams.",
+    perspective:
+      "This topic reminds me that secure development is not only about fixing bugs. It is also about designing systems that can adapt when the threat model changes."
+  },
+  {
+    title: "On-device AI will make privacy and speed feel connected",
+    topic: "Edge AI",
+    status: "Product shift",
+    note:
+      "More AI work is moving closer to devices, browsers, phones, and edge systems. That can reduce latency and protect sensitive data, but it also changes how interfaces explain local versus cloud behavior.",
+    problem:
+      "Users often do not know where their data is processed. If an AI feature feels private but quietly sends everything to a server, the product creates a trust gap.",
+    solution:
+      "Design clear local/cloud states, lightweight model interactions, fallback behavior, battery-aware experiences, and privacy explanations that are simple enough to understand in the moment.",
+    perspective:
+      "For frontend developers, this is exciting because the browser becomes more than a display layer. It becomes part of the intelligence, privacy, and performance story."
+  },
+  {
+    title: "Synthetic data needs careful product boundaries",
+    topic: "Data + AI",
+    status: "Trend note",
+    note:
+      "Synthetic data can help teams build and test AI systems when real data is limited or sensitive, but it can also create false confidence if the product forgets what the data does not represent.",
+    problem:
+      "If teams treat synthetic examples as perfect reality, models and dashboards can miss edge cases, bias, messy user behavior, or real-world failure patterns.",
+    solution:
+      "Show dataset limits, label generated examples clearly, test against real validation sets where possible, and build review steps before synthetic outputs influence important decisions.",
+    perspective:
+      "My view is that AI products need honest interfaces. A good UI should make uncertainty visible instead of hiding it behind a clean-looking result."
   }
 ];
 
