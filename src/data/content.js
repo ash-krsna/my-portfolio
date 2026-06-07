@@ -286,6 +286,58 @@ export const labExperiments = [
 
 export const notesSpaceItems = [
   {
+    title: "AI-native development needs stronger review habits",
+    topic: "AI-Native Dev",
+    status: "New signal",
+    note:
+      "AI is becoming part of the development workflow itself: planning, coding, debugging, testing, and documenting. The opportunity is speed, but the risk is accepting generated work without enough technical judgment.",
+    problem:
+      "Teams can ship faster while also creating hidden defects, weak architecture, dependency confusion, or security mistakes if AI output is treated as automatically correct.",
+    solution:
+      "Use AI as a pair-builder, not an unchecked author. Keep code review, threat modeling, tests, traceable decisions, and human ownership at the center of the workflow.",
+    perspective:
+      "This is where I want to grow as a frontend developer: use AI to move faster, but keep the taste, responsibility, and debugging discipline human."
+  },
+  {
+    title: "Preemptive cybersecurity changes dashboard design",
+    topic: "Preemptive Security",
+    status: "2026 watch",
+    note:
+      "Security tools are shifting from reacting after an incident to predicting weak signals earlier. That makes the interface challenge bigger because teams need to see risk before it becomes obvious.",
+    problem:
+      "A dashboard full of alerts can still fail if it does not explain priority, confidence, blast radius, or the next action clearly enough for a fast decision.",
+    solution:
+      "Design security surfaces around risk stories: what changed, why it matters, which assets are exposed, what evidence supports it, and what action should happen first.",
+    perspective:
+      "Preemptive security is not only a backend or SOC problem. A good interface can help defenders think faster when the signal is still early."
+  },
+  {
+    title: "Disinformation security will need product-level defenses",
+    topic: "Digital Trust",
+    status: "Rising risk",
+    note:
+      "AI-generated media, synthetic reviews, fake executive messages, and manipulated content are becoming business risks. Trust is turning into a product and security problem at the same time.",
+    problem:
+      "Users may interact with polished but false information, and organizations can lose trust when there is no clear way to verify origin, intent, or authenticity.",
+    solution:
+      "Build visible verification flows, provenance labels, reporting paths, source comparison, and content confidence signals that help people slow down before trusting high-impact information.",
+    perspective:
+      "I like this topic because it sits directly between UI and security. The screen has to help people notice when something feels too smooth to trust blindly."
+  },
+  {
+    title: "Energy-efficient computing will shape AI product UX",
+    topic: "Efficient Compute",
+    status: "Tech trend",
+    note:
+      "AI products are starting to care more about compute cost, energy use, battery impact, and latency. Performance is no longer only about speed; it is also about choosing when heavy intelligence is worth it.",
+    problem:
+      "If every feature calls a large model, products can become expensive, slow, and wasteful. Users feel that through waiting, heat, battery drain, or inconsistent responsiveness.",
+    solution:
+      "Use tiered intelligence: local logic first, smaller models when possible, cached answers, progressive enhancement, and clear UI states when a heavier AI step is actually running.",
+    perspective:
+      "Frontend can help make efficient AI feel natural. The interface decides how often users ask for intelligence and how clearly the system explains the cost of that choice."
+  },
+  {
     title: "Agentic AI needs human-centered control panels",
     topic: "Agentic AI",
     status: "2026 signal",

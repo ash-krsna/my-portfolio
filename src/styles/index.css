@@ -16,14 +16,14 @@
 
 .dark {
   color-scheme: dark;
-  --page-bg: #071018;
-  --page-bg-soft: #0b1622;
-  --panel-bg: rgba(255, 255, 255, 0.038);
-  --panel-border: rgba(255, 255, 255, 0.09);
-  --text-primary: #f4f8fb;
-  --spot-1: rgba(34, 211, 238, 0.12);
-  --spot-2: rgba(99, 102, 241, 0.1);
-  --grid-color: rgba(255, 255, 255, 0.06);
+  --page-bg: #100507;
+  --page-bg-soft: #19090d;
+  --panel-bg: rgba(35, 10, 14, 0.64);
+  --panel-border: rgba(248, 113, 113, 0.18);
+  --text-primary: #fff7f7;
+  --spot-1: rgba(239, 68, 68, 0.18);
+  --spot-2: rgba(34, 211, 238, 0.1);
+  --grid-color: rgba(248, 113, 113, 0.09);
 }
 
 * {
@@ -85,8 +85,9 @@ textarea {
 .dark .premium-card,
 .dark .glass-panel {
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.03),
-    0 32px 100px rgba(0, 0, 0, 0.34);
+    0 0 0 1px rgba(248, 113, 113, 0.06),
+    0 32px 100px rgba(0, 0, 0, 0.42),
+    0 0 52px rgba(127, 29, 29, 0.08);
 }
 
 .input-shell {
@@ -141,7 +142,7 @@ textarea {
   pointer-events: none;
   z-index: 25;
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), rgba(34, 211, 238, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), rgba(248, 113, 113, 0.14), rgba(34, 211, 238, 0.08), transparent 70%);
   mix-blend-mode: screen;
   filter: blur(28px);
 }
@@ -237,10 +238,10 @@ textarea {
   border-color: rgba(255, 255, 255, 0.12);
   background:
     radial-gradient(circle at 24% 20%, rgba(255, 255, 255, 0.16), transparent 30%),
-    linear-gradient(145deg, rgba(15, 23, 42, 0.88), rgba(8, 47, 73, 0.92) 46%, rgba(6, 95, 70, 0.94));
+    linear-gradient(145deg, rgba(69, 10, 10, 0.92), rgba(127, 29, 29, 0.88) 46%, rgba(8, 47, 73, 0.94));
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 18px 42px rgba(8, 145, 178, 0.22);
+    0 18px 42px rgba(239, 68, 68, 0.2);
 }
 
 .dark .brand-emblem::before {
@@ -258,7 +259,7 @@ textarea {
   border-color: rgba(255, 255, 255, 0.08);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    linear-gradient(150deg, #020617, #0f172a 58%, #0f766e);
+    linear-gradient(150deg, #020617, #1f0a0d 58%, #7f1d1d);
 }
 
 .header-mobile-nav > div {
@@ -290,6 +291,10 @@ textarea {
   background-image: linear-gradient(90deg, #22d3ee, #34d399 45%, #818cf8);
 }
 
+.dark .hero-gradient-title {
+  background-image: linear-gradient(90deg, #fb7185, #f97316 42%, #22d3ee);
+}
+
 .hero-chip {
   border: 1px solid rgba(15, 23, 42, 0.08);
   background:
@@ -314,6 +319,14 @@ textarea {
     linear-gradient(180deg, rgba(8, 15, 28, 0.94), rgba(2, 6, 23, 0.98));
 }
 
+.dark .hero-console {
+  border-color: rgba(248, 113, 113, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.12), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(248, 113, 113, 0.12), transparent 26%),
+    linear-gradient(180deg, rgba(25, 7, 12, 0.96), rgba(7, 2, 5, 0.98));
+}
+
 .hero-stat,
 .hero-social,
 .project-card,
@@ -328,15 +341,20 @@ textarea {
 .dark .hero-social,
 .dark .project-card,
 .dark .tech-lab-card {
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(248, 113, 113, 0.14);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    rgba(255, 255, 255, 0.02);
+    linear-gradient(180deg, rgba(248, 113, 113, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(15, 6, 10, 0.54);
 }
 
 .hero-meter {
   background-image: linear-gradient(90deg, #22d3ee, #34d399, #818cf8);
   box-shadow: 0 0 18px rgba(34, 211, 238, 0.35);
+}
+
+.dark .hero-meter {
+  background-image: linear-gradient(90deg, #fb7185, #f97316, #22d3ee);
+  box-shadow: 0 0 18px rgba(248, 113, 113, 0.34);
 }
 
 .hero-social:hover,
@@ -348,6 +366,244 @@ textarea {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 18px 44px rgba(34, 211, 238, 0.1);
+}
+
+.dark .hero-social:hover,
+.dark .project-card:hover,
+.dark .tech-lab-card:hover {
+  border-color: rgba(248, 113, 113, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 18px 44px rgba(248, 113, 113, 0.12);
+}
+
+.notes-space-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.notes-space-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(244, 114, 182, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(circle at 70% 20%, black 0, transparent 54%);
+}
+
+.notes-circuit-field {
+  position: absolute;
+  inset: 1rem;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.notes-circuit-line,
+.notes-circuit-node,
+.notes-circuit-chip {
+  position: absolute;
+  display: block;
+}
+
+.notes-circuit-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.42), rgba(244, 63, 94, 0.32), transparent);
+}
+
+.notes-circuit-line::before,
+.notes-circuit-line::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 2px;
+  height: 38px;
+  background: rgba(34, 211, 238, 0.28);
+}
+
+.notes-circuit-line::before {
+  left: 18%;
+}
+
+.notes-circuit-line::after {
+  right: 14%;
+}
+
+.notes-circuit-line--one {
+  top: 4rem;
+  right: 2rem;
+  width: min(34rem, 54vw);
+}
+
+.notes-circuit-line--two {
+  bottom: 5rem;
+  left: 4rem;
+  width: min(28rem, 48vw);
+}
+
+.notes-circuit-node {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(34, 211, 238, 0.5);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 0 22px rgba(34, 211, 238, 0.28);
+}
+
+.notes-circuit-node--one {
+  top: 3.65rem;
+  right: 20%;
+}
+
+.notes-circuit-node--two {
+  bottom: 4.65rem;
+  left: 28%;
+}
+
+.notes-circuit-chip {
+  right: clamp(1rem, 4vw, 4rem);
+  bottom: clamp(1rem, 5vw, 4rem);
+  display: inline-flex;
+  width: 4.75rem;
+  height: 4.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(244, 63, 94, 0.22);
+  border-radius: 1.25rem;
+  color: #0e7490;
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(15, 23, 42, 0.12) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.52);
+  background-size: 12px 12px;
+  box-shadow: 0 20px 44px rgba(15, 23, 42, 0.08);
+}
+
+.notes-circuit-chip i {
+  font-size: 1.8rem;
+}
+
+.notebook-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.7rem minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(92, 64, 33, 0.18);
+  border-radius: 2rem;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.48), transparent 16%),
+    linear-gradient(180deg, #fff7df, #f6e6bd);
+  box-shadow:
+    0 30px 80px rgba(75, 48, 20, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.notebook-spine {
+  position: relative;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem 0.7rem;
+  background:
+    linear-gradient(180deg, rgba(45, 26, 16, 0.96), rgba(88, 43, 24, 0.95)),
+    repeating-linear-gradient(180deg, transparent 0, transparent 22px, rgba(255, 255, 255, 0.08) 22px, rgba(255, 255, 255, 0.08) 23px);
+}
+
+.notebook-ring {
+  width: 2.1rem;
+  height: 1.45rem;
+  border: 3px solid rgba(255, 239, 204, 0.72);
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+  box-shadow:
+    inset -3px 0 0 rgba(0, 0, 0, 0.16),
+    0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+.notebook-cover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 9rem;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border-bottom: 1px solid rgba(92, 64, 33, 0.14);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.76), rgba(255, 247, 221, 0.72)),
+    linear-gradient(90deg, rgba(14, 116, 144, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(180, 83, 9, 0.08) 1px, transparent 1px);
+  background-size: auto, 26px 26px, 26px 26px;
+}
+
+.notebook-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #8b5e16;
+}
+
+.notebook-cover h3 {
+  margin-top: 0.55rem;
+  font-family: "Syne", "Inter", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 0.95;
+  color: #132033;
+}
+
+.notebook-signal-grid {
+  display: grid;
+  width: min(12rem, 32vw);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.notebook-signal-grid span {
+  aspect-ratio: 1;
+  border: 1px solid rgba(14, 116, 144, 0.18);
+  border-radius: 0.7rem;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.18), transparent),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(15, 23, 42, 0.12) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.5);
+  background-size: auto, 10px 10px, 10px 10px;
+}
+
+.notebook-pages {
+  display: grid;
+  gap: 1.35rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  perspective: 1400px;
+}
+
+.notebook-page {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  min-height: 27rem;
+  margin-left: -0.3rem;
+}
+
+.notebook-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 0 24px 0 100%;
+  background:
+    linear-gradient(135deg, rgba(139, 92, 42, 0.18), rgba(255, 255, 255, 0.72) 58%, rgba(255, 255, 255, 0));
+  pointer-events: none;
 }
 
 .note-card {
@@ -377,6 +633,45 @@ textarea {
   left: 32px;
   width: 2px;
   background: rgba(244, 114, 182, 0.16);
+}
+
+.note-page-meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.note-page-number {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(14, 116, 144, 0.12);
+  background: rgba(255, 255, 255, 0.58);
+  padding: 0.52rem 0.9rem;
+  color: #0e7490;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.note-icon {
+  display: inline-flex;
+  width: 2.6rem;
+  height: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(14, 116, 144, 0.14);
+  border-radius: 0.95rem;
+  color: #0e7490;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.16), transparent),
+    rgba(255, 255, 255, 0.58);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
 }
 
 .note-topic,
@@ -422,23 +717,36 @@ textarea {
 }
 
 .dark .note-card {
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(248, 113, 113, 0.16);
   background:
-    linear-gradient(180deg, rgba(19, 26, 38, 0.96), rgba(11, 18, 30, 0.94)),
+    linear-gradient(180deg, rgba(34, 12, 16, 0.96), rgba(18, 5, 8, 0.94)),
     repeating-linear-gradient(
       180deg,
       transparent 0,
       transparent 31px,
-      rgba(84, 148, 255, 0.1) 31px,
-      rgba(84, 148, 255, 0.1) 32px
+      rgba(248, 113, 113, 0.1) 31px,
+      rgba(248, 113, 113, 0.1) 32px
     );
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 20px 48px rgba(0, 0, 0, 0.24);
+    0 20px 48px rgba(0, 0, 0, 0.34),
+    0 0 34px rgba(127, 29, 29, 0.1);
 }
 
 .dark .note-card::before {
-  background: rgba(248, 113, 113, 0.14);
+  background: rgba(34, 211, 238, 0.14);
+}
+
+.dark .note-card::after {
+  background:
+    linear-gradient(135deg, rgba(248, 113, 113, 0.16), rgba(255, 255, 255, 0.08) 58%, rgba(255, 255, 255, 0));
+}
+
+.dark .note-page-number,
+.dark .note-icon {
+  border-color: rgba(34, 211, 238, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: #7dd3fc;
 }
 
 .dark .note-topic {
@@ -448,19 +756,93 @@ textarea {
 }
 
 .dark .note-status {
-  color: #d9b46b;
+  color: #fca5a5;
 }
 
 .dark .note-title {
-  color: #eef6ff;
+  color: #fff1f2;
 }
 
 .dark .note-label {
-  color: #79c8ff;
+  color: #67e8f9;
 }
 
 .dark .note-body {
   color: rgba(241, 245, 249, 0.82);
+}
+
+.dark .notes-space-section::before {
+  background-image:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(248, 113, 113, 0.1) 1px, transparent 1px);
+}
+
+.dark .notes-circuit-node {
+  border-color: rgba(34, 211, 238, 0.62);
+  background: rgba(15, 23, 42, 0.86);
+  box-shadow: 0 0 22px rgba(34, 211, 238, 0.24);
+}
+
+.dark .notes-circuit-chip {
+  border-color: rgba(248, 113, 113, 0.28);
+  color: #fca5a5;
+  background:
+    linear-gradient(90deg, rgba(248, 113, 113, 0.14) 1px, transparent 1px),
+    linear-gradient(rgba(34, 211, 238, 0.1) 1px, transparent 1px),
+    rgba(17, 5, 9, 0.78);
+  background-size: 12px 12px;
+  box-shadow: 0 20px 54px rgba(127, 29, 29, 0.2);
+}
+
+.dark .notebook-shell {
+  border-color: rgba(248, 113, 113, 0.2);
+  background:
+    linear-gradient(90deg, rgba(248, 113, 113, 0.08), transparent 16%),
+    linear-gradient(180deg, #1b070b, #100406);
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.36),
+    0 0 60px rgba(127, 29, 29, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.dark .notebook-spine {
+  background:
+    linear-gradient(180deg, rgba(69, 10, 10, 0.98), rgba(18, 5, 8, 0.98)),
+    repeating-linear-gradient(180deg, transparent 0, transparent 22px, rgba(248, 113, 113, 0.12) 22px, rgba(248, 113, 113, 0.12) 23px);
+}
+
+.dark .notebook-ring {
+  border-color: rgba(252, 165, 165, 0.7);
+  box-shadow:
+    inset -3px 0 0 rgba(0, 0, 0, 0.24),
+    0 0 18px rgba(248, 113, 113, 0.14);
+}
+
+.dark .notebook-cover {
+  border-bottom-color: rgba(248, 113, 113, 0.14);
+  background:
+    linear-gradient(120deg, rgba(45, 12, 16, 0.9), rgba(18, 5, 8, 0.76)),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(248, 113, 113, 0.09) 1px, transparent 1px);
+  background-size: auto, 26px 26px, 26px 26px;
+}
+
+.dark .notebook-kicker {
+  color: #fca5a5;
+}
+
+.dark .notebook-cover h3 {
+  color: #fff1f2;
+}
+
+.dark .notebook-signal-grid span {
+  border-color: rgba(248, 113, 113, 0.18);
+  background:
+    linear-gradient(135deg, rgba(248, 113, 113, 0.18), transparent),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(248, 113, 113, 0.12) 1px, transparent 1px),
+    rgba(15, 6, 10, 0.62);
+  background-size: auto, 10px 10px, 10px 10px;
 }
 
 .project-card img,
@@ -484,6 +866,19 @@ textarea {
   .cursor-glow {
     display: none;
   }
+
+  .notebook-shell {
+    grid-template-columns: 3.4rem minmax(0, 1fr);
+  }
+
+  .notebook-cover {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .notebook-signal-grid {
+    width: min(10rem, 48vw);
+  }
 }
 
 @media (max-width: 640px) {
@@ -494,6 +889,38 @@ textarea {
   .hero-shell {
     padding-top: 9rem;
   }
+
+  .notes-circuit-field {
+    display: none;
+  }
+
+  .notebook-shell {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+    border-radius: 1.35rem;
+  }
+
+  .notebook-spine {
+    padding-inline: 0.35rem;
+  }
+
+  .notebook-ring {
+    width: 1.3rem;
+    height: 1rem;
+    border-width: 2px;
+  }
+
+  .notebook-pages {
+    padding: 0.9rem;
+  }
+
+  .notebook-page {
+    min-height: auto;
+    margin-left: 0;
+  }
+
+  .note-card::before {
+    left: 18px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -503,5 +930,9 @@ textarea {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+
+  .notebook-page {
+    transform: none !important;
   }
 }
