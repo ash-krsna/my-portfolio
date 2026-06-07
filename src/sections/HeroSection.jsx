@@ -99,8 +99,8 @@ export function HeroSection() {
               <div className="hero-console premium-card overflow-hidden p-4 md:p-5">
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-cyan-300" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-indigo-300" />
                     <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
                   </div>
                   <p className="text-[11px] uppercase tracking-[0.28em] text-white/42">system status</p>
