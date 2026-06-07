@@ -1,5 +1,3 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionHeading } from "../components/SectionHeading";
 import { notesSpaceItems } from "../data/content";
 
@@ -14,30 +12,11 @@ const noteIcons = [
   "bi-robot"
 ];
 
-function NotebookPage({ item, index, total }) {
-  const pageRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: pageRef,
-    offset: ["start 88%", "end 34%"]
-  });
-  const rotateY = useTransform(scrollYProgress, [0, 0.42, 1], [-42, 0, 3]);
-  const y = useTransform(scrollYProgress, [0, 0.42, 1], [28, 0, -10]);
-  const opacity = useTransform(scrollYProgress, [0, 0.22, 1], [0.28, 1, 1]);
+function NotebookPage({ item, index }) {
   const icon = noteIcons[index % noteIcons.length];
 
   return (
-    <motion.article
-      ref={pageRef}
-      style={{
-        rotateY,
-        y,
-        opacity,
-        transformPerspective: 1300,
-        transformOrigin: "left center",
-        zIndex: total - index
-      }}
-      className="notebook-page note-card p-6 md:p-7"
-    >
+    <article className="notebook-page note-card p-6 md:p-7">
       <div className="note-page-meta">
         <span className="note-page-number">Field note {String(index + 1).padStart(2, "0")}</span>
         <span className="note-status">{item.status}</span>
@@ -68,7 +47,7 @@ function NotebookPage({ item, index, total }) {
         <p className="note-label">My perspective</p>
         <p className="note-body">{item.perspective}</p>
       </div>
-    </motion.article>
+    </article>
   );
 }
 
@@ -113,7 +92,7 @@ export function NotesSpaceSection() {
 
         <div className="notebook-pages">
           {notesSpaceItems.map((item, index) => (
-            <NotebookPage key={item.title} item={item} index={index} total={notesSpaceItems.length} />
+            <NotebookPage key={item.title} item={item} index={index} />
           ))}
         </div>
       </div>

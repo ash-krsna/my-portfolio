@@ -583,12 +583,9 @@ textarea {
   display: grid;
   gap: 1.35rem;
   padding: clamp(1.1rem, 3vw, 2rem);
-  perspective: 1400px;
 }
 
 .notebook-page {
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   min-height: 27rem;
   margin-left: -0.3rem;
 }
@@ -932,7 +929,4 @@ textarea {
     scroll-behavior: auto !important;
   }
 
-  .notebook-page {
-    transform: none !important;
-  }
 }
