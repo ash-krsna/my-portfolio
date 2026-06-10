@@ -31,7 +31,7 @@
 
 ## Portfolio Snapshot
 
-This is a React + Vite portfolio built around practical IT skills, cybersecurity interest, AI/LLM learning, Python/web development, achievements, project case studies, and a security-aware developer identity.
+This is a React + Vite portfolio built around practical IT skills, cybersecurity interest, AI/LLM learning, Llama/Ollama experimentation, Python/web development, achievements, project case studies, and a security-aware developer identity.
 
 <table>
   <tr>
@@ -41,7 +41,7 @@ This is a React + Vite portfolio built around practical IT skills, cybersecurity
 
 - IT profile covering Python, SQL, React.js, Flask, MySQL, Linux, and networking
 - Cybersecurity direction with ethical hacking, vulnerability assessment, SOC, and tool awareness
-- AI direction with LLMs, AI agents, RAG, LangChain, prompt engineering, and automation
+- AI direction with LLMs, Llama/Ollama, AI agents, RAG, LangChain, vector databases, prompt engineering, and automation
 - Project case studies with live demos and product-style presentation
 - Certificates, achievements, resume, and professional contact flow
 - Smooth motion using Framer Motion, GSAP, and Lenis
@@ -76,7 +76,7 @@ Open to projects and collaboration
 | --- | --- |
 | Development | Python, SQL, React.js, Flask, JavaScript, responsive web UI |
 | Motion | Framer Motion, GSAP, Lenis smooth scrolling |
-| AI Direction | LLMs, AI agents, RAG, LangChain, prompt engineering, automation |
+| AI Direction | LLMs, Llama/Ollama, AI agents, RAG, LangChain, vector databases, prompt engineering, automation |
 | Security Awareness | Cybersecurity fundamentals, OWASP Top 10, Nmap, Wireshark, Burp Suite |
 | Deployment | Vite build pipeline with Vercel-ready configuration |
 
@@ -107,7 +107,7 @@ Open to projects and collaboration
 | Styling | Tailwind CSS, Bootstrap Icons, custom CSS |
 | Motion | Framer Motion, GSAP, Lenis |
 | Backend Utility | Vercel serverless function, Resend |
-| Learning Areas | Cybersecurity, SOC, LLMs, RAG, LangChain, Docker, cloud computing concepts |
+| Learning Areas | Cybersecurity, SOC, LLMs, Llama, Ollama, RAG, LangChain, vector databases, Docker, cloud computing concepts |
 
 ---
 

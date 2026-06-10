@@ -15,7 +15,7 @@ export function SkillsSection() {
         <div className="premium-card p-8">
           <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Core strengths</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            {["Python", "SQL", "React.js", "Flask", "REST APIs", "MySQL", "Linux", "Networking", "Cybersecurity", "OWASP", "Nmap", "Wireshark", "Burp Suite", "LLMs", "LangChain", "RAG", "Docker", "Cloud Basics"].map((item) => (
+            {["Python", "SQL", "React.js", "Flask", "REST APIs", "MySQL", "Linux", "Networking", "Cybersecurity", "OWASP", "Nmap", "Wireshark", "Burp Suite", "LLMs", "Llama", "Ollama", "LangChain", "RAG", "Vector DBs", "AI Agents", "Docker", "Cloud Basics"].map((item) => (
               <span key={item} className="rounded-full border border-black/10 bg-black/5 px-4 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-white/72">
                 {item}
               </span>

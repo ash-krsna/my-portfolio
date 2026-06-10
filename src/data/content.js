@@ -78,6 +78,8 @@ export const atsKeywords = [
   "AI Agents",
   "Generative AI",
   "LLMs",
+  "Llama",
+  "Ollama",
   "LangChain",
   "RAG",
   "Prompt Engineering",
@@ -296,7 +298,7 @@ export const skills = [
   { name: "Flask + REST APIs", value: 74 },
   { name: "Cybersecurity Fundamentals", value: 79 },
   { name: "Networking + Linux", value: 76 },
-  { name: "AI Agents + LLMs", value: 72 },
+  { name: "Llama + LLM Workflows", value: 74 },
   { name: "Problem Solving", value: 88 }
 ];
 
@@ -318,6 +320,74 @@ export const labExperiments = [
     copy:
       "Learning how modern products should handle trust, identity, prompt safety, sensitive data, and stronger user-side security awareness.",
     icon: "bi-shield-lock"
+  }
+];
+
+export const llmModelBadges = [
+  {
+    name: "LLaMA",
+    label: "Open model thinking",
+    iconText: "LLa"
+  },
+  {
+    name: "Ollama",
+    label: "Local model runtime",
+    iconText: "OL"
+  },
+  {
+    name: "LangChain",
+    label: "Agent orchestration",
+    iconText: "LC"
+  },
+  {
+    name: "RAG",
+    label: "Retrieval pipeline",
+    iconText: "RAG"
+  }
+];
+
+export const llmModules = [
+  {
+    title: "Local LLM runtime",
+    tag: "LLaMA + Ollama",
+    copy:
+      "Learning how local models can run through Ollama-style workflows for private experiments, offline prototyping, and faster AI automation practice.",
+    icon: "bi-hdd-network"
+  },
+  {
+    title: "RAG knowledge layer",
+    tag: "Retrieval + context",
+    copy:
+      "Understanding how documents, embeddings, vector databases, and retrieval steps can give an LLM better context before it generates an answer.",
+    icon: "bi-database-check"
+  },
+  {
+    title: "Prompt engineering",
+    tag: "Instructions + outputs",
+    copy:
+      "Practicing prompt structure, system instructions, examples, guardrails, and evaluation so model responses become more useful and predictable.",
+    icon: "bi-terminal"
+  },
+  {
+    title: "AI agent workflows",
+    tag: "Tools + actions",
+    copy:
+      "Exploring how agents can connect reasoning, tools, APIs, memory, and user approval flows to complete practical automation tasks safely.",
+    icon: "bi-diagram-3"
+  },
+  {
+    title: "Vector database basics",
+    tag: "Embeddings + search",
+    copy:
+      "Building awareness of semantic search, chunking, similarity matching, and how vector stores support AI assistants and knowledge apps.",
+    icon: "bi-boxes"
+  },
+  {
+    title: "AI automation modules",
+    tag: "Tasks + pipelines",
+    copy:
+      "Connecting LLM outputs with scripts, APIs, and repeatable workflows for support tasks, research helpers, content processing, and tech operations.",
+    icon: "bi-lightning-charge"
   }
 ];
 

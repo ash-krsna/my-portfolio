@@ -377,6 +377,215 @@ textarea {
     0 18px 44px rgba(34, 211, 238, 0.12);
 }
 
+.llm-lab-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(34, 211, 238, 0.14), transparent 28%),
+    radial-gradient(circle at 88% 12%, rgba(129, 140, 248, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.24));
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 18px 44px rgba(15, 23, 42, 0.06);
+}
+
+.llm-lab-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at 78% 26%, black, transparent 62%);
+}
+
+.llm-lab-header {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  grid-template-columns: minmax(0, 0.92fr) minmax(18rem, 1.08fr);
+}
+
+.llm-model-strip {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.llm-model-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.42)),
+    rgba(255, 255, 255, 0.32);
+  padding: 0.85rem;
+}
+
+.llama-mark {
+  position: relative;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border: 1px solid rgba(14, 116, 144, 0.18);
+  border-radius: 1rem;
+  background:
+    linear-gradient(90deg, rgba(14, 116, 144, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(14, 116, 144, 0.12) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(34, 211, 238, 0.26), rgba(129, 140, 248, 0.18));
+  background-size: 9px 9px, 9px 9px, auto;
+  color: #0f172a;
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.llama-mark::before,
+.llama-mark::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(14, 116, 144, 0.8);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.34);
+}
+
+.llama-mark::before {
+  width: 6px;
+  height: 6px;
+  top: 8px;
+  right: 8px;
+}
+
+.llama-mark::after {
+  width: 4px;
+  height: 4px;
+  left: 9px;
+  bottom: 9px;
+}
+
+.llm-model-badge p {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.llm-model-badge span:not(.llama-mark) {
+  display: block;
+  margin-top: 0.16rem;
+  font-size: 0.78rem;
+  color: rgba(51, 65, 85, 0.74);
+}
+
+.llm-module-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.28)),
+    rgba(255, 255, 255, 0.32);
+  padding: 1.25rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05);
+}
+
+.llm-module-card::after {
+  content: "";
+  position: absolute;
+  right: -2.2rem;
+  top: -2.2rem;
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 2rem;
+  transform: rotate(18deg);
+}
+
+.llm-module-icon {
+  display: inline-flex;
+  width: 2.7rem;
+  height: 2.7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.95rem;
+  background: linear-gradient(135deg, #22d3ee, #818cf8);
+  color: white;
+  font-size: 1.12rem;
+}
+
+.llm-module-tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(14, 116, 144, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.45rem 0.7rem;
+  color: #0e7490;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dark .llm-lab-shell {
+  border-color: rgba(125, 211, 252, 0.14);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(34, 211, 238, 0.13), transparent 28%),
+    radial-gradient(circle at 88% 12%, rgba(129, 140, 248, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(10, 20, 34, 0.72), rgba(3, 7, 18, 0.74));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+.dark .llm-lab-shell::before {
+  background-image:
+    linear-gradient(90deg, rgba(125, 211, 252, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(129, 140, 248, 0.08) 1px, transparent 1px);
+}
+
+.dark .llm-model-badge,
+.dark .llm-module-card {
+  border-color: rgba(125, 211, 252, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)),
+    rgba(6, 13, 25, 0.52);
+}
+
+.dark .llama-mark {
+  border-color: rgba(125, 211, 252, 0.2);
+  background:
+    linear-gradient(90deg, rgba(125, 211, 252, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(129, 140, 248, 0.11) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(129, 140, 248, 0.16));
+  background-size: 9px 9px, 9px 9px, auto;
+  color: #ecfeff;
+}
+
+.dark .llm-model-badge p {
+  color: #f8fbff;
+}
+
+.dark .llm-model-badge span:not(.llama-mark) {
+  color: rgba(226, 232, 240, 0.68);
+}
+
+.dark .llm-module-tag {
+  border-color: rgba(125, 211, 252, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: #7dd3fc;
+}
+
 .notes-space-section {
   position: relative;
   overflow: hidden;
@@ -859,6 +1068,10 @@ textarea {
     @apply rounded-[1.6rem] py-12;
   }
 
+  .llm-lab-header {
+    grid-template-columns: 1fr;
+  }
+
   .header-mobile-nav {
     top: 5.25rem;
   }
@@ -892,6 +1105,20 @@ textarea {
 
   .notes-circuit-field {
     display: none;
+  }
+
+  .llm-model-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .llm-module-card {
+    padding: 1rem;
+  }
+
+  .llm-module-tag {
+    max-width: 11rem;
+    justify-content: center;
+    text-align: center;
   }
 
   .notebook-shell {
