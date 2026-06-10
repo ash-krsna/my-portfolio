@@ -4,7 +4,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:0f172a,100:2563eb&height=210&section=header&text=Akash%20Bhagwat&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Frontend%20Engineer%20%7C%20React%20%2B%20Vite%20%7C%20Security-Aware%20Builder&descAlignY=58&animation=fadeIn" alt="Akash Bhagwat Portfolio header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&pause=1100&color=22D3EE&center=true&vCenter=true&width=900&lines=Building+modern+frontend+experiences;Designing+clean+and+responsive+interfaces;Exploring+APIs%2C+systems%2C+and+security-aware+development;Shipping+practical+portfolio-ready+web+products" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&pause=1100&color=22D3EE&center=true&vCenter=true&width=900&lines=Cybersecurity%20%2B%20AI%20%2B%20Python%20focused;Building%20practical%20web%20and%20automation%20projects;Exploring%20LLMs%2C%20RAG%2C%20and%20AI%20agents;Learning%20SOC%2C%20network%20security%2C%20and%20cloud%20fundamentals" alt="Typing SVG" />
 
 <br />
 
@@ -31,7 +31,7 @@
 
 ## Portfolio Snapshot
 
-This is a cinematic React + Vite portfolio built around premium motion, responsive UI, photography, achievements, project case studies, and a security-aware developer identity.
+This is a React + Vite portfolio built around practical IT skills, cybersecurity interest, AI/LLM learning, Python/web development, achievements, project case studies, and a security-aware developer identity.
 
 <table>
   <tr>
@@ -39,7 +39,9 @@ This is a cinematic React + Vite portfolio built around premium motion, responsi
 
 ### What This Portfolio Shows
 
-- Frontend engineering with React, JavaScript, and modern UI patterns
+- IT profile covering Python, SQL, React.js, Flask, MySQL, Linux, and networking
+- Cybersecurity direction with ethical hacking, vulnerability assessment, SOC, and tool awareness
+- AI direction with LLMs, AI agents, RAG, LangChain, prompt engineering, and automation
 - Project case studies with live demos and product-style presentation
 - Certificates, achievements, resume, and professional contact flow
 - Smooth motion using Framer Motion, GSAP, and Lenis
@@ -72,10 +74,10 @@ Open to projects and collaboration
 
 | Area | Details |
 | --- | --- |
-| Frontend | React, JavaScript, responsive layouts, polished visual systems |
+| Development | Python, SQL, React.js, Flask, JavaScript, responsive web UI |
 | Motion | Framer Motion, GSAP, Lenis smooth scrolling |
-| Product Thinking | Case studies, project impact, interface clarity, content structure |
-| Security Awareness | Cybersecurity certificates, secure development mindset, web risk curiosity |
+| AI Direction | LLMs, AI agents, RAG, LangChain, prompt engineering, automation |
+| Security Awareness | Cybersecurity fundamentals, OWASP Top 10, Nmap, Wireshark, Burp Suite |
 | Deployment | Vite build pipeline with Vercel-ready configuration |
 
 ---
@@ -101,11 +103,11 @@ Open to projects and collaboration
 
 | Category | Tools |
 | --- | --- |
-| Core | React, Vite, JavaScript |
+| Core | Python, SQL, React, Vite, JavaScript, Flask |
 | Styling | Tailwind CSS, Bootstrap Icons, custom CSS |
 | Motion | Framer Motion, GSAP, Lenis |
 | Backend Utility | Vercel serverless function, Resend |
-| Learning Areas | APIs, SQL, MongoDB, Linux, web security fundamentals |
+| Learning Areas | Cybersecurity, SOC, LLMs, RAG, LangChain, Docker, cloud computing concepts |
 
 ---
 

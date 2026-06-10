@@ -7,8 +7,8 @@ export function AboutSection() {
     <section id="about" className="section-shell">
       <SectionHeading
         eyebrow="About me"
-        title="Frontend engineering with AI-era product taste, technical curiosity, and a builder mindset."
-        copy="I care about digital work that feels authored and solid. Not just functional, and not just pretty. The aim is strong frontend execution, clearer product thinking, security awareness, and systems that feel dependable."
+        title="IT professional focused on cybersecurity, AI, Python, and practical software development."
+        copy="I care about technology that is useful, secure, and well-structured. My current direction blends web development, databases, networking, security fundamentals, AI agents, and automation."
       />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -20,7 +20,7 @@ export function AboutSection() {
         >
           <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Working style</p>
           <p className="mt-6 text-2xl leading-[1.5] text-zinc-900 dark:text-white">
-            I like interfaces that feel intentional, code that stays readable, and products that make sense quickly. As AI, automation, and connected devices become normal, the goal is to build things that look sharp because they are thought through well.
+            I like solving technical problems across the full stack: clean interfaces, readable code, useful databases, secure thinking, and automation that makes work faster. The goal is to grow into roles where cybersecurity, AI, Python, cloud, and operations meet real business needs.
           </p>
         </motion.div>
 

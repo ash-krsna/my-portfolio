@@ -10,47 +10,84 @@ export const navItems = [
 ];
 
 export const heroHighlights = [
-  "Frontend Engineer",
-  "React + Vite",
-  "AI-Aware UI",
-  "API + Agent Flows",
-  "Security-Aware Builder"
+  "IT Professional",
+  "Python + SQL",
+  "React + Flask",
+  "Cybersecurity Focus",
+  "AI Agents + Automation"
 ];
 
 export const heroStats = [
-  { label: "Focus", value: "UI Engineering" },
-  { label: "Current", value: "AI-Era Products" },
-  { label: "Learning", value: "Agents + Edge" },
-  { label: "Mode", value: "Build Smart" }
+  { label: "Focus", value: "Cyber + AI" },
+  { label: "Core", value: "Python + Web" },
+  { label: "Learning", value: "SOC + LLMs" },
+  { label: "Mode", value: "Build Secure" }
 ];
 
 export const heroTerminalLines = [
   "boot portfolio --profile akash",
-  "stack: react, js, python, sql, ai-aware-ui",
-  "signal: frontend precision + agentic product thinking",
-  "watchlist: ai security, edge ai, robotics, inference cost",
-  "deploy: vercel, github, practical client-ready work"
+  "stack: python, sql, react, flask, mysql, linux",
+  "security: nmap, wireshark, burp suite, owasp top 10",
+  "ai: llms, rag, langchain, prompt engineering, agents",
+  "target: cybersecurity, ai/ml, python, cloud, tech ops"
 ];
 
 export const aboutTimeline = [
   {
     year: "Now",
-    title: "Frontend craft for AI-era products",
+    title: "IT professional growing across cybersecurity, AI, and software",
     description:
-      "Sharpening interfaces that can explain system state, guide user decisions, and stay dependable as AI tools, APIs, and automation enter everyday products."
+      "Combining BCA fundamentals with hands-on Python, SQL, React, Flask, MySQL, Linux, networking, and cybersecurity practice to build a broader technical profile."
   },
   {
     year: "Learning arc",
-    title: "React, APIs, agents, edge devices, and systems",
+    title: "Security tools, AI agents, REST APIs, and automation",
     description:
-      "Going deeper into scalable frontend architecture, API integration, agent workflows, Raspberry Pi style edge experiments, and cleaner observable interface systems."
+      "Going deeper into vulnerability assessment, SOC thinking, ethical hacking basics, LLM workflows, LangChain, RAG, prompt engineering, and AI-powered automation."
   },
   {
     year: "Next chapter",
-    title: "Builder with technical range and security awareness",
+    title: "Ready for cybersecurity, AI/ML, Python, cloud, and tech operations",
     description:
-      "Growing toward a stronger developer identity that mixes code quality, AI-aware product thinking, interface discipline, experimentation, and responsible security habits."
+      "Seeking practical industry opportunities where software development, IT support, cloud concepts, security operations, and AI automation can create useful business impact."
   }
+];
+
+export const professionalSummary = [
+  "Results-driven IT professional with a Bachelor of Computer Applications and hands-on experience across Python, SQL, HTML5, CSS3, JavaScript, React.js, Flask, MySQL, Git, Linux, computer networking, and cybersecurity fundamentals.",
+  "Strong understanding of web application development, REST APIs, database management, responsive UI design, troubleshooting, system analysis, and software development best practices.",
+  "Passionate about cybersecurity, ethical hacking, penetration testing, vulnerability assessment, SOC workflows, digital forensics, artificial intelligence, LLMs, AI agents, RAG, prompt engineering, vector databases, and automation.",
+  "Familiar with practical tools and concepts including Nmap, Wireshark, Burp Suite, OWASP Top 10, Postman, GitHub, Docker fundamentals, cloud computing concepts, Ollama, Llama, LangChain, and generative AI workflows."
+];
+
+export const atsKeywords = [
+  "Cyber Security",
+  "Ethical Hacking",
+  "Penetration Testing",
+  "Vulnerability Assessment",
+  "Network Security",
+  "SOC Analyst",
+  "Digital Forensics",
+  "Python",
+  "SQL",
+  "React.js",
+  "Flask",
+  "REST APIs",
+  "MySQL",
+  "Linux",
+  "AI Agents",
+  "Generative AI",
+  "LLMs",
+  "LangChain",
+  "RAG",
+  "Prompt Engineering",
+  "Vector Databases",
+  "Docker",
+  "Cloud Computing",
+  "OWASP Top 10",
+  "Nmap",
+  "Wireshark",
+  "Burp Suite"
 ];
 
 export const projects = [
@@ -253,13 +290,13 @@ export const certificates = [
 ];
 
 export const skills = [
-  { name: "React", value: 84 },
-  { name: "JavaScript", value: 89 },
-  { name: "AI-Aware UI", value: 78 },
-  { name: "UI Engineering", value: 87 },
-  { name: "API Integration", value: 80 },
-  { name: "Cyber Security Basics", value: 76 },
-  { name: "Edge + IoT Curiosity", value: 68 },
+  { name: "Python", value: 82 },
+  { name: "SQL + MySQL", value: 78 },
+  { name: "React.js", value: 84 },
+  { name: "Flask + REST APIs", value: 74 },
+  { name: "Cybersecurity Fundamentals", value: 79 },
+  { name: "Networking + Linux", value: 76 },
+  { name: "AI Agents + LLMs", value: 72 },
   { name: "Problem Solving", value: 88 }
 ];
 
@@ -296,7 +333,7 @@ export const notesSpaceItems = [
     solution:
       "Use AI as a pair-builder, not an unchecked author. Keep code review, threat modeling, tests, traceable decisions, and human ownership at the center of the workflow.",
     perspective:
-      "This is where I want to grow as a frontend developer: use AI to move faster, but keep the taste, responsibility, and debugging discipline human."
+      "This is where I want to grow as a technical builder: use AI to move faster, but keep the judgment, responsibility, and debugging discipline human."
   },
   {
     title: "Preemptive cybersecurity changes dashboard design",
@@ -348,7 +385,7 @@ export const notesSpaceItems = [
     solution:
       "Build agent interfaces with timeline views, review checkpoints, confidence signals, clear cancel paths, and plain-language summaries of decisions before important actions happen.",
     perspective:
-      "My take is that frontend developers will be important in making AI feel dependable. The best agent products will not just automate work; they will make automation understandable."
+      "My take is that developers will be important in making AI feel dependable. The best agent products will not just automate work; they will make automation understandable."
   },
   {
     title: "AI security is becoming product design work",
@@ -426,7 +463,7 @@ export const notesSpaceItems = [
     solution:
       "Design clear local/cloud states, lightweight model interactions, fallback behavior, battery-aware experiences, and privacy explanations that are simple enough to understand in the moment.",
     perspective:
-      "For frontend developers, this is exciting because the browser becomes more than a display layer. It becomes part of the intelligence, privacy, and performance story."
+      "For software builders, this is exciting because the browser becomes more than a display layer. It becomes part of the intelligence, privacy, and performance story."
   },
   {
     title: "Synthetic data needs careful product boundaries",
@@ -463,18 +500,18 @@ export const socialLinks = [
 
 export const hireMeOffers = [
   {
-    title: "Modern frontend development",
-    copy: "Responsive interfaces, polished layouts, and cleaner product presentation for web experiences that need to feel sharp, usable, and current.",
-    icon: "bi-window"
+    title: "Python and web development",
+    copy: "Practical web applications, REST API integration, database-backed features, responsive UI, troubleshooting, and clean implementation across Python, Flask, React, and MySQL.",
+    icon: "bi-code-slash"
   },
   {
-    title: "AI-aware portfolio and product pages",
-    copy: "Personal brands, product pages, and presentation-focused websites with stronger visual hierarchy, modern interaction quality, and smarter technical positioning.",
-    icon: "bi-layout-text-window"
+    title: "Cybersecurity support and learning",
+    copy: "Security-aware testing, OWASP Top 10 awareness, vulnerability assessment practice, network security fundamentals, and hands-on tool familiarity with Nmap, Wireshark, and Burp Suite.",
+    icon: "bi-shield-lock"
   },
   {
-    title: "Tech experimentation",
-    copy: "Developer-focused builds, interface concepts, automation-minded ideas, edge experiments, and practical systems work shaped by curiosity and clarity.",
+    title: "AI automation and tech operations",
+    copy: "LLM experiments, AI agent workflows, RAG concepts, prompt engineering, automation-minded ideas, IT support thinking, cloud fundamentals, and practical systems work.",
     icon: "bi-cpu"
   }
 ];

@@ -8,8 +8,8 @@ export function HireSection() {
     <section id="hire" className="section-shell">
       <SectionHeading
         eyebrow="Hire me"
-        title="A direct space for people who want to work with me, not just browse the portfolio."
-        copy="If you need a frontend developer who cares about clean UI, strong presentation, responsive implementation, and a builder mindset, this is the fastest way to start the conversation."
+        title="A direct space for cybersecurity, AI, Python, web, and IT opportunities."
+        copy="If you need a motivated IT professional who can learn fast, solve technical problems, build practical software, and grow across security, AI, cloud, and operations, this is the fastest way to start the conversation."
       />
 
       <div className="mt-10 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">

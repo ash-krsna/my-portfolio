@@ -1,18 +1,60 @@
 AKASH BHAGWAT
-Creative Developer | Frontend Builder | Future Cinematic Storyteller
+IT Professional | Python Developer | Cybersecurity Learner | AI Automation Enthusiast
 
-SUMMARY
-Creative developer focused on premium interfaces, responsive systems, stronger visual presentation, and the long-term blend of technology with cinematic storytelling.
+PROFESSIONAL SUMMARY
+Results-driven and highly motivated IT professional with a Bachelor of Computer Applications (BCA) and hands-on experience in Python, SQL, HTML5, CSS3, JavaScript, React.js, Flask, MySQL, Git, Linux, computer networking, and cybersecurity fundamentals.
+
+Strong understanding of web application development, REST APIs, database management, responsive UI design, troubleshooting, system analysis, and software development best practices.
+
+Passionate about cybersecurity, ethical hacking, penetration testing, vulnerability assessment, network security, security operations (SOC), digital forensics, artificial intelligence, large language models (LLMs), AI agents, and automation.
+
+Familiar with modern AI technologies and workflows including Ollama, Llama, LangChain, Retrieval-Augmented Generation (RAG), prompt engineering, vector databases, generative AI workflows, and AI-powered automation solutions.
+
+Knowledge of tools and technologies such as Nmap, Wireshark, Burp Suite, OWASP Top 10, Postman, GitHub, Docker fundamentals, and cloud computing concepts.
+
+TARGET ROLES
+- Cybersecurity
+- AI/ML
+- Python Development
+- Software Engineering
+- IT Support
+- Cloud Technologies
+- Technology Operations
+- SOC Analyst
 
 CORE SKILLS
-- React
-- JavaScript
 - Python
 - SQL
-- Responsive UI
-- UI and UX thinking
-- Creative direction
-- Security-aware learning
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Flask
+- REST APIs
+- MySQL
+- Git
+- Linux
+- Computer Networking
+- Cybersecurity Fundamentals
+- Ethical Hacking
+- Penetration Testing
+- Vulnerability Assessment
+- Network Security
+- Digital Forensics
+- AI Agents
+- Generative AI
+- LLMs
+- LangChain
+- RAG
+- Prompt Engineering
+- Vector Databases
+- Docker Fundamentals
+- Cloud Computing Concepts
+- OWASP Top 10
+- Nmap
+- Wireshark
+- Burp Suite
+- Postman
 
 EXPERIENCE
 Trainee HTML Programmer
@@ -20,14 +62,16 @@ Aptara
 - Accessibility-aware document and content workflows
 - Structured digital content preparation
 - Attention to semantic organization and usability
+- Practical exposure to production-oriented digital publishing workflows
 
 PROJECTS
-- Vehicle Tracker
-- Lift Management
 - BSB International School Website
+- Pandurang Pratishthan
+- Lift Management
+- Vehicle Tracker
 
 CONTACT
 GitHub: https://github.com/ash-krsna
 LinkedIn: https://www.linkedin.com/in/akash-gita-bhagwat
 Instagram: https://www.instagram.com/duskveil_______/
-Email: akashohalkar300@gmail.com
+Email: akash.gita.bhagwat@gmail.com
