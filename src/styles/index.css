@@ -157,6 +157,30 @@ textarea {
     0 18px 40px rgba(12, 14, 18, 0.06);
 }
 
+.site-header-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0 16%;
+  top: 0;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.64), rgba(52, 211, 153, 0.46), transparent);
+}
+
+.site-header-bar::after {
+  content: "";
+  position: absolute;
+  inset: auto 2rem -2.6rem 2rem;
+  height: 3.6rem;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.12), transparent 68%);
+}
+
 .dark .nav-dock {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
@@ -279,12 +303,117 @@ textarea {
   isolation: isolate;
 }
 
+.hero-availability-pill {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-availability-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 0 36%, rgba(255, 255, 255, 0.46) 46%, transparent 58% 100%);
+  transform: translateX(-120%);
+  animation: soft-sheen 6s ease-in-out infinite;
+}
+
 .hero-noise {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 22px 22px;
   mask-image: radial-gradient(circle at center, black 42%, transparent 100%);
+}
+
+.hero-visual-stage::before {
+  content: "";
+  position: absolute;
+  width: min(39rem, 78vw);
+  aspect-ratio: 1;
+  border: 1px solid rgba(34, 211, 238, 0.14);
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(129, 140, 248, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle, black 0 48%, transparent 71%);
+}
+
+.hero-orbit {
+  position: absolute;
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  border-radius: 999px;
+  pointer-events: none;
+  box-shadow: 0 0 34px rgba(34, 211, 238, 0.08);
+}
+
+.hero-orbit::before {
+  content: "";
+  position: absolute;
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  background: #67e8f9;
+  box-shadow: 0 0 18px rgba(103, 232, 249, 0.76);
+}
+
+.hero-orbit-one {
+  width: 31rem;
+  height: 31rem;
+  transform: rotate(-14deg);
+}
+
+.hero-orbit-one::before {
+  right: 5.4rem;
+  top: 2.8rem;
+}
+
+.hero-orbit-two {
+  width: 23rem;
+  height: 23rem;
+  border-style: dashed;
+  transform: rotate(18deg);
+}
+
+.hero-orbit-two::before {
+  left: 3.2rem;
+  bottom: 3rem;
+  background: #a7f3d0;
+  box-shadow: 0 0 18px rgba(167, 243, 208, 0.7);
+}
+
+.hero-floating-code {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 0.55rem 0.8rem;
+  color: #0f172a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.hero-floating-code-left {
+  left: 0.5rem;
+  top: 8%;
+}
+
+.hero-floating-code-right {
+  right: 0.2rem;
+  bottom: 16%;
+}
+
+.dark .hero-floating-code {
+  border-color: rgba(125, 211, 252, 0.16);
+  background: rgba(6, 13, 25, 0.72);
+  color: rgba(248, 251, 255, 0.94);
 }
 
 .hero-gradient-title {
@@ -317,6 +446,21 @@ textarea {
   background:
     radial-gradient(circle at top right, rgba(34, 211, 238, 0.15), transparent 28%),
     linear-gradient(180deg, rgba(8, 15, 28, 0.94), rgba(2, 6, 23, 0.98));
+}
+
+.hero-portrait-card {
+  position: relative;
+}
+
+.hero-portrait-card::before {
+  content: "";
+  position: absolute;
+  inset: 0.45rem;
+  z-index: 1;
+  pointer-events: none;
+  border: 1px solid rgba(125, 211, 252, 0.18);
+  border-radius: 1.65rem;
+  box-shadow: inset 0 0 32px rgba(34, 211, 238, 0.08);
 }
 
 .dark .hero-console {
@@ -375,6 +519,90 @@ textarea {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 18px 44px rgba(34, 211, 238, 0.12);
+}
+
+.project-card {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.34), transparent 34%, rgba(34, 211, 238, 0.08));
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-cover {
+  position: relative;
+  overflow: hidden;
+  min-height: 10.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1.05rem;
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.project-cover-featured {
+  min-height: 13rem;
+}
+
+.project-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  transition: transform 500ms ease, filter 500ms ease;
+}
+
+.project-card:hover .project-cover img {
+  transform: scale(1.045);
+  filter: saturate(1.08) contrast(1.03);
+}
+
+.project-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 30%, rgba(2, 6, 23, 0.72)),
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.2), transparent 34%);
+}
+
+.project-cover-overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.project-cover-overlay span {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(2, 6, 23, 0.48);
+  padding: 0.38rem 0.62rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.72rem;
+  font-weight: 700;
+  backdrop-filter: blur(12px);
+}
+
+.dark .project-cover {
+  border-color: rgba(125, 211, 252, 0.13);
+  background: rgba(6, 13, 25, 0.76);
 }
 
 .llm-lab-shell {
@@ -1068,6 +1296,14 @@ textarea {
     @apply rounded-[1.6rem] py-12;
   }
 
+  .hero-orbit {
+    opacity: 0.46;
+  }
+
+  .hero-floating-code {
+    display: none;
+  }
+
   .llm-lab-header {
     grid-template-columns: 1fr;
   }
@@ -1101,6 +1337,16 @@ textarea {
 
   .hero-shell {
     padding-top: 9rem;
+  }
+
+  .hero-orbit,
+  .hero-visual-stage::before {
+    display: none;
+  }
+
+  .project-cover,
+  .project-cover-featured {
+    min-height: 9.5rem;
   }
 
   .notes-circuit-field {
@@ -1161,5 +1407,17 @@ textarea {
 
   .notebook-page {
     transform: none !important;
+  }
+}
+
+@keyframes soft-sheen {
+  0%,
+  62% {
+    transform: translateX(-120%);
+  }
+
+  82%,
+  100% {
+    transform: translateX(120%);
   }
 }

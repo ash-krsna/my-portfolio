@@ -91,7 +91,7 @@ function App() {
       <div className="fixed inset-0 -z-20 opacity-[0.08] [background-size:48px_48px] [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]" />
 
       <header className="fixed inset-x-0 top-0 z-50">
-        <div className="mx-auto mt-3 flex max-w-[96rem] items-center justify-between gap-3 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-5 xl:gap-5">
+        <div className="site-header-bar mx-auto mt-3 flex max-w-[96rem] items-center justify-between gap-3 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-5 xl:gap-5">
           <a href="#home" className="flex min-w-0 items-center gap-3 xl:max-w-[22rem]">
             <span className="brand-emblem flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-[0_18px_40px_rgba(72,194,141,0.2)]">
               <span className="brand-emblem__core">
@@ -100,7 +100,7 @@ function App() {
             </span>
             <div className="min-w-0">
               <p className="truncate font-display text-[1.05rem] text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer · AI + Tech Systems</p>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer | AI + Tech Systems</p>
             </div>
           </a>
 

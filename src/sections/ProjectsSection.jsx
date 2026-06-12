@@ -30,6 +30,14 @@ export function ProjectsSection() {
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(16,185,129,0.16),transparent_24%)] opacity-80" />
             <div className="relative z-10">
+              <div className={`project-cover ${project.featured ? "project-cover-featured" : ""}`}>
+                <img src={project.cover} alt={`${project.title} preview`} loading="lazy" />
+                <div className="project-cover-overlay">
+                  {project.metrics.slice(0, 2).map((metric) => (
+                    <span key={metric}>{metric}</span>
+                  ))}
+                </div>
+              </div>
               <span className="inline-flex rounded-full border border-black/10 bg-black/5 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500 dark:border-white/10 dark:bg-white/5 dark:text-white/50">
                 {project.label}
               </span>

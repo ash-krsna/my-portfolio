@@ -14,10 +14,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/72 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/60"
+            className="hero-availability-pill inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/72 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/60"
           >
             <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(74,222,128,0.8)]" />
-            IT professional · cybersecurity · AI automation · Python
+            IT professional | cybersecurity | AI automation | Python
           </motion.div>
 
           <motion.h1
@@ -76,11 +76,21 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.96, y: 22 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.05, delay: 0.12 }}
-          className="relative flex items-center justify-center"
+          className="hero-visual-stage relative flex items-center justify-center"
         >
+          <div className="hero-orbit hero-orbit-one" aria-hidden="true" />
+          <div className="hero-orbit hero-orbit-two" aria-hidden="true" />
+          <div className="hero-floating-code hero-floating-code-left" aria-hidden="true">
+            <i className="bi bi-cpu" />
+            <span>LLM</span>
+          </div>
+          <div className="hero-floating-code hero-floating-code-right" aria-hidden="true">
+            <i className="bi bi-shield-lock" />
+            <span>SOC</span>
+          </div>
           <div className="relative grid w-full max-w-[35rem] gap-4">
             <div className="grid gap-4 md:grid-cols-[0.88fr_1.12fr]">
-              <div className="premium-card overflow-hidden p-3">
+              <div className="hero-portrait-card premium-card overflow-hidden p-3">
                 <div className="relative h-full min-h-[24rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#08111d]">
                   <img
                     src="/media/photos/profile-latest.jpeg"
