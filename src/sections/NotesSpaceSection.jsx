@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { SectionHeading } from "../components/SectionHeading";
 import { notesSpaceItems } from "../data/content";
 
@@ -14,32 +13,19 @@ const noteIcons = [
   "bi-robot"
 ];
 
-function NotebookPage({ item, index, total }) {
-  const pageRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: pageRef,
-    offset: ["start 88%", "end 34%"]
-  });
-  const rotateY = useTransform(scrollYProgress, [0, 0.42, 1], [-42, 0, 3]);
-  const y = useTransform(scrollYProgress, [0, 0.42, 1], [28, 0, -10]);
-  const opacity = useTransform(scrollYProgress, [0, 0.22, 1], [0.28, 1, 1]);
+function NoteCard({ item, index }) {
   const icon = noteIcons[index % noteIcons.length];
 
   return (
     <motion.article
-      ref={pageRef}
-      style={{
-        rotateY,
-        y,
-        opacity,
-        transformPerspective: 1300,
-        transformOrigin: "left center",
-        zIndex: total - index
-      }}
-      className="notebook-page note-card p-6 md:p-7"
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-8%" }}
+      transition={{ duration: 0.42, delay: index * 0.04 }}
+      className="simple-note-card note-card p-6 md:p-7"
     >
       <div className="note-page-meta">
-        <span className="note-page-number">Field note {String(index + 1).padStart(2, "0")}</span>
+        <span className="note-page-number">Note {String(index + 1).padStart(2, "0")}</span>
         <span className="note-status">{item.status}</span>
       </div>
 
@@ -87,33 +73,22 @@ export function NotesSpaceSection() {
 
       <SectionHeading
         eyebrow="My notes space"
-        title="A notebook-style space for my technology observations, security ideas, and AI-era product thinking."
+        title="A simple scrollable space for my technology observations, security ideas, and AI-era product thinking."
         copy="These are working notes on fast-moving tech: what I am watching, what feels risky, and what kind of interface thinking could make the next wave of products easier to trust."
       />
 
-      <div className="notebook-shell mt-12">
-        <div className="notebook-spine" aria-hidden="true">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <span key={index} className="notebook-ring" />
-          ))}
-        </div>
-
-        <div className="notebook-cover">
+      <div className="notes-scroll-shell mt-12">
+        <div className="notes-scroll-header">
           <div>
-            <p className="notebook-kicker">Tech field notebook</p>
+            <p className="notes-scroll-kicker">Tech notes</p>
             <h3>Current watchlist</h3>
           </div>
-          <div className="notebook-signal-grid" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
+          <span className="notes-scroll-count">{notesSpaceItems.length} notes</span>
         </div>
 
-        <div className="notebook-pages">
+        <div className="notes-scroll-list">
           {notesSpaceItems.map((item, index) => (
-            <NotebookPage key={item.title} item={item} index={index} total={notesSpaceItems.length} />
+            <NoteCard key={item.title} item={item} index={index} />
           ))}
         </div>
       </div>
