@@ -16,7 +16,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-2">
+        <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
@@ -24,28 +24,41 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.58, delay: index * 0.05 }}
-              className={`project-card ${index === 0 ? "lg:row-span-2" : ""}`}
+              className="project-card"
             >
               <div className="project-card-top">
-                <span className="project-icon">
-                  <i className={`bi ${project.icon}`} />
-                </span>
-                <span className="project-category">{project.category}</span>
+                <div className="project-meta">
+                  <span className="project-icon">
+                    <i className={`bi ${project.icon}`} />
+                  </span>
+                  <div>
+                    <span className="project-category">{project.category}</span>
+                    <span className="project-number">0{index + 1}</span>
+                  </div>
+                </div>
+                <span className="project-status">Featured</span>
               </div>
 
               <h3>{project.title}</h3>
               <p className="project-description">{project.description}</p>
-              <p className="project-impact">{project.impact}</p>
 
-              <div className="mt-7 flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <span key={tech} className="stack-chip">
-                    {tech}
-                  </span>
-                ))}
+              <div className="project-impact">
+                <span>Impact</span>
+                <p>{project.impact}</p>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="project-stack">
+                <span className="project-stack-label">Tech stack</span>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {project.stack.map((tech) => (
+                    <span key={tech} className="stack-chip">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="project-actions">
                 <a href={project.github} target="_blank" rel="noreferrer" className="link-button">
                   <i className="bi bi-github" />
                   GitHub

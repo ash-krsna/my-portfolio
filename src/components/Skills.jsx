@@ -14,7 +14,7 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
           {skillGroups.map((group, index) => (
             <motion.article
               key={group.title}
@@ -24,12 +24,15 @@ export function Skills() {
               transition={{ duration: 0.55, delay: index * 0.05 }}
               className="skill-card"
             >
-              <div className="skill-icon">
-                <i className={`bi ${group.icon}`} />
+              <div className="skill-card-head">
+                <div className="skill-icon">
+                  <i className={`bi ${group.icon}`} />
+                </div>
+                <span>0{index + 1}</span>
               </div>
               <h3>{group.title}</h3>
               <p>{group.description}</p>
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="skill-chip-list">
                 {group.skills.map((skill) => (
                   <span key={skill} className="skill-chip">
                     {skill}

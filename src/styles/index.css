@@ -432,11 +432,11 @@ textarea:focus-visible {
   height: 27rem;
   object-fit: cover;
   object-position: top center;
-  filter: grayscale(1) contrast(1.04);
+  filter: saturate(1.04) contrast(1.03) brightness(0.96);
 }
 
 :root[data-theme="light"] .profile-portrait img {
-  filter: saturate(0.92) contrast(1.02);
+  filter: saturate(0.98) contrast(1.02);
 }
 
 .profile-portrait::after {
@@ -557,9 +557,9 @@ textarea:focus-visible {
 
 .section-title {
   font-family: "Syne", "Inter", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 850;
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 .section-copy {
@@ -591,7 +591,9 @@ textarea:focus-visible {
 .contact-form,
 .contact-link {
   border: 1px solid var(--line);
-  background: var(--surface);
+  background:
+    linear-gradient(180deg, var(--wash), transparent 38%),
+    var(--surface);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(18px);
 }
@@ -602,7 +604,7 @@ textarea:focus-visible {
 .project-card,
 .resume-preview,
 .contact-form {
-  border-radius: 0.65rem;
+  border-radius: 0.5rem;
 }
 
 .proof-card {
@@ -632,8 +634,24 @@ textarea:focus-visible {
 .metric-card {
   position: relative;
   overflow: hidden;
-  min-height: 9rem;
+  display: grid;
+  min-height: 10rem;
+  align-content: space-between;
   padding: 1.2rem;
+}
+
+.metric-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.metric-card-head small {
+  color: var(--muted-soft);
+  font-family: "Syne", "Inter", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 850;
 }
 
 .metric-card::after {
@@ -670,14 +688,31 @@ textarea:focus-visible {
 
 .skill-card {
   min-height: 24rem;
+  display: flex;
+  flex-direction: column;
   padding: 1.2rem;
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .skill-card:hover,
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+.skill-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.skill-card-head span {
+  color: var(--muted-soft);
+  font-family: "Syne", "Inter", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 850;
 }
 
 .skill-icon,
@@ -689,7 +724,7 @@ textarea:focus-visible {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--line);
-  border-radius: 0.65rem;
+  border-radius: 0.5rem;
   background: var(--surface-raised);
   color: var(--text-strong);
   font-size: 1.2rem;
@@ -714,6 +749,14 @@ textarea:focus-visible {
   line-height: 1.75;
 }
 
+.skill-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
 .skill-chip {
   background: var(--surface-raised);
 }
@@ -721,6 +764,10 @@ textarea:focus-visible {
 .project-card {
   position: relative;
   overflow: hidden;
+  display: flex;
+  min-height: 24rem;
+  flex-direction: column;
+  isolation: isolate;
   padding: 1.35rem;
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
@@ -737,13 +784,70 @@ textarea:focus-visible {
   gap: 1rem;
 }
 
-.project-impact {
-  margin-top: 1rem;
-  border-left: 2px solid var(--text-strong);
-  padding-left: 0.9rem;
+.project-meta {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project-number {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--muted-soft);
+  font-family: "Syne", "Inter", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.project-status {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  padding: 0.45rem 0.65rem;
   color: var(--text);
-  font-weight: 800;
+  font-size: 0.75rem;
+  font-weight: 850;
+}
+
+.project-impact {
+  margin-top: 1.15rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--text-strong);
+  border-radius: 0.5rem;
+  background: var(--surface-solid);
+  padding: 0.95rem 1rem;
+}
+
+.project-impact span,
+.project-stack-label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.project-impact p {
+  margin-top: 0.42rem;
+  color: var(--text);
+  font-weight: 780;
   line-height: 1.65;
+}
+
+.project-stack {
+  margin-top: auto;
+  padding-top: 1.35rem;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 
 .link-button {
@@ -751,7 +855,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 0.48rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 0.5rem;
   background: var(--surface-raised);
   padding: 0.68rem 0.85rem;
   color: var(--text-strong);
@@ -990,7 +1094,7 @@ textarea:focus-visible {
   }
 
   .section-title {
-    font-size: 3.25rem;
+    font-size: 2.65rem;
   }
 
   .impact-grid {
@@ -1008,25 +1112,15 @@ textarea:focus-visible {
   }
 
   .section-title {
-    font-size: 4.35rem;
+    font-size: 3.15rem;
   }
 
   .impact-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .project-card:first-child h3 {
-    font-size: 2.05rem;
-  }
-
-  .project-card:first-child {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-  }
-
-  .project-card:first-child .project-description {
-    font-size: 1.05rem;
+  .project-card h3 {
+    font-size: 1.55rem;
   }
 }
 
@@ -1066,7 +1160,8 @@ textarea:focus-visible {
   }
 
   .section-title {
-    font-size: 2.15rem;
+    font-size: 2rem;
+    line-height: 1.08;
   }
 
   .btn {

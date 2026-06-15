@@ -15,7 +15,10 @@ export function Impact() {
               transition={{ delay: index * 0.05, duration: 0.5 }}
               className={`metric-card metric-${metric.tone}`}
             >
-              <span>{metric.label}</span>
+              <div className="metric-card-head">
+                <span>{metric.label}</span>
+                <small>0{index + 1}</small>
+              </div>
               <strong>{metric.value}</strong>
             </motion.div>
           ))}
