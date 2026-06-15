@@ -1,587 +1,179 @@
+export const identity = {
+  name: "Akash Ohalkar",
+  initials: "AO",
+  role: "Frontend Developer | Cyber Security Learner | Python & SQL Developer",
+  location: "Maharashtra, India",
+  status: "Open to Internship / Junior Developer Roles",
+  email: "akashohalkar300@gmail.com",
+  github: "https://github.com/ash-krsna",
+  portfolio: "https://ash-krsna.github.io/my-portfolio/",
+  linkedin: "https://www.linkedin.com/in/akash-gita-bhagwat",
+  resume: "/media/documents/akash-ohalkar-resume.pdf"
+};
+
 export const navItems = [
+  { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "projects", label: "Projects" },
-  { id: "notes", label: "Notes Space" },
-  { id: "certifications", label: "Achievements" },
   { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "journey", label: "Journey" },
   { id: "resume", label: "Resume" },
-  { id: "hire", label: "Hire" },
   { id: "contact", label: "Contact" }
 ];
 
-export const heroHighlights = [
-  "IT Professional",
-  "Python + SQL",
-  "React + Flask",
-  "Cybersecurity Focus",
-  "AI Agents + Automation"
+export const heroSignals = [
+  "React.js interfaces",
+  "Python + SQL logic",
+  "Security-first mindset",
+  "Recruiter-ready portfolio"
 ];
 
-export const heroStats = [
-  { label: "Focus", value: "Cyber + AI" },
-  { label: "Core", value: "Python + Web" },
-  { label: "Learning", value: "SOC + LLMs" },
-  { label: "Mode", value: "Build Secure" }
+export const impactMetrics = [
+  { value: "5+", label: "Projects Built", tone: "cyan" },
+  { value: "React", label: "+ Python + SQL", tone: "violet" },
+  { value: "BCA", label: "Graduate", tone: "emerald" },
+  { value: "Cyber", label: "Security Learner", tone: "blue" },
+  { value: "Open", label: "To Work", tone: "rose" }
 ];
 
-export const heroTerminalLines = [
-  "boot portfolio --profile akash",
-  "stack: python, sql, react, flask, mysql, linux",
-  "security: nmap, wireshark, burp suite, owasp top 10",
-  "ai: llms, rag, langchain, prompt engineering, agents",
-  "target: cybersecurity, ai/ml, python, cloud, tech ops"
+export const proofPoints = [
+  "Built web projects across school, NGO, tracking, portfolio, and computer vision use cases.",
+  "Comfortable turning simple requirements into responsive pages, dashboards, and user flows.",
+  "Growing from frontend fundamentals into full-stack thinking with Flask, MySQL, Python, and security awareness."
 ];
 
-export const aboutTimeline = [
+export const skillGroups = [
   {
-    year: "Now",
-    title: "IT professional growing across cybersecurity, AI, and software",
-    description:
-      "Combining BCA fundamentals with hands-on Python, SQL, React, Flask, MySQL, Linux, networking, and cybersecurity practice to build a broader technical profile."
+    title: "Frontend",
+    icon: "bi-window-stack",
+    description: "Clean, responsive interfaces with strong hierarchy and smooth interactions.",
+    skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive UI"]
   },
   {
-    year: "Learning arc",
-    title: "Security tools, AI agents, REST APIs, and automation",
-    description:
-      "Going deeper into vulnerability assessment, SOC thinking, ethical hacking basics, LLM workflows, LangChain, RAG, prompt engineering, and AI-powered automation."
+    title: "Backend",
+    icon: "bi-braces-asterisk",
+    description: "Practical server logic, routing, forms, and Python-backed workflows.",
+    skills: ["Python", "Flask", "REST basics", "Form handling", "API thinking"]
   },
   {
-    year: "Next chapter",
-    title: "Ready for cybersecurity, AI/ML, Python, cloud, and tech operations",
-    description:
-      "Seeking practical industry opportunities where software development, IT support, cloud concepts, security operations, and AI automation can create useful business impact."
+    title: "Database",
+    icon: "bi-database-check",
+    description: "Data modeling foundations for useful web applications and reporting.",
+    skills: ["SQL", "MySQL", "CRUD flows", "Queries", "Relational basics"]
+  },
+  {
+    title: "Tools",
+    icon: "bi-tools",
+    description: "Daily developer workflow for shipping, debugging, and collaboration.",
+    skills: ["Git", "GitHub", "VS Code", "Vercel", "Postman", "Chrome DevTools"]
+  },
+  {
+    title: "Cyber Security",
+    icon: "bi-shield-lock",
+    description: "Learning security fundamentals to build safer and more trustworthy products.",
+    skills: ["OWASP Top 10", "Nmap", "Wireshark", "Burp Suite basics", "Networking", "Linux basics"]
   }
-];
-
-export const professionalSummary = [
-  "Results-driven IT professional with a Bachelor of Computer Applications and hands-on experience across Python, SQL, HTML5, CSS3, JavaScript, React.js, Flask, MySQL, Git, Linux, computer networking, and cybersecurity fundamentals.",
-  "Strong understanding of web application development, REST APIs, database management, responsive UI design, troubleshooting, system analysis, and software development best practices.",
-  "Passionate about cybersecurity, ethical hacking, penetration testing, vulnerability assessment, SOC workflows, digital forensics, artificial intelligence, LLMs, AI agents, RAG, prompt engineering, vector databases, and automation.",
-  "Familiar with practical tools and concepts including Nmap, Wireshark, Burp Suite, OWASP Top 10, Postman, GitHub, Docker fundamentals, cloud computing concepts, Ollama, Llama, LangChain, and generative AI workflows."
-];
-
-export const atsKeywords = [
-  "Cyber Security",
-  "Ethical Hacking",
-  "Penetration Testing",
-  "Vulnerability Assessment",
-  "Network Security",
-  "SOC Analyst",
-  "Digital Forensics",
-  "Python",
-  "SQL",
-  "React.js",
-  "Flask",
-  "REST APIs",
-  "MySQL",
-  "Linux",
-  "AI Agents",
-  "Generative AI",
-  "LLMs",
-  "Llama",
-  "Ollama",
-  "LangChain",
-  "RAG",
-  "Prompt Engineering",
-  "Vector Databases",
-  "Docker",
-  "Cloud Computing",
-  "OWASP Top 10",
-  "Nmap",
-  "Wireshark",
-  "Burp Suite"
 ];
 
 export const projects = [
   {
-    id: "bsb-school",
+    title: "NGO Management Website",
+    category: "Full-stack system",
+    stack: ["Flask", "MySQL", "Python", "HTML", "CSS"],
+    impact: "Organizes donor, activity, and admin workflows into one clearer management experience.",
+    description:
+      "A practical NGO platform shaped around real operations: records, activity updates, and structured admin work.",
+    github: "https://github.com/ash-krsna",
+    live: "https://pandurang-pratishthan.vercel.app/#home",
+    icon: "bi-people"
+  },
+  {
     title: "BSB International School Website",
-    label: "Featured Live Build",
+    category: "Institution website",
+    stack: ["HTML", "CSS", "JavaScript", "Responsive UX"],
+    impact: "Improves trust for parents and visitors through a polished school-first web presence.",
     description:
-      "A live school platform designed to present academics, student growth, and institutional transparency through a clear digital experience for parents, students, and administrators.",
-    impact:
-      "Structured to balance public presentation with role-based access to student information, while keeping the experience responsive and easy to navigate.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive UX", "Information Design"],
-    cover: "/media/photos/portrait-01.jpeg",
-    metrics: ["Live on Vercel", "Parent-friendly UX", "Secure result flow"],
-    caseStudy: {
-      problem:
-        "The school needed a trustworthy web presence that could communicate academics and school culture while also supporting access to sensitive student-related information.",
-      analysis: [
-        "Parents need quick access to results and progress information without getting lost.",
-        "Public and private information require different levels of visibility.",
-        "The site has to feel welcoming on phones as well as on larger screens used for admin tasks."
-      ],
-      solution:
-        "Designed a multi-surface school website with clearer navigation, live sections for achievements and updates, and structured result-access flows that separate sensitive student views from general public content.",
-      outcomes: [
-        "Created a more organized information hierarchy for academics, events, and updates.",
-        "Improved trust through cleaner layout and institutional presentation.",
-        "Made the experience usable across devices for parents, visitors, and staff."
-      ]
-    },
-    links: [
-      { label: "Live Site", href: "https://bsb-international-school.vercel.app/" },
-      { label: "Legacy Gallery", href: "https://ash-krsna.github.io/BSB-International-School/gallery.html" }
-    ],
-    featured: true
+      "A clean public website with better information flow for academics, updates, gallery content, and school identity.",
+    github: "https://github.com/ash-krsna",
+    live: "https://bsb-international-school.vercel.app/",
+    icon: "bi-mortarboard"
   },
   {
-    id: "pandurang-pratishthan",
-    title: "Pandurang Pratishthan",
-    label: "Live Organization Site",
-    description:
-      "A public-facing website built to communicate mission, activities, and key sections clearly for visitors while keeping the overall experience lightweight and accessible.",
-    impact:
-      "Focused on making the organization feel credible online through cleaner content flow, approachable layout, and responsive presentation.",
-    stack: ["Frontend UI", "Responsive Design", "Public Website", "Content Layout"],
-    cover: "/media/photos/nature-01.jpeg",
-    metrics: ["Live on Vercel", "Public-facing site", "Mobile-friendly flow"],
-    caseStudy: {
-      problem:
-        "The organization needed a digital presence that felt more structured and trustworthy than a simple static page, while still staying lightweight and easy for visitors to use.",
-      analysis: [
-        "Visitors need important information quickly without visual clutter.",
-        "The message and identity of the organization should come across clearly.",
-        "Mobile browsing matters because many users arrive through phones."
-      ],
-      solution:
-        "Built a cleaner responsive layout with a simpler content hierarchy, direct section flow, and a more polished frontend treatment to help visitors understand the organization quickly.",
-      outcomes: [
-        "Improved readability and structure across sections.",
-        "Made the site easier to browse on smaller screens.",
-        "Strengthened the visual credibility of the organization online."
-      ]
-    },
-    links: [{ label: "Live Site", href: "https://pandurang-pratishthan.vercel.app/#home" }]
-  },
-  {
-    id: "lift-management",
-    title: "Lift Management",
-    label: "Live Web App",
-    description:
-      "A workflow-focused web experience designed around clarity, responsive layout behavior, and a smoother operations-oriented user journey.",
-    impact:
-      "Shows my interest in useful digital products with thoughtful interaction flow, clearer interface logic, and a more practical product mindset.",
-    stack: ["Responsive UI", "Interaction Flow", "Frontend Logic", "Usability", "Operations UI"],
-    cover: "/media/photos/random-01.jpeg",
-    metrics: ["Live demo", "Operations-oriented UI", "Clear workflow structure"],
-    caseStudy: {
-      problem:
-        "Operational interfaces often become visually heavy and difficult to scan, which slows down decision-making and repeated actions.",
-      analysis: [
-        "Users need a layout that helps them scan and act quickly.",
-        "The interface should avoid unnecessary visual noise.",
-        "Responsive behavior matters because operations dashboards still get opened on smaller screens."
-      ],
-      solution:
-        "Created a cleaner frontend flow with a more deliberate layout, better spacing, and interaction patterns that keep the experience focused on task completion.",
-      outcomes: [
-        "Improved clarity across workflow steps.",
-        "Made the demo feel more like a usable product than a loose concept.",
-        "Showed stronger product thinking in the interface decisions."
-      ]
-    },
-    links: [{ label: "Live Demo", href: "https://ash-krsna.github.io/Lift-Management/?v=demo2" }]
-  },
-  {
-    id: "vehicle-tracker",
     title: "Vehicle Tracker",
-    label: "Live Demo",
+    category: "Dashboard concept",
+    stack: ["JavaScript", "CSS", "Dashboard UI", "Maps thinking"],
+    impact: "Turns a technical tracking idea into a sharper interface recruiters can quickly understand.",
     description:
-      "A responsive frontend experience centered on interaction design, clean structure, and polished presentation for technical workflows.",
-    impact:
-      "Built to show stronger interface discipline, smoother motion, and better screen-to-screen composition with practical dashboard energy.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Dashboard UI"],
-    cover: "/media/photos/street-01.jpeg",
-    metrics: ["Responsive demo", "Dashboard direction", "Interaction polish"],
-    caseStudy: {
-      problem:
-        "Tracking interfaces can become dense and generic, making it hard to communicate state, movement, and system clarity at a glance.",
-      analysis: [
-        "The interface should feel technical without becoming cold or cluttered.",
-        "Information grouping matters more than decoration in tracking-style products.",
-        "Motion can help orient the user when used carefully."
-      ],
-      solution:
-        "Built a cleaner visual language with stronger composition, tighter spacing, and interaction patterns that make the experience feel more product-like and easier to scan.",
-      outcomes: [
-        "Improved presentation quality for a technical concept.",
-        "Demonstrated stronger UI hierarchy and screen composition.",
-        "Made the build feel more aligned with modern dashboard expectations."
-      ]
-    },
-    links: [
-      { label: "Live Demo", href: "https://ash-krsna.github.io/codex-" },
-      { label: "GitHub", href: "https://github.com/ash-krsna" }
-    ]
+      "A responsive tracking-oriented UI focused on status, movement, scan-friendly cards, and practical product thinking.",
+    github: "https://github.com/ash-krsna",
+    live: "https://ash-krsna.github.io/codex-",
+    icon: "bi-geo-alt"
+  },
+  {
+    title: "Gun Detection Project",
+    category: "Computer vision",
+    stack: ["Python", "OpenCV", "Detection logic", "Security awareness"],
+    impact: "Connects Python learning with real-time safety and security use cases.",
+    description:
+      "An OpenCV-based project exploring object detection concepts and how software can support threat-awareness workflows.",
+    github: "https://github.com/ash-krsna",
+    live: "",
+    icon: "bi-camera-video"
+  },
+  {
+    title: "Personal Portfolio",
+    category: "Personal brand",
+    stack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    impact: "Presents identity, proof, projects, and contact details in a recruiter-friendly journey.",
+    description:
+      "A modern portfolio system designed to show who Akash is, what he builds, and where he is growing next.",
+    github: "https://github.com/ash-krsna/my-portfolio",
+    live: "https://ash-krsna.github.io/my-portfolio/",
+    icon: "bi-person-badge"
   }
 ];
 
-export const certificates = [
+export const journeyItems = [
   {
-    title: "Cybersecurity Virtual Experience Program",
-    platform: "Forage",
+    date: "BCA Graduate",
+    title: "Built the foundation",
     description:
-      "Completed a virtual job simulation focused on real-world cybersecurity tasks including threat analysis, web request investigation, and suspicious user behavior review.",
-    href: "/media/documents/deloitte-cyber-job-simulations.pdf",
-    cta: "View Certificate",
-    badge: "Verified",
-    icon: "bi-shield-lock"
+      "Completed a Bachelor of Computer Applications background with fundamentals in programming, databases, web technology, and problem solving.",
+    icon: "bi-journal-code"
   },
   {
-    title: "BCG Virtual Experience Program",
-    platform: "BCG",
+    date: "Aptara",
+    title: "Process Associate experience",
     description:
-      "Verified local certificate reflecting practical industry-style experience and structured problem solving.",
-    href: "/media/documents/bcg.pdf",
-    cta: "View Certificate",
-    badge: "New",
+      "Gained workplace discipline, accuracy, communication habits, and process thinking that now support how I approach technical work.",
     icon: "bi-briefcase"
   },
   {
-    title: "Commonwealth Cyber Security Certificate",
-    platform: "Commonwealth",
+    date: "Projects",
+    title: "Started shipping web experiences",
     description:
-      "Security-focused certificate added from your local portfolio files to strengthen the cybersecurity side of your profile.",
-    href: "/media/documents/commonwealth-cyber-security.pdf",
-    cta: "View Certificate",
-    badge: "New",
+      "Moved from learning concepts into building public websites, dashboards, Flask/MySQL workflows, and responsive portfolio experiences.",
+    icon: "bi-rocket-takeoff"
+  },
+  {
+    date: "Now",
+    title: "Cyber security learning journey",
+    description:
+      "Growing security awareness through networking basics, OWASP concepts, Linux practice, and tools such as Nmap, Wireshark, and Burp Suite.",
     icon: "bi-shield-check"
-  },
-  {
-    title: "Commonwealth Certificate",
-    platform: "Commonwealth",
-    description:
-      "Verified achievement representing broader learning progress and continued completion of recognized programs.",
-    href: "/media/documents/commonwealth.pdf",
-    cta: "View Certificate",
-    badge: "New",
-    icon: "bi-award"
-  },
-  {
-    title: "Microsoft Learn Achievement",
-    platform: "Microsoft Learn",
-    description:
-      "Platform-based verified achievement documenting continued progress in technical learning and practical skill development.",
-    href: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fachievements%2Fshare%2Fen-us%2FAkashGitaBhagwat-1594%2FCYCQ6CY9%3FsharingId%3D27AF0B5C79B5ED56&urlhash=rsKK&mt=UFaMnKZuEhfV8AKSoUI42RSOLBqosPpPmxRk6R7ulLppNUg8ypw3BqjndifL-QAvh8dFnubueP_tf47dlGYOqSF-T3KbQ82bVlMify45pYUlOweiKDT1PO1PUw&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BiLp9eNb%2BSEGBK1UH9uqiqw%3D%3D",
-    cta: "View Achievement",
-    badge: "CYCQ6CY9",
-    icon: "bi-microsoft"
-  },
-  {
-    title: "Microsoft Learn Achievement",
-    platform: "Microsoft Learn",
-    description:
-      "A second verified Microsoft Learn achievement showing continued guided learning and platform-backed skill growth.",
-    href: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fachievements%2Fshare%2Fen-us%2FAkashGitaBhagwat-1594%2FB9KAXT3D%3FsharingId%3D27AF0B5C79B5ED56&urlhash=YuM2&mt=FxcVPRXGWGA8c_FQYOhgvsCLpfMDhX1xNUg6yzLxVncgOg-nA5MQ8FfzmvSlUNpU7hBlbReT8b2m7U2MVyIwr-qkbe9mDLeG5LjGn1QeCEfdF5Gv4H5f73-luw&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BiLp9eNb%2BSEGBK1UH9uqiqw%3D%3D",
-    cta: "View Achievement",
-    badge: "B9KAXT3D",
-    icon: "bi-microsoft"
-  },
-  {
-    title: "Microsoft Learn Achievement",
-    platform: "Microsoft Learn",
-    description:
-      "A third verified Microsoft Learn achievement reinforcing your technical consistency and long-term growth curve.",
-    href: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fachievements%2Fshare%2Fen-us%2FAkashGitaBhagwat-1594%2F37UDPJLH%3FsharingId%3D27AF0B5C79B5ED56&urlhash=do12&mt=3D0gz1N8jE-uffh_o7mu8HR3B6PreF0Pk858BYBfa3PaihAYtnJEngCycL8D74HywialoK-jOdAHL3Ac546-GOLuB3SgUEBN_Kh9CLCEtBEKd9k1d-6qGjaMjw&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BiLp9eNb%2BSEGBK1UH9uqiqw%3D%3D",
-    cta: "View Achievement",
-    badge: "37UDPJLH",
-    icon: "bi-microsoft"
   }
 ];
 
-export const skills = [
-  { name: "Python", value: 82 },
-  { name: "SQL + MySQL", value: 78 },
-  { name: "React.js", value: 84 },
-  { name: "Flask + REST APIs", value: 74 },
-  { name: "Cybersecurity Fundamentals", value: 79 },
-  { name: "Networking + Linux", value: 76 },
-  { name: "Llama + LLM Workflows", value: 74 },
-  { name: "Problem Solving", value: 88 }
+export const resumeHighlights = [
+  "Frontend development with React.js, JavaScript, Tailwind CSS, HTML, and CSS.",
+  "Python, Flask, SQL, and MySQL foundations for full-stack project work.",
+  "Cyber security learning across OWASP, networking, Linux, and security tools.",
+  "BCA graduate with process experience and a practical project portfolio."
 ];
 
-export const labExperiments = [
-  {
-    title: "Edge AI + Raspberry Pi curiosity",
-    copy:
-      "Exploring the hardware side of tech through Raspberry Pi style tinkering, lightweight automation, sensor thinking, and small edge-computing experiments.",
-    icon: "bi-cpu"
-  },
-  {
-    title: "Agent-ready interface systems",
-    copy:
-      "Designing UI patterns that make AI and automation easier to understand: clear states, visible feedback, human review, and strong action boundaries.",
-    icon: "bi-diagram-3"
-  },
-  {
-    title: "AI security mindset",
-    copy:
-      "Learning how modern products should handle trust, identity, prompt safety, sensitive data, and stronger user-side security awareness.",
-    icon: "bi-shield-lock"
-  }
-];
-
-export const llmModelBadges = [
-  {
-    name: "LLaMA",
-    label: "Open model thinking",
-    iconText: "LLa"
-  },
-  {
-    name: "Ollama",
-    label: "Local model runtime",
-    iconText: "OL"
-  },
-  {
-    name: "LangChain",
-    label: "Agent orchestration",
-    iconText: "LC"
-  },
-  {
-    name: "RAG",
-    label: "Retrieval pipeline",
-    iconText: "RAG"
-  }
-];
-
-export const llmModules = [
-  {
-    title: "Local LLM runtime",
-    tag: "LLaMA + Ollama",
-    copy:
-      "Learning how local models can run through Ollama-style workflows for private experiments, offline prototyping, and faster AI automation practice.",
-    icon: "bi-hdd-network"
-  },
-  {
-    title: "RAG knowledge layer",
-    tag: "Retrieval + context",
-    copy:
-      "Understanding how documents, embeddings, vector databases, and retrieval steps can give an LLM better context before it generates an answer.",
-    icon: "bi-database-check"
-  },
-  {
-    title: "Prompt engineering",
-    tag: "Instructions + outputs",
-    copy:
-      "Practicing prompt structure, system instructions, examples, guardrails, and evaluation so model responses become more useful and predictable.",
-    icon: "bi-terminal"
-  },
-  {
-    title: "AI agent workflows",
-    tag: "Tools + actions",
-    copy:
-      "Exploring how agents can connect reasoning, tools, APIs, memory, and user approval flows to complete practical automation tasks safely.",
-    icon: "bi-diagram-3"
-  },
-  {
-    title: "Vector database basics",
-    tag: "Embeddings + search",
-    copy:
-      "Building awareness of semantic search, chunking, similarity matching, and how vector stores support AI assistants and knowledge apps.",
-    icon: "bi-boxes"
-  },
-  {
-    title: "AI automation modules",
-    tag: "Tasks + pipelines",
-    copy:
-      "Connecting LLM outputs with scripts, APIs, and repeatable workflows for support tasks, research helpers, content processing, and tech operations.",
-    icon: "bi-lightning-charge"
-  }
-];
-
-export const notesSpaceItems = [
-  {
-    title: "AI-native development needs stronger review habits",
-    topic: "AI-Native Dev",
-    status: "New signal",
-    note:
-      "AI is becoming part of the development workflow itself: planning, coding, debugging, testing, and documenting. The opportunity is speed, but the risk is accepting generated work without enough technical judgment.",
-    problem:
-      "Teams can ship faster while also creating hidden defects, weak architecture, dependency confusion, or security mistakes if AI output is treated as automatically correct.",
-    solution:
-      "Use AI as a pair-builder, not an unchecked author. Keep code review, threat modeling, tests, traceable decisions, and human ownership at the center of the workflow.",
-    perspective:
-      "This is where I want to grow as a technical builder: use AI to move faster, but keep the judgment, responsibility, and debugging discipline human."
-  },
-  {
-    title: "Preemptive cybersecurity changes dashboard design",
-    topic: "Preemptive Security",
-    status: "2026 watch",
-    note:
-      "Security tools are shifting from reacting after an incident to predicting weak signals earlier. That makes the interface challenge bigger because teams need to see risk before it becomes obvious.",
-    problem:
-      "A dashboard full of alerts can still fail if it does not explain priority, confidence, blast radius, or the next action clearly enough for a fast decision.",
-    solution:
-      "Design security surfaces around risk stories: what changed, why it matters, which assets are exposed, what evidence supports it, and what action should happen first.",
-    perspective:
-      "Preemptive security is not only a backend or SOC problem. A good interface can help defenders think faster when the signal is still early."
-  },
-  {
-    title: "Disinformation security will need product-level defenses",
-    topic: "Digital Trust",
-    status: "Rising risk",
-    note:
-      "AI-generated media, synthetic reviews, fake executive messages, and manipulated content are becoming business risks. Trust is turning into a product and security problem at the same time.",
-    problem:
-      "Users may interact with polished but false information, and organizations can lose trust when there is no clear way to verify origin, intent, or authenticity.",
-    solution:
-      "Build visible verification flows, provenance labels, reporting paths, source comparison, and content confidence signals that help people slow down before trusting high-impact information.",
-    perspective:
-      "I like this topic because it sits directly between UI and security. The screen has to help people notice when something feels too smooth to trust blindly."
-  },
-  {
-    title: "Energy-efficient computing will shape AI product UX",
-    topic: "Efficient Compute",
-    status: "Tech trend",
-    note:
-      "AI products are starting to care more about compute cost, energy use, battery impact, and latency. Performance is no longer only about speed; it is also about choosing when heavy intelligence is worth it.",
-    problem:
-      "If every feature calls a large model, products can become expensive, slow, and wasteful. Users feel that through waiting, heat, battery drain, or inconsistent responsiveness.",
-    solution:
-      "Use tiered intelligence: local logic first, smaller models when possible, cached answers, progressive enhancement, and clear UI states when a heavier AI step is actually running.",
-    perspective:
-      "Frontend can help make efficient AI feel natural. The interface decides how often users ask for intelligence and how clearly the system explains the cost of that choice."
-  },
-  {
-    title: "Agentic AI needs human-centered control panels",
-    topic: "Agentic AI",
-    status: "2026 signal",
-    note:
-      "AI agents are moving from demos into real workflows, but the interface challenge is still very human: users need to know what the agent is doing, what it changed, and when to approve or stop it.",
-    problem:
-      "Autonomous tools can feel powerful but unclear. Without visible state, permissions, audit trails, and fallback actions, users may not trust the system even when the model is capable.",
-    solution:
-      "Build agent interfaces with timeline views, review checkpoints, confidence signals, clear cancel paths, and plain-language summaries of decisions before important actions happen.",
-    perspective:
-      "My take is that developers will be important in making AI feel dependable. The best agent products will not just automate work; they will make automation understandable."
-  },
-  {
-    title: "AI security is becoming product design work",
-    topic: "Cyber Security",
-    status: "Current affair",
-    note:
-      "As AI becomes part of normal apps, security is no longer only a backend checklist. The product surface has to help users avoid leaking data, trusting bad outputs, or approving risky actions.",
-    problem:
-      "AI tools introduce new behavior risks: prompt injection, unclear data handling, over-permissioned agents, and users pasting sensitive information into systems they do not fully understand.",
-    solution:
-      "Design safer flows with permission scopes, data-use warnings, output verification patterns, secure defaults, and UI that separates suggestion from confirmed action.",
-    perspective:
-      "This matches my cybersecurity interest: strong products should not only look polished, they should guide safer decisions at the exact moment users need that guidance."
-  },
-  {
-    title: "Inference cost will shape frontend decisions",
-    topic: "AI Infrastructure",
-    status: "Tech trend",
-    note:
-      "The AI conversation is shifting from experimentation to cost, latency, and reliability. That matters for frontend too because the interface decides when AI calls happen and how users experience waiting.",
-    problem:
-      "A product can become expensive or slow if every interaction triggers a heavy model call. Users also lose confidence when loading states are vague or repeated AI responses feel unnecessary.",
-    solution:
-      "Use smarter UX patterns: progressive disclosure, cached results, draft previews, lightweight local logic, streaming feedback, and clear states that make latency feel intentional.",
-    perspective:
-      "I want my frontend work to understand the cost behind the screen. Good UI can reduce waste, improve trust, and make advanced systems feel calmer."
-  },
-  {
-    title: "Physical AI makes hardware curiosity useful again",
-    topic: "Robotics + Edge",
-    status: "Emerging",
-    note:
-      "AI is moving beyond chat boxes into robotics, devices, cameras, sensors, and real-world environments. That makes edge computing and hardware curiosity more valuable for software builders.",
-    problem:
-      "Pure web projects can hide the real constraints of systems: sensor delay, unreliable inputs, limited compute, device safety, and the need for feedback that users can trust quickly.",
-    solution:
-      "Use small hardware experiments, Raspberry Pi projects, and device-style thinking to learn how software behaves when it meets real inputs, physical constraints, and edge decisions.",
-    perspective:
-      "This is why I like mixing frontend with systems curiosity. The stronger I understand real-world inputs, the better I can design interfaces that explain them clearly."
-  },
-  {
-    title: "Digital provenance will become part of everyday trust",
-    topic: "Digital Trust",
-    status: "2026 signal",
-    note:
-      "As AI-generated text, images, video, and synthetic media become normal, products will need better ways to show where content came from, how it changed, and whether it should be trusted.",
-    problem:
-      "Users can no longer judge authenticity only by how polished something looks. A convincing image, message, or dashboard output may still be incomplete, manipulated, or generated without context.",
-    solution:
-      "Add provenance-aware UI patterns: source labels, change history, verified badges with real meaning, content lineage, confidence notes, and clear separation between original data and AI-generated output.",
-    perspective:
-      "I think trust will become a visible interface feature. Good frontend work will help people understand not just what they are seeing, but why they should believe it."
-  },
-  {
-    title: "Post-quantum security is a future problem starting now",
-    topic: "Quantum Security",
-    status: "Security watch",
-    note:
-      "Post-quantum cryptography is becoming a real planning topic because organizations need time to identify old encryption, update systems, and build crypto agility before quantum risk becomes urgent.",
-    problem:
-      "Security migrations are slow. Even if quantum attacks are not a daily threat yet, long-lived data and outdated cryptography can create risk years before teams are ready to replace them.",
-    solution:
-      "Start with inventory thinking: know where encryption is used, avoid hard-coded assumptions, design systems that can swap algorithms, and keep security decisions visible to technical teams.",
-    perspective:
-      "This topic reminds me that secure development is not only about fixing bugs. It is also about designing systems that can adapt when the threat model changes."
-  },
-  {
-    title: "On-device AI will make privacy and speed feel connected",
-    topic: "Edge AI",
-    status: "Product shift",
-    note:
-      "More AI work is moving closer to devices, browsers, phones, and edge systems. That can reduce latency and protect sensitive data, but it also changes how interfaces explain local versus cloud behavior.",
-    problem:
-      "Users often do not know where their data is processed. If an AI feature feels private but quietly sends everything to a server, the product creates a trust gap.",
-    solution:
-      "Design clear local/cloud states, lightweight model interactions, fallback behavior, battery-aware experiences, and privacy explanations that are simple enough to understand in the moment.",
-    perspective:
-      "For software builders, this is exciting because the browser becomes more than a display layer. It becomes part of the intelligence, privacy, and performance story."
-  },
-  {
-    title: "Synthetic data needs careful product boundaries",
-    topic: "Data + AI",
-    status: "Trend note",
-    note:
-      "Synthetic data can help teams build and test AI systems when real data is limited or sensitive, but it can also create false confidence if the product forgets what the data does not represent.",
-    problem:
-      "If teams treat synthetic examples as perfect reality, models and dashboards can miss edge cases, bias, messy user behavior, or real-world failure patterns.",
-    solution:
-      "Show dataset limits, label generated examples clearly, test against real validation sets where possible, and build review steps before synthetic outputs influence important decisions.",
-    perspective:
-      "My view is that AI products need honest interfaces. A good UI should make uncertainty visible instead of hiding it behind a clean-looking result."
-  }
-];
-
-export const testimonials = [
-  {
-    quote: "The next version of this space is being built for the people who notice both the interface and the engineering behind it.",
-    author: "Portfolio note"
-  },
-  {
-    quote: "Code, systems, and product clarity are all part of the same identity here.",
-    author: "Future collaborators"
-  }
-];
-
-export const socialLinks = [
-  { label: "GitHub", href: "https://github.com/ash-krsna", icon: "bi-github" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/akash-gita-bhagwat", icon: "bi-linkedin" },
-  { label: "Instagram Profile", href: "https://www.instagram.com/duskveil_______/", icon: "bi-instagram" },
-  { label: "Email", href: "mailto:akash.gita.bhagwat@gmail.com", icon: "bi-envelope" }
-];
-
-export const hireMeOffers = [
-  {
-    title: "Python and web development",
-    copy: "Practical web applications, REST API integration, database-backed features, responsive UI, troubleshooting, and clean implementation across Python, Flask, React, and MySQL.",
-    icon: "bi-code-slash"
-  },
-  {
-    title: "Cybersecurity support and learning",
-    copy: "Security-aware testing, OWASP Top 10 awareness, vulnerability assessment practice, network security fundamentals, and hands-on tool familiarity with Nmap, Wireshark, and Burp Suite.",
-    icon: "bi-shield-lock"
-  },
-  {
-    title: "AI automation and tech operations",
-    copy: "LLM experiments, AI agent workflows, RAG concepts, prompt engineering, automation-minded ideas, IT support thinking, cloud fundamentals, and practical systems work.",
-    icon: "bi-cpu"
-  }
+export const contactLinks = [
+  { label: "Email", value: identity.email, href: `mailto:${identity.email}`, icon: "bi-envelope" },
+  { label: "GitHub", value: "github.com/ash-krsna", href: identity.github, icon: "bi-github" },
+  { label: "LinkedIn", value: "LinkedIn profile", href: identity.linkedin, icon: "bi-linkedin" },
+  { label: "Portfolio", value: "ash-krsna.github.io/my-portfolio", href: identity.portfolio, icon: "bi-globe2" }
 ];

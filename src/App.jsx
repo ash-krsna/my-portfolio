@@ -1,80 +1,20 @@
 import { useEffect, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { motion } from "framer-motion";
-import { CursorGlow } from "./components/CursorGlow";
-import { Loader } from "./components/Loader";
-import { ThemeToggle } from "./components/ThemeToggle";
-import { useLenis } from "./hooks/useLenis";
-import { useTheme } from "./hooks/useTheme";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { Impact } from "./components/Impact";
+import { Navbar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
+import { Resume } from "./components/Resume";
+import { Skills } from "./components/Skills";
+import { Timeline } from "./components/Timeline";
 import { navItems } from "./data/content";
-import { HeroSection } from "./sections/HeroSection";
-import { AboutSection } from "./sections/AboutSection";
-import { ProjectsSection } from "./sections/ProjectsSection";
-import { NotesSpaceSection } from "./sections/NotesSpaceSection";
-import { LabSection } from "./sections/LabSection";
-import { SkillsSection } from "./sections/SkillsSection";
-import { ResumeSection } from "./sections/ResumeSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection";
-import { HireSection } from "./sections/HireSection";
-import { ContactSection } from "./sections/ContactSection";
-import { CertificationsSection } from "./sections/CertificationsSection";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useLenis } from "./hooks/useLenis";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [activeSection, setActiveSection] = useState("about");
-  const [hudTime, setHudTime] = useState("");
-  const { theme, isDark, toggleTheme } = useTheme();
+  const [activeSection, setActiveSection] = useState("home");
   useLenis();
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 1600);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  useEffect(() => {
-    const updateClock = () => {
-      setHudTime(
-        new Date().toLocaleTimeString("en-IN", {
-          hour12: false,
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          timeZone: "Asia/Kolkata"
-        })
-      );
-    };
-
-    updateClock();
-    const interval = window.setInterval(updateClock, 1000);
-    return () => window.clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    if (loading) return undefined;
-    const ctx = gsap.context(() => {
-      gsap.utils.toArray(".section-shell").forEach((node) => {
-        gsap.fromTo(
-          node,
-          { opacity: 0.88, y: 24 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: node,
-              start: "top 85%"
-            }
-          }
-        );
-      });
-    });
-
-    return () => ctx.revert();
-  }, [loading]);
 
   useEffect(() => {
     const sections = navItems
@@ -91,10 +31,7 @@ function App() {
           setActiveSection(visible.target.id);
         }
       },
-      {
-        rootMargin: "-20% 0px -55% 0px",
-        threshold: [0.2, 0.45, 0.7]
-      }
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0.18, 0.4, 0.7] }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -102,115 +39,19 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[var(--page-bg)] text-[var(--text-primary)] transition-colors duration-500">
-      <Loader visible={loading} />
-      {!loading ? <CursorGlow /> : null}
-
-      <div className="fixed inset-0 -z-30 bg-[radial-gradient(circle_at_15%_20%,var(--spot-1),transparent_22%),radial-gradient(circle_at_84%_18%,var(--spot-2),transparent_24%),linear-gradient(180deg,var(--page-bg),var(--page-bg-soft))]" />
-      <div className="fixed inset-0 -z-20 opacity-[0.08] [background-size:48px_48px] [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]" />
-
-      <header className="fixed inset-x-0 top-0 z-50">
-        <div className="site-hud mx-auto mt-3 hidden max-w-[96rem] grid-cols-4 gap-3 px-4 text-[11px] uppercase tracking-[0.24em] text-zinc-500 dark:text-white/42 lg:grid">
-          <span>IND {hudTime || "--:--:--"}</span>
-          <span>Mode {theme}</span>
-          <span>Cyber + AI systems</span>
-          <span className="text-right">Scroll to inspect</span>
-        </div>
-
-        <div className="site-header-bar mx-auto mt-2 flex max-w-[96rem] items-center justify-between gap-3 rounded-[1.15rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#05070d]/78 md:px-5 xl:gap-5">
-          <a href="#home" className="flex min-w-0 items-center gap-3 xl:max-w-[22rem]">
-            <span className="brand-emblem flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-[0_18px_40px_rgba(72,194,141,0.2)]">
-              <span className="brand-emblem__core">
-                <span className="brand-emblem__glyph">A</span>
-              </span>
-            </span>
-            <div className="min-w-0">
-              <p className="truncate font-display text-[1.05rem] text-zinc-950 dark:text-white">Akash Bhagwat</p>
-              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-white/38">Developer | AI + Tech Systems</p>
-            </div>
-          </a>
-
-          <nav className="nav-dock hidden flex-1 items-center justify-center gap-1.5 rounded-full border border-black/10 bg-black/[0.03] px-2 py-2 dark:border-white/10 dark:bg-white/[0.04] xl:flex xl:max-w-[67rem]">
-            {navItems.map((item) => (
-              <motion.a
-                key={item.id}
-                href={`#${item.id}`}
-                whileHover={{ y: -4, scale: 1.03 }}
-                whileTap={{ y: 0, scale: 0.92 }}
-                transition={{ type: "spring", stiffness: 420, damping: 16 }}
-                className={`relative rounded-full px-3.5 py-2.5 text-[0.95rem] font-medium transition ${
-                  activeSection === item.id
-                    ? "text-zinc-950 dark:text-white"
-                    : "text-zinc-600 hover:text-zinc-950 dark:text-white/55 dark:hover:text-white"
-                }`}
-              >
-                {activeSection === item.id ? (
-                  <motion.span
-                    layoutId="nav-pill"
-                    className="absolute inset-0 rounded-full border border-black/10 bg-white shadow-[0_10px_24px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/10 dark:shadow-none"
-                    transition={{ type: "spring", stiffness: 380, damping: 26 }}
-                  />
-                ) : null}
-                <span className="relative z-10 whitespace-nowrap">{item.label}</span>
-              </motion.a>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-2 xl:gap-3">
-            <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
-            <a
-              href="https://github.com/ash-krsna"
-              target="_blank"
-              rel="noreferrer"
-              className="hidden rounded-full border border-black/10 bg-black/5 px-4 py-3 text-sm font-semibold text-zinc-900 transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(15,15,20,0.08)] dark:border-white/10 dark:bg-white/5 dark:text-white xl:inline-flex"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <div className="header-mobile-nav fixed inset-x-0 top-[5.5rem] z-40 px-4 md:px-6 xl:hidden">
-        <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto rounded-full border border-black/10 bg-white/72 px-2 py-2 backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className={`mobile-nav-pill shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition ${
-                activeSection === item.id
-                  ? "border border-black/10 bg-white text-zinc-950 dark:border-white/10 dark:bg-white/10 dark:text-white"
-                  : "text-zinc-600 dark:text-white/58"
-              }`}
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <main className="overflow-hidden">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <NotesSpaceSection />
-        <LabSection />
-        <CertificationsSection />
-        <SkillsSection />
-        <ResumeSection />
-        <TestimonialsSection />
-        <HireSection />
-        <ContactSection />
+    <div className="min-h-screen bg-[#030712] text-white">
+      <Navbar activeSection={activeSection} />
+      <main>
+        <Hero />
+        <About />
+        <Impact />
+        <Skills />
+        <Projects />
+        <Timeline />
+        <Resume />
+        <Contact />
       </main>
-
-      <motion.footer
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="mx-auto flex max-w-7xl flex-col gap-4 px-4 pb-10 pt-4 text-sm text-zinc-500 dark:text-white/42 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
-      >
-        <p>Built as a focused technical portfolio for recruiters, collaborators, and product-minded teams.</p>
-        <p className="uppercase tracking-[0.22em]">Theme: {theme}</p>
-      </motion.footer>
+      <Footer />
     </div>
   );
 }

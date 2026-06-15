@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, message, projectType, budget, source = "portfolio-contact" } = req.body || {};
+    const { name, email, message, opportunity, projectType, budget, source = "portfolio-contact" } = req.body || {};
 
     if (!name || !email || !message) {
       return res.status(400).json({ success: false, message: "Name, email, and message are required." });
@@ -29,6 +29,7 @@ export default async function handler(req, res) {
         <p><strong>Source:</strong> ${escapeHtml(source)}</p>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        ${opportunity ? `<p><strong>Opportunity:</strong> ${escapeHtml(opportunity)}</p>` : ""}
         ${projectType ? `<p><strong>Project type:</strong> ${escapeHtml(projectType)}</p>` : ""}
         ${budget ? `<p><strong>Budget / scope:</strong> ${escapeHtml(budget)}</p>` : ""}
         <p><strong>Message:</strong></p>
@@ -38,7 +39,7 @@ export default async function handler(req, res) {
 
     const { error } = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["akash.gita.bhagwat@gmail.com"],
+      to: ["akashohalkar300@gmail.com"],
       reply_to: email,
       subject: `Portfolio enquiry from ${name}`,
       html: emailHtml
