@@ -25,12 +25,31 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState("about");
+  const [hudTime, setHudTime] = useState("");
   const { theme, isDark, toggleTheme } = useTheme();
   useLenis();
 
   useEffect(() => {
     const timeout = setTimeout(() => setLoading(false), 1600);
     return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    const updateClock = () => {
+      setHudTime(
+        new Date().toLocaleTimeString("en-IN", {
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          timeZone: "Asia/Kolkata"
+        })
+      );
+    };
+
+    updateClock();
+    const interval = window.setInterval(updateClock, 1000);
+    return () => window.clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -91,7 +110,14 @@ function App() {
       <div className="fixed inset-0 -z-20 opacity-[0.08] [background-size:48px_48px] [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]" />
 
       <header className="fixed inset-x-0 top-0 z-50">
-        <div className="site-header-bar mx-auto mt-3 flex max-w-[96rem] items-center justify-between gap-3 rounded-[2rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#09090f]/72 md:px-5 xl:gap-5">
+        <div className="site-hud mx-auto mt-3 hidden max-w-[96rem] grid-cols-4 gap-3 px-4 text-[11px] uppercase tracking-[0.24em] text-zinc-500 dark:text-white/42 lg:grid">
+          <span>IND {hudTime || "--:--:--"}</span>
+          <span>Mode {theme}</span>
+          <span>Cyber + AI systems</span>
+          <span className="text-right">Scroll to inspect</span>
+        </div>
+
+        <div className="site-header-bar mx-auto mt-2 flex max-w-[96rem] items-center justify-between gap-3 rounded-[1.15rem] border border-black/10 bg-white/72 px-4 py-3 shadow-glow backdrop-blur-2xl dark:border-white/10 dark:bg-[#05070d]/78 md:px-5 xl:gap-5">
           <a href="#home" className="flex min-w-0 items-center gap-3 xl:max-w-[22rem]">
             <span className="brand-emblem flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-[0_18px_40px_rgba(72,194,141,0.2)]">
               <span className="brand-emblem__core">

@@ -2,13 +2,19 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "../components/SectionHeading";
 import { aboutTimeline } from "../data/content";
 
+const aboutPrinciples = [
+  ["Secure by default", "I think about permissions, data handling, user trust, and failure states early instead of adding security language at the end."],
+  ["Useful before flashy", "Interfaces should help someone decide, act, or understand faster. Animation and visuals only matter when they support that job."],
+  ["AI with context", "LLMs, RAG, agents, and automation work best when the surrounding workflow is clear, reviewed, and grounded in real information."]
+];
+
 export function AboutSection() {
   return (
     <section id="about" className="section-shell">
       <SectionHeading
         eyebrow="About me"
-        title="IT professional focused on cybersecurity, AI, Python, and practical software development."
-        copy="I care about technology that is useful, secure, and well-structured. My current direction blends web development, databases, networking, security fundamentals, AI agents, and automation."
+        title="The work is not just the tool. It is the system around it."
+        copy="I care about technology that is useful, secure, and well-structured. My current direction blends web development, databases, networking, security fundamentals, AI agents, RAG, and automation."
       />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -16,12 +22,21 @@ export function AboutSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="premium-card p-8"
+          className="about-manifesto premium-card p-8"
         >
-          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Working style</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-zinc-500 dark:text-white/40">Working signal</p>
           <p className="mt-6 text-2xl leading-[1.5] text-zinc-900 dark:text-white">
-            I like solving technical problems across the full stack: clean interfaces, readable code, useful databases, secure thinking, and automation that makes work faster. The goal is to grow into roles where cybersecurity, AI, Python, cloud, and operations meet real business needs.
+            I like solving technical problems across the full stack: clean interfaces, readable code, useful databases, secure thinking, and automation that makes work faster.
           </p>
+
+          <div className="mt-8 grid gap-3">
+            {aboutPrinciples.map(([title, copy]) => (
+              <div key={title} className="about-principle">
+                <span>{title}</span>
+                <p>{copy}</p>
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         <div className="space-y-4">

@@ -1,13 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "akash-theme";
 
 export function useTheme() {
-  const systemTheme = useMemo(
-    () => (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
-    []
-  );
-  const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEY) || systemTheme);
+  const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEY) || "dark");
 
   useEffect(() => {
     const root = document.documentElement;
