@@ -14,7 +14,14 @@ import { useLenis } from "./hooks/useLenis";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState(() => localStorage.getItem("akash-theme") || "dark");
   useLenis();
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.style.colorScheme = theme;
+    localStorage.setItem("akash-theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const sections = navItems
@@ -39,8 +46,12 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#030712] text-white">
-      <Navbar activeSection={activeSection} />
+    <div className="app-shell min-h-screen">
+      <Navbar
+        activeSection={activeSection}
+        theme={theme}
+        onToggleTheme={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
+      />
       <main>
         <Hero />
         <About />

@@ -36,20 +36,20 @@ export function Hero() {
             {identity.status}
           </motion.div>
 
-          <motion.p variants={fadeUp} className="mb-4 text-sm font-bold uppercase text-cyan-200/70">
+          <motion.p variants={fadeUp} className="hero-location mb-4 text-sm font-bold uppercase">
             {identity.location}
           </motion.p>
 
-          <motion.h1 variants={fadeUp} className="hero-name font-display font-extrabold text-white" aria-label="Akash Ohalkar">
+          <motion.h1 variants={fadeUp} className="hero-name font-display font-extrabold" aria-label="Akash Ohalkar">
             <span aria-hidden="true">Akash</span>
             <span aria-hidden="true">Ohalkar</span>
           </motion.h1>
 
-          <motion.h2 variants={fadeUp} className="mt-5 max-w-4xl text-2xl font-semibold leading-tight text-slate-100 sm:text-3xl">
+          <motion.h2 variants={fadeUp} className="hero-headline mt-5 max-w-4xl text-2xl font-semibold leading-tight sm:text-3xl">
             Frontend developer building sharp interfaces with a security-aware, data-minded edge.
           </motion.h2>
 
-          <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
+          <motion.p variants={fadeUp} className="hero-intro mt-4 max-w-3xl text-base leading-7 sm:text-lg">
             I build responsive web experiences with React.js and JavaScript, strengthen them with Python and SQL fundamentals,
             and keep growing into cyber security so the products I create feel useful, trustworthy, and recruiter-ready.
           </motion.p>
