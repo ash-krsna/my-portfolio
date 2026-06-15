@@ -1,7 +1,5 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 function escapeHtml(value = "") {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -22,6 +20,15 @@ export default async function handler(req, res) {
     if (!name || !email || !message) {
       return res.status(400).json({ success: false, message: "Name, email, and message are required." });
     }
+
+    if (!process.env.RESEND_API_KEY) {
+      return res.status(500).json({
+        success: false,
+        message: "Contact form is not configured. Please email me directly."
+      });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const emailHtml = `
       <div style="font-family:Arial,sans-serif;line-height:1.7;color:#111827;">

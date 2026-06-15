@@ -2,4 +2,7 @@ node_modules/
 dist/
 vite.log
 .vite-dev*.log
+.env
+.env.local
+.env.*.local
 .vercel/
