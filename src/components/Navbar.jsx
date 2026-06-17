@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { identity, navItems } from "../data/content";
 
+const mobileDockItems = [
+  { id: "home", label: "Intro", icon: "bi-house-door" },
+  { id: "projects", label: "Work", icon: "bi-grid-1x2" },
+  { id: "resume", label: "Resume", icon: "bi-file-earmark-text" },
+  { id: "contact", label: "Contact", icon: "bi-send" }
+];
+
 export function Navbar({ activeSection, theme, onToggleTheme }) {
   const [open, setOpen] = useState(false);
 
@@ -22,7 +29,7 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           </span>
         </a>
 
-        <div className="nav-links hidden items-center p-1 lg:flex">
+        <div className="nav-links hidden items-center p-1 xl:flex">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -66,7 +73,7 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           <button
             type="button"
             onClick={() => setOpen((current) => !current)}
-            className="icon-button inline-flex lg:hidden"
+            className="icon-button inline-flex xl:hidden"
             aria-label="Toggle navigation"
             aria-expanded={open}
           >
@@ -80,7 +87,7 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -12 }}
-          className="mobile-nav-panel mx-auto mt-3 grid max-w-7xl gap-2 p-3 lg:hidden"
+          className="mobile-nav-panel mx-auto mt-3 grid max-w-7xl gap-2 p-3 xl:hidden"
         >
           {navItems.map((item) => (
             <a
@@ -94,6 +101,20 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           ))}
         </motion.div>
       ) : null}
+
+      <nav className="mobile-dock" aria-label="Mobile quick navigation">
+        {mobileDockItems.map((item) => (
+          <a
+            key={item.id}
+            href={`#${item.id}`}
+            className={`mobile-dock-link ${activeSection === item.id ? "is-active" : ""}`}
+            aria-label={`Go to ${item.label}`}
+          >
+            <i className={`bi ${item.icon}`} />
+            <span>{item.label}</span>
+          </a>
+        ))}
+      </nav>
     </header>
   );
 }
