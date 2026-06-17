@@ -92,7 +92,7 @@ export function Hero() {
             <div className="profile-shell">
               <div className="profile-topline">
                 <span>Profile Signal</span>
-                <span>AO / 01</span>
+                <span>{identity.initials} / 01</span>
               </div>
               <div className="profile-portrait">
                 <img src="/media/photos/profile-main.jpeg" alt="Akash Bhagwat profile portrait" />

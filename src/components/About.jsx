@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { disciplineStrip, proofPoints, profileVitals } from "../data/content";
+import { disciplineStrip, focusModes, proofPoints, profileVitals } from "../data/content";
 
 export function About() {
   return (
@@ -93,6 +93,31 @@ export function About() {
             </motion.article>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.65 }}
+          className="direction-board mt-8"
+        >
+          <div className="direction-board-head">
+            <span>Working Direction</span>
+            <strong>Build / Connect / Protect</strong>
+          </div>
+          <div className="direction-grid">
+            {focusModes.map((mode) => (
+              <article key={mode.label} className="direction-card">
+                <div className="direction-icon">
+                  <i className={`bi ${mode.icon}`} />
+                </div>
+                <span>{mode.label}</span>
+                <h3>{mode.title}</h3>
+                <p>{mode.copy}</p>
+              </article>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

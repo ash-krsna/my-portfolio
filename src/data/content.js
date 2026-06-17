@@ -105,6 +105,30 @@ export const proofPoints = [
   }
 ];
 
+export const focusModes = [
+  {
+    label: "Build",
+    title: "Interfaces that explain themselves",
+    copy:
+      "I like UI that feels calm, obvious, and useful: strong hierarchy, responsive spacing, clear actions, and screens that do not make people guess.",
+    icon: "bi-layout-text-sidebar-reverse"
+  },
+  {
+    label: "Connect",
+    title: "Frontend with data sense",
+    copy:
+      "Python, Flask, SQL, and MySQL help me think about forms, records, dashboards, and admin flows as complete product systems.",
+    icon: "bi-diagram-3"
+  },
+  {
+    label: "Protect",
+    title: "Security-aware from the start",
+    copy:
+      "Cyber security learning gives my development process a sharper lens: input handling, safer habits, networking basics, and OWASP thinking.",
+    icon: "bi-shield-check"
+  }
+];
+
 export const skillGroups = [
   {
     title: "Frontend",

@@ -440,6 +440,7 @@ textarea:focus-visible {
 .profile-shell,
 .now-panel,
 .vitals-panel,
+.direction-board,
 .proof-card,
 .metric-card,
 .skill-card,
@@ -750,6 +751,78 @@ textarea:focus-visible {
   margin-top: 0.7rem;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.direction-board {
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.direction-board-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding: 0.2rem 0.15rem 1rem;
+}
+
+.direction-board-head span,
+.direction-card span {
+  color: var(--muted-soft);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.direction-board-head strong {
+  color: var(--text-strong);
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.direction-grid {
+  display: grid;
+  gap: 0;
+}
+
+.direction-card {
+  display: grid;
+  gap: 0.75rem;
+  border-top: 1px solid var(--line);
+  padding: 1.1rem 0.15rem;
+}
+
+.direction-card:first-child {
+  border-top: 0;
+}
+
+.direction-icon {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface-raised);
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.direction-card h3 {
+  color: var(--text-strong);
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.direction-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .impact-grid {
@@ -1266,6 +1339,20 @@ textarea:focus-visible {
 
   .impact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .direction-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .direction-card {
+    border-top: 0;
+    border-left: 1px solid var(--line);
+    padding: 1.2rem;
+  }
+
+  .direction-card:first-child {
+    border-left: 0;
   }
 
   .contact-form {
