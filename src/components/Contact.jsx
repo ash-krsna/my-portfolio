@@ -46,8 +46,8 @@ export function Contact() {
     <section id="contact" className="contact-section px-4 py-24 sm:px-6 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
-          <p className="section-kicker">Contact</p>
-          <h2 className="section-title mt-4">Have a role, internship, or project in mind?</h2>
+          <p className="section-kicker">07 Contact</p>
+          <h2 className="section-title mt-4">For roles, internships, and serious project conversations.</h2>
           <p className="section-copy mt-6">
             Send a short message and I will reply with context, availability, and the next step. I am especially interested
             in frontend, junior developer, Python/SQL, and security-learning opportunities.

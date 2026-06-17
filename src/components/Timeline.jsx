@@ -3,14 +3,14 @@ import { journeyItems } from "../data/content";
 
 export function Timeline() {
   return (
-    <section id="journey" className="section-band section-band-deep px-4 py-24 sm:px-6 lg:py-32">
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+    <section id="journey" className="section-band journey-section px-4 py-24 sm:px-6 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="section-kicker">Experience / Journey</p>
-          <h2 className="section-title mt-4">A clear path from study to shipped work.</h2>
+          <p className="section-kicker">04 Journey</p>
+          <h2 className="section-title mt-4">Through the years, the signal gets sharper.</h2>
           <p className="section-copy mt-6">
-            The journey is not inflated. It shows the real growth curve: education, workplace discipline, portfolio
-            projects, and a steady move toward security-aware development.
+            The path is not inflated. It shows a real growth curve: education, workplace discipline, public projects, and
+            a steady move toward security-aware development.
           </p>
         </div>
 

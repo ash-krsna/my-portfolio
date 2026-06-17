@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="site-footer px-4 py-8 sm:px-6">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between">
         <p>
-          Designed and built for {identity.name}. Frontend, Python, SQL, and cyber security learning in one clear portfolio.
+          {identity.name} / Frontend, Python, SQL, and cyber security learning in one focused portfolio issue.
         </p>
         <div className="flex gap-4">
           <a href={identity.github} target="_blank" rel="noreferrer">

@@ -2,6 +2,7 @@ export const identity = {
   name: "Akash Ohalkar",
   initials: "AO",
   role: "Frontend Developer | Cyber Security Learner | Python & SQL Developer",
+  shortRole: "Frontend Developer",
   location: "Maharashtra, India",
   status: "Open to Internship / Junior Developer Roles",
   email: "akashohalkar300@gmail.com",
@@ -12,65 +13,127 @@ export const identity = {
 };
 
 export const navItems = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
-  { id: "journey", label: "Journey" },
-  { id: "resume", label: "Resume" },
-  { id: "contact", label: "Contact" }
+  { id: "home", label: "00 Intro" },
+  { id: "about", label: "01 Background" },
+  { id: "impact", label: "02 Proof" },
+  { id: "projects", label: "03 Projects" },
+  { id: "journey", label: "04 Journey" },
+  { id: "skills", label: "05 Toolkit" },
+  { id: "resume", label: "06 Resume" },
+  { id: "contact", label: "07 Contact" }
 ];
 
 export const heroSignals = [
-  "React.js interfaces",
-  "Python + SQL logic",
-  "Security-first mindset",
-  "Recruiter-ready portfolio"
+  "React.js UI systems",
+  "Python + SQL product logic",
+  "Security-aware learning",
+  "AI-assisted research and build loops"
+];
+
+export const issueDetails = [
+  { label: "Base", value: "Maharashtra, India" },
+  { label: "Current focus", value: "React, Python, SQL, Cyber Security" },
+  { label: "Looking for", value: "Internship and junior developer roles" }
+];
+
+export const nowItems = [
+  {
+    label: "Building",
+    value: "Recruiter-ready product interfaces with React, Vite, Tailwind, and careful responsive behavior."
+  },
+  {
+    label: "Learning",
+    value: "Cyber security fundamentals through OWASP, networking, Linux, Nmap, Wireshark, and Burp Suite basics."
+  },
+  {
+    label: "Practicing",
+    value: "Python, Flask, MySQL, data flows, clean forms, and backend logic for practical full-stack projects."
+  },
+  {
+    label: "Last shipped",
+    value: "Portfolio, school, NGO, vehicle tracker, and computer-vision projects shaped for public presentation."
+  }
+];
+
+export const disciplineStrip = [
+  "React.js",
+  "JavaScript",
+  "Python",
+  "SQL",
+  "Flask",
+  "MySQL",
+  "Tailwind CSS",
+  "Vite",
+  "GitHub",
+  "Vercel",
+  "OWASP",
+  "Nmap",
+  "Wireshark",
+  "Burp Suite"
+];
+
+export const profileVitals = [
+  { label: "Education", value: "BCA graduate" },
+  { label: "Experience", value: "Aptara process associate" },
+  { label: "Direction", value: "Frontend + data + security" },
+  { label: "Availability", value: "Open to work" }
 ];
 
 export const impactMetrics = [
-  { value: "5+", label: "Projects Built", tone: "cyan" },
-  { value: "React", label: "+ Python + SQL", tone: "violet" },
-  { value: "BCA", label: "Graduate", tone: "emerald" },
-  { value: "Cyber", label: "Security Learner", tone: "blue" },
-  { value: "Open", label: "To Work", tone: "rose" }
+  { value: "5+", label: "Projects Built", note: "Public work across web, dashboard, full-stack, and CV concepts." },
+  { value: "3", label: "Core Tracks", note: "Frontend engineering, Python/SQL systems, and security learning." },
+  { value: "BCA", label: "Graduate", note: "Computer applications foundation with practical project execution." },
+  { value: "Live", label: "Web Presence", note: "GitHub, hosted projects, resume, and contact paths ready for recruiters." },
+  { value: "Now", label: "Open to Work", note: "Focused on internships and junior developer roles." }
 ];
 
 export const proofPoints = [
-  "Built web projects across school, NGO, tracking, portfolio, and computer vision use cases.",
-  "Comfortable turning simple requirements into responsive pages, dashboards, and user flows.",
-  "Growing from frontend fundamentals into full-stack thinking with Flask, MySQL, Python, and security awareness."
+  {
+    title: "Practical by default",
+    copy:
+      "Akash's work is strongest when a project needs clear screens, useful information flow, and a build that recruiters or users can understand quickly."
+  },
+  {
+    title: "Data-minded builder",
+    copy:
+      "Python, Flask, SQL, and MySQL are part of the direction, not side notes. The goal is to make interfaces connect to real records, forms, and decisions."
+  },
+  {
+    title: "Security-aware learner",
+    copy:
+      "Cyber security is a growing lane: networking basics, OWASP concepts, Linux practice, and tool-based exploration are shaping more responsible development habits."
+  }
 ];
 
 export const skillGroups = [
   {
     title: "Frontend",
     icon: "bi-window-stack",
-    description: "Clean, responsive interfaces with strong hierarchy and smooth interactions.",
+    description: "Responsive product screens with clear hierarchy, clean states, and smooth interactions.",
     skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive UI"]
   },
   {
     title: "Backend",
     icon: "bi-braces-asterisk",
-    description: "Practical server logic, routing, forms, and Python-backed workflows.",
+    description: "Practical server logic for forms, routes, admin flows, and small product systems.",
     skills: ["Python", "Flask", "REST basics", "Form handling", "API thinking"]
   },
   {
     title: "Database",
     icon: "bi-database-check",
-    description: "Data modeling foundations for useful web applications and reporting.",
+    description: "Structured data foundations for CRUD workflows, reports, and reliable records.",
     skills: ["SQL", "MySQL", "CRUD flows", "Queries", "Relational basics"]
   },
   {
     title: "Tools",
     icon: "bi-tools",
-    description: "Daily developer workflow for shipping, debugging, and collaboration.",
+    description: "Modern development workflow for shipping, debugging, and collaborating.",
     skills: ["Git", "GitHub", "VS Code", "Vercel", "Postman", "Chrome DevTools"]
   },
   {
     title: "Cyber Security",
     icon: "bi-shield-lock",
-    description: "Learning security fundamentals to build safer and more trustworthy products.",
+    description: "Learning how safer products are designed, tested, and reasoned about.",
     skills: ["OWASP Top 10", "Nmap", "Wireshark", "Burp Suite basics", "Networking", "Linux basics"]
   }
 ];
@@ -78,22 +141,26 @@ export const skillGroups = [
 export const projects = [
   {
     title: "NGO Management Website",
-    category: "Full-stack system",
+    category: "Full-stack operations",
+    period: "Flask + MySQL",
+    status: "Live",
     stack: ["Flask", "MySQL", "Python", "HTML", "CSS"],
-    impact: "Organizes donor, activity, and admin workflows into one clearer management experience.",
+    impact: "Brings donor, activity, and admin information into a clearer management experience.",
     description:
-      "A practical NGO platform shaped around real operations: records, activity updates, and structured admin work.",
+      "A practical NGO platform shaped around records, activity updates, and admin workflows instead of a static brochure site.",
     github: "https://github.com/ash-krsna",
     live: "https://pandurang-pratishthan.vercel.app/#home",
     icon: "bi-people"
   },
   {
     title: "BSB International School Website",
-    category: "Institution website",
+    category: "Institution web presence",
+    period: "Public site",
+    status: "Live",
     stack: ["HTML", "CSS", "JavaScript", "Responsive UX"],
-    impact: "Improves trust for parents and visitors through a polished school-first web presence.",
+    impact: "Improves trust for parents and visitors through a polished, school-first information structure.",
     description:
-      "A clean public website with better information flow for academics, updates, gallery content, and school identity.",
+      "A clean public website with organized academics, updates, gallery content, and brand identity for an educational institution.",
     github: "https://github.com/ash-krsna",
     live: "https://bsb-international-school.vercel.app/",
     icon: "bi-mortarboard"
@@ -101,10 +168,12 @@ export const projects = [
   {
     title: "Vehicle Tracker",
     category: "Dashboard concept",
+    period: "Product UI",
+    status: "Prototype",
     stack: ["JavaScript", "CSS", "Dashboard UI", "Maps thinking"],
-    impact: "Turns a technical tracking idea into a sharper interface recruiters can quickly understand.",
+    impact: "Turns a technical tracking idea into scan-friendly cards, statuses, and movement-oriented UI.",
     description:
-      "A responsive tracking-oriented UI focused on status, movement, scan-friendly cards, and practical product thinking.",
+      "A tracking-oriented product concept focused on status visibility, responsive layout, and practical dashboard thinking.",
     github: "https://github.com/ash-krsna",
     live: "https://ash-krsna.github.io/codex-",
     icon: "bi-geo-alt"
@@ -112,6 +181,8 @@ export const projects = [
   {
     title: "Gun Detection Project",
     category: "Computer vision",
+    period: "Python / OpenCV",
+    status: "Research build",
     stack: ["Python", "OpenCV", "Detection logic", "Security awareness"],
     impact: "Connects Python learning with real-time safety and security use cases.",
     description:
@@ -122,9 +193,11 @@ export const projects = [
   },
   {
     title: "Personal Portfolio",
-    category: "Personal brand",
+    category: "Personal brand system",
+    period: "React / Vite",
+    status: "Live",
     stack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-    impact: "Presents identity, proof, projects, and contact details in a recruiter-friendly journey.",
+    impact: "Guides recruiters from identity to proof, projects, resume, and contact without clutter.",
     description:
       "A modern portfolio system designed to show who Akash is, what he builds, and where he is growing next.",
     github: "https://github.com/ash-krsna/my-portfolio",
@@ -135,31 +208,31 @@ export const projects = [
 
 export const journeyItems = [
   {
-    date: "BCA Graduate",
-    title: "Built the foundation",
+    date: "BCA",
+    title: "Computer applications foundation",
     description:
-      "Completed a Bachelor of Computer Applications background with fundamentals in programming, databases, web technology, and problem solving.",
+      "Built the base in programming, databases, web technology, and problem solving through a Bachelor of Computer Applications background.",
     icon: "bi-journal-code"
   },
   {
     date: "Aptara",
-    title: "Process Associate experience",
+    title: "Process associate discipline",
     description:
-      "Gained workplace discipline, accuracy, communication habits, and process thinking that now support how I approach technical work.",
+      "Gained workplace habits around accuracy, process, communication, and consistency that now support technical execution.",
     icon: "bi-briefcase"
   },
   {
     date: "Projects",
-    title: "Started shipping web experiences",
+    title: "Public web and product builds",
     description:
-      "Moved from learning concepts into building public websites, dashboards, Flask/MySQL workflows, and responsive portfolio experiences.",
+      "Moved from learning concepts into public websites, dashboards, Flask/MySQL workflows, and portfolio systems with clearer user journeys.",
     icon: "bi-rocket-takeoff"
   },
   {
     date: "Now",
-    title: "Cyber security learning journey",
+    title: "Security-aware growth path",
     description:
-      "Growing security awareness through networking basics, OWASP concepts, Linux practice, and tools such as Nmap, Wireshark, and Burp Suite.",
+      "Learning networking, OWASP, Linux, Nmap, Wireshark, and Burp Suite basics to become a sharper, safer developer.",
     icon: "bi-shield-check"
   }
 ];

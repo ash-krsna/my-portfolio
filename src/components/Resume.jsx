@@ -6,11 +6,11 @@ export function Resume() {
     <section id="resume" className="section-band px-4 py-24 sm:px-6 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-center">
         <div>
-          <p className="section-kicker">Resume</p>
-          <h2 className="section-title mt-4">A compact preview before the download.</h2>
+          <p className="section-kicker">06 Resume</p>
+          <h2 className="section-title mt-4">A compact snapshot before the PDF.</h2>
           <p className="section-copy mt-6">
-            The resume should support the website, not repeat it. This section gives recruiters a fast summary and a direct
-            file download.
+            The resume supports the website rather than repeating it. This section gives recruiters the fast version and a
+            direct file download.
           </p>
           <a href={identity.resume} download className="btn btn-primary mt-8">
             <i className="bi bi-file-earmark-arrow-down" />

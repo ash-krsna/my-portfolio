@@ -18,7 +18,7 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           <span className="brand-mark">{identity.initials}</span>
           <span className="brand-copy hidden min-w-0 sm:block">
             <span>{identity.name}</span>
-            <small>Frontend Developer</small>
+            <small>Portfolio issue / 2026</small>
           </span>
         </a>
 
@@ -54,12 +54,13 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           <button
             type="button"
             onClick={onToggleTheme}
-            className="icon-button"
+            className="theme-toggle"
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
           >
+            <span>{theme === "dark" ? "Day" : "Night"}</span>
             <i className={`bi ${theme === "dark" ? "bi-sun" : "bi-moon"}`} />
           </button>
-          <a href="#contact" className="btn btn-compact hidden md:inline-flex">
+          <a href="#contact" className="btn btn-compact btn-nav hidden md:inline-flex">
             Contact
           </a>
           <button

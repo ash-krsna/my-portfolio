@@ -3,14 +3,16 @@ import { skillGroups } from "../data/content";
 
 export function Skills() {
   return (
-    <section id="skills" className="section-band section-band-deep px-4 py-24 sm:px-6 lg:py-32">
+    <section id="skills" className="section-band toolkit-section px-4 py-24 sm:px-6 lg:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="max-w-3xl">
-          <p className="section-kicker">Skills</p>
-          <h2 className="section-title mt-4">The stack is focused, practical, and growing in the right direction.</h2>
-          <p className="section-copy mt-6">
-            I group my skills by the kind of work they help me do: build clean interfaces, connect data, understand backend
-            flows, use developer tools, and keep learning security fundamentals.
+        <div className="section-heading-row">
+          <div>
+            <p className="section-kicker">05 Toolkit</p>
+            <h2 className="section-title mt-4">A focused stack for UI, data, delivery, and security learning.</h2>
+          </div>
+          <p className="section-copy">
+            The toolkit is grouped by the kind of problem it helps solve: screen design, backend logic, data structure,
+            shipping workflow, and safer product habits.
           </p>
         </div>
 
