@@ -39,7 +39,7 @@ export function About() {
             className="story-panel"
           >
             <p>
-              I am Akash Ohalkar, a BCA graduate from Maharashtra building toward frontend and junior developer roles. My
+              I am Akash Bhagwat, a BCA graduate from Maharashtra building toward frontend and junior developer roles. My
               strongest lane is creating React and JavaScript interfaces that make information easy to scan, actions easy to
               understand, and projects easier to trust.
             </p>

@@ -1,15 +1,15 @@
 export const identity = {
-  name: "Akash Ohalkar",
-  initials: "AO",
+  name: "Akash Bhagwat",
+  initials: "AB",
   role: "Frontend Developer | Cyber Security Learner | Python & SQL Developer",
   shortRole: "Frontend Developer",
   location: "Maharashtra, India",
   status: "Open to Internship / Junior Developer Roles",
-  email: "akashohalkar300@gmail.com",
+  email: "akash.gita.bhagwat@gmail.com",
   github: "https://github.com/ash-krsna",
   portfolio: "https://ash-krsna.github.io/my-portfolio/",
   linkedin: "https://www.linkedin.com/in/akash-gita-bhagwat",
-  resume: "/media/documents/akash-ohalkar-resume.pdf"
+  resume: "/media/documents/akash-bhagwat-resume.pdf"
 };
 
 export const navItems = [

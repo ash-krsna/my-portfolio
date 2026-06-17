@@ -66,7 +66,7 @@ body {
   min-width: 320px;
   background: var(--page);
   color: var(--text);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0;
   transition: background 220ms ease, color 220ms ease;
 }
@@ -104,7 +104,7 @@ img {
 }
 
 .font-display {
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
 }
 
 .app-shell {
@@ -133,7 +133,7 @@ img {
   border-radius: 999px;
   background: var(--surface-raised);
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-weight: 850;
   box-shadow: inset 0 1px 0 var(--wash);
 }
@@ -141,7 +141,7 @@ img {
 .brand-copy span {
   display: block;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 0.92rem;
   font-weight: 850;
 }
@@ -560,7 +560,7 @@ textarea:focus-visible {
 .now-panel-head strong,
 .vitals-panel-head strong {
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.05rem;
   line-height: 1.2;
 }
@@ -625,7 +625,7 @@ textarea:focus-visible {
   display: block;
   margin-top: 0.38rem;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.05rem;
   line-height: 1.18;
 }
@@ -651,7 +651,7 @@ textarea:focus-visible {
 
 .section-title {
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 2.25rem;
   font-weight: 850;
   line-height: 1.04;
@@ -733,7 +733,7 @@ textarea:focus-visible {
 
 .proof-card span {
   color: var(--accent);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.65rem;
   font-weight: 850;
 }
@@ -741,7 +741,7 @@ textarea:focus-visible {
 .proof-card h3 {
   margin-top: 2.2rem;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.28rem;
   font-weight: 850;
 }
@@ -784,7 +784,7 @@ textarea:focus-visible {
 
 .metric-card-head small {
   color: var(--muted-soft);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 0.86rem;
   font-weight: 850;
 }
@@ -793,7 +793,7 @@ textarea:focus-visible {
   display: block;
   margin-top: 2.2rem;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 2.3rem;
   line-height: 1;
 }
@@ -846,7 +846,7 @@ textarea:focus-visible {
 
 .plate-index {
   color: var(--accent);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 2.5rem;
   font-weight: 850;
   line-height: 1;
@@ -856,7 +856,7 @@ textarea:focus-visible {
 .skill-card h3,
 .timeline-item h3 {
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.45rem;
   font-weight: 850;
   line-height: 1.14;
@@ -933,7 +933,7 @@ textarea:focus-visible {
   display: block;
   margin-top: 0.35rem;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 1.15rem;
   line-height: 1.2;
 }
@@ -1038,7 +1038,7 @@ textarea:focus-visible {
 
 .skill-card-head span {
   color: var(--muted-soft);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 0.92rem;
   font-weight: 850;
 }
@@ -1081,7 +1081,7 @@ textarea:focus-visible {
 .resume-header h3 {
   margin-top: 0.4rem;
   color: var(--text-strong);
-  font-family: "Syne", "Inter", sans-serif;
+  font-family: "Sora", "Manrope", sans-serif;
   font-size: 2rem;
   font-weight: 850;
 }

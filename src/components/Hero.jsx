@@ -46,7 +46,7 @@ export function Hero() {
 
             <motion.h1 variants={fadeUp} className="hero-name font-display font-extrabold" aria-label={identity.name}>
               <span aria-hidden="true">Akash</span>
-              <span aria-hidden="true">Ohalkar</span>
+              <span aria-hidden="true">Bhagwat</span>
             </motion.h1>
 
             <motion.p variants={fadeUp} className="hero-role">
@@ -95,7 +95,7 @@ export function Hero() {
                 <span>AO / 01</span>
               </div>
               <div className="profile-portrait">
-                <img src="/media/photos/profile-main.jpeg" alt="Akash Ohalkar profile portrait" />
+                <img src="/media/photos/profile-main.jpeg" alt="Akash Bhagwat profile portrait" />
                 <div className="portrait-overlay">
                   <span>Frontend / Python / SQL / Cyber Security</span>
                   <strong>Available for internships and junior developer roles</strong>
