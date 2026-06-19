@@ -21,7 +21,7 @@ export function Hero() {
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl flex-col justify-center gap-8 pb-14">
+      <div className="hero-inner mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl flex-col justify-center gap-8 pb-14">
         <motion.div
           initial="hidden"
           animate="visible"
