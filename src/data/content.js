@@ -1,276 +1,286 @@
 export const identity = {
-  name: "Akash Bhagwat",
-  initials: "AB",
-  role: "Frontend Developer | Cyber Security Learner | Python & SQL Developer",
-  shortRole: "Frontend Developer",
-  location: "Maharashtra, India",
-  status: "Open to Internship / Junior Developer Roles",
-  email: "akash.gita.bhagwat@gmail.com",
+  name: "Akash Ohalkar",
+  initials: "AO",
+  role: "Software Developer",
+  headline: "Python · Flask · SQL · REST APIs · Web Development",
+  summary:
+    "I build practical web applications and backend solutions using Python, databases, APIs, and web fundamentals.",
+  location: "Pune, Maharashtra, India",
+  status: "Open to software development opportunities",
+  email: "akashohalkar300@gmail.com",
+  phone: "+91 9699134688",
   github: "https://github.com/ash-krsna",
-  portfolio: "https://ash-krsna.github.io/my-portfolio/",
-  linkedin: "https://www.linkedin.com/in/akash-gita-bhagwat",
-  resume: "/media/documents/akash-bhagwat-resume.pdf"
+  portfolio: "https://my-portfolio-ochre-xi-97.vercel.app/",
+  resume: "/media/documents/akash-ohalkar-resume.pdf"
 };
 
 export const navItems = [
-  { id: "home", label: "00 Intro" },
-  { id: "about", label: "01 Background" },
-  { id: "impact", label: "02 Proof" },
-  { id: "projects", label: "03 Projects" },
-  { id: "journey", label: "04 Journey" },
-  { id: "skills", label: "05 Toolkit" },
-  { id: "resume", label: "06 Resume" },
-  { id: "contact", label: "07 Contact" }
+  { id: "projects", label: "Selected Work" },
+  { id: "about", label: "About" },
+  { id: "contact", label: "Contact" }
 ];
 
-export const heroSignals = [
-  "React.js UI systems",
-  "Python + SQL product logic",
-  "Security-aware learning",
-  "AI-assisted research and build loops"
-];
+export const heroSignals = ["Python", "Flask", "SQL/MySQL", "REST APIs", "JavaScript"];
 
-export const issueDetails = [
-  { label: "Base", value: "Maharashtra, India" },
-  { label: "Current focus", value: "React, Python, SQL, Cyber Security" },
-  { label: "Looking for", value: "Internship and junior developer roles" }
-];
-
-export const nowItems = [
-  {
-    label: "Building",
-    value: "Recruiter-ready product interfaces with React, Vite, Tailwind, and careful responsive behavior."
-  },
-  {
-    label: "Learning",
-    value: "Cyber security fundamentals through OWASP, networking, Linux, Nmap, Wireshark, and Burp Suite basics."
-  },
-  {
-    label: "Practicing",
-    value: "Python, Flask, MySQL, data flows, clean forms, and backend logic for practical full-stack projects."
-  },
-  {
-    label: "Last shipped",
-    value: "Portfolio, school, NGO, vehicle tracker, and computer-vision projects shaped for public presentation."
-  }
-];
-
-export const disciplineStrip = [
-  "React.js",
-  "JavaScript",
-  "Python",
-  "SQL",
-  "Flask",
-  "MySQL",
-  "Tailwind CSS",
-  "Vite",
-  "GitHub",
-  "Vercel",
-  "OWASP",
-  "Nmap",
-  "Wireshark",
-  "Burp Suite"
+export const heroDetails = [
+  { label: "Base", value: "Pune, Maharashtra" },
+  { label: "Education", value: "BCA completed, MCA pursuing" },
+  { label: "Looking for", value: "Junior developer, backend, and full-stack roles" }
 ];
 
 export const profileVitals = [
-  { label: "Education", value: "BCA graduate" },
-  { label: "Experience", value: "Aptara process associate" },
-  { label: "Direction", value: "Frontend + data + security" },
-  { label: "Availability", value: "Open to work" }
+  { label: "Primary stack", value: "Python, Flask, SQL, REST APIs" },
+  { label: "Current role", value: "Trainee HTML Programmer at Aptara" },
+  { label: "Direction", value: "Backend and practical web applications" },
+  { label: "Availability", value: "Open to entry-level software roles" }
 ];
 
-export const impactMetrics = [
-  { value: "5+", label: "Projects Built", note: "Public work across web, dashboard, full-stack, and CV concepts." },
-  { value: "3", label: "Core Tracks", note: "Frontend engineering, Python/SQL systems, and security learning." },
-  { value: "BCA", label: "Graduate", note: "Computer applications foundation with practical project execution." },
-  { value: "Live", label: "Web Presence", note: "GitHub, hosted projects, resume, and contact paths ready for recruiters." },
-  { value: "Now", label: "Open to Work", note: "Focused on internships and junior developer roles." }
+export const disciplineStrip = [
+  "Python",
+  "Flask",
+  "REST APIs",
+  "SQL",
+  "MySQL",
+  "MongoDB",
+  "HTML",
+  "CSS",
+  "Bootstrap",
+  "JavaScript",
+  "Git",
+  "GitHub"
 ];
 
-export const proofPoints = [
+export const aboutHighlights = [
   {
-    title: "Practical by default",
-    copy:
-      "Akash's work is strongest when a project needs clear screens, useful information flow, and a build that recruiters or users can understand quickly."
+    label: "Background",
+    value:
+      "BCA graduate currently pursuing an online MCA, with a focus on strengthening software development fundamentals."
   },
   {
-    title: "Data-minded builder",
-    copy:
-      "Python, Flask, SQL, and MySQL are part of the direction, not side notes. The goal is to make interfaces connect to real records, forms, and decisions."
+    label: "Build style",
+    value:
+      "Comfortable with practical projects that connect forms, routes, database records, and clear user-facing pages."
   },
   {
-    title: "Security-aware learner",
-    copy:
-      "Cyber security is a growing lane: networking basics, OWASP concepts, Linux practice, and tool-based exploration are shaping more responsible development habits."
+    label: "Next step",
+    value:
+      "Seeking a genuine junior software role where I can contribute, learn from a team, and keep building useful systems."
   }
 ];
 
 export const focusModes = [
   {
-    label: "Build",
-    title: "Interfaces that explain themselves",
+    label: "Backend",
+    title: "Routes, records, and workflows",
     copy:
-      "I like UI that feels calm, obvious, and useful: strong hierarchy, responsive spacing, clear actions, and screens that do not make people guess.",
-    icon: "bi-layout-text-sidebar-reverse"
-  },
-  {
-    label: "Connect",
-    title: "Frontend with data sense",
-    copy:
-      "Python, Flask, SQL, and MySQL help me think about forms, records, dashboards, and admin flows as complete product systems.",
+      "Python, Flask, SQL, and API practice used to move data through clear CRUD flows and application logic.",
     icon: "bi-diagram-3"
   },
   {
-    label: "Protect",
-    title: "Security-aware from the start",
+    label: "Frontend",
+    title: "Readable, responsive interfaces",
     copy:
-      "Cyber security learning gives my development process a sharper lens: input handling, safer habits, networking basics, and OWASP thinking.",
-    icon: "bi-shield-check"
+      "HTML, CSS, Bootstrap, and JavaScript used to create pages that are easy to scan and practical to use.",
+    icon: "bi-layout-text-sidebar-reverse"
+  },
+  {
+    label: "Habits",
+    title: "Steady improvement through projects",
+    copy:
+      "Project work, GitHub practice, and continued MCA learning are helping turn fundamentals into recruiter-visible proof.",
+    icon: "bi-git"
   }
 ];
 
 export const skillGroups = [
   {
-    title: "Frontend",
-    icon: "bi-window-stack",
-    description: "Responsive product screens with clear hierarchy, clean states, and smooth interactions.",
-    skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive UI"]
-  },
-  {
     title: "Backend",
-    icon: "bi-braces-asterisk",
-    description: "Practical server logic for forms, routes, admin flows, and small product systems.",
-    skills: ["Python", "Flask", "REST basics", "Form handling", "API thinking"]
+    icon: "bi-hdd-network",
+    description: "Core server-side skills for junior Python and backend development roles.",
+    skills: ["Python", "Flask", "REST APIs", "JSON", "CRUD operations"]
   },
   {
-    title: "Database",
-    icon: "bi-database-check",
-    description: "Structured data foundations for CRUD workflows, reports, and reliable records.",
-    skills: ["SQL", "MySQL", "CRUD flows", "Queries", "Relational basics"]
+    title: "Databases",
+    icon: "bi-database",
+    description: "Database tools used across project work and continued practice.",
+    skills: ["MySQL", "SQL", "MongoDB"]
+  },
+  {
+    title: "Frontend",
+    icon: "bi-window",
+    description: "Web interface skills used to build responsive pages and simple application screens.",
+    skills: ["HTML", "CSS", "Bootstrap", "JavaScript"]
   },
   {
     title: "Tools",
     icon: "bi-tools",
-    description: "Modern development workflow for shipping, debugging, and collaborating.",
-    skills: ["Git", "GitHub", "VS Code", "Vercel", "Postman", "Chrome DevTools"]
+    description: "Development workflow tools used for code, version control, and project sharing.",
+    skills: ["Git", "GitHub", "Postman", "Vite"]
   },
   {
-    title: "Cyber Security",
-    icon: "bi-shield-lock",
-    description: "Learning how safer products are designed, tested, and reasoned about.",
-    skills: ["OWASP Top 10", "Nmap", "Wireshark", "Burp Suite basics", "Networking", "Linux basics"]
+    title: "Currently Learning",
+    icon: "bi-compass",
+    description: "Foundational technologies being strengthened through small builds and practice.",
+    skills: ["React basics", "Node.js basics", "Express basics"]
   }
 ];
 
 export const projects = [
   {
-    title: "NGO Management Website",
-    category: "Full-stack operations",
-    period: "Flask + MySQL",
-    status: "Live",
-    stack: ["Flask", "MySQL", "Python", "HTML", "CSS"],
-    impact: "Brings donor, activity, and admin information into a clearer management experience.",
+    title: "BSB International School ERP",
+    category: "Full-stack school application",
+    period: "Node.js / Express / MySQL / React",
+    status: "Public repo + live site",
+    featured: true,
+    stack: ["Node.js", "Express", "MySQL", "React", "Electron", "Cloudinary"],
+    problem:
+      "A school needs more than a brochure site: admissions, student records, fees, attendance, notices, and office workflows need a structured system.",
+    solution:
+      "A production-style monorepo with an API, web app, desktop shell, database schema, deployment docs, and ERP-oriented modules.",
+    implementation:
+      "Organized the project into app workspaces, backend routes, database setup, role-based workflows, and a Vercel-ready public website.",
+    proof:
+      "Shows full-stack thinking, backend structure, database planning, and the ability to document a larger application.",
     description:
-      "A practical NGO platform shaped around records, activity updates, and admin workflows instead of a static brochure site.",
-    github: "https://github.com/ash-krsna",
-    live: "https://pandurang-pratishthan.vercel.app/#home",
-    icon: "bi-people"
+      "A school ERP and website project structured around admissions, student records, fees, attendance, notices, reporting, and office use.",
+    github: "https://github.com/ash-krsna/BSB-International-School",
+    live: "https://bsb-international-school.vercel.app/",
+    icon: "bi-mortarboard",
+    visual: {
+      title: "ERP flow",
+      rows: ["Admissions", "Student profiles", "Fees + receipts", "Notices + reports"]
+    }
   },
   {
-    title: "BSB International School Website",
-    category: "Institution web presence",
-    period: "Public site",
-    status: "Live",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive UX"],
-    impact: "Improves trust for parents and visitors through a polished, school-first information structure.",
+    title: "Lift Management System",
+    category: "Python backend logic",
+    period: "Python / MySQL / HTML",
+    status: "Source + static demo",
+    featured: true,
+    stack: ["Python", "MySQL", "HTML", "CSS", "Scheduling logic"],
+    problem:
+      "Lift control needs predictable decisions across floors, queues, directions, maintenance mode, and emergency states.",
+    solution:
+      "A Python lift dashboard with MySQL-backed records, request assignment logic, lift rules, logs, and browser/Tkinter interfaces.",
+    implementation:
+      "Built controller, scheduler, database, lift model, SQL schema, and a simple browser dashboard for testing lift behavior.",
+    proof:
+      "Shows decomposition, state management, database handling, and practical backend logic beyond a static website.",
     description:
-      "A clean public website with organized academics, updates, gallery content, and brand identity for an educational institution.",
-    github: "https://github.com/ash-krsna",
-    live: "https://bsb-international-school.vercel.app/",
-    icon: "bi-mortarboard"
+      "A Python project that models multi-lift request handling, floor movement, queues, maintenance state, and database logging.",
+    github: "https://github.com/ash-krsna/Lift-Management",
+    live: "https://ash-krsna.github.io/Lift-Management/?v=demo2",
+    icon: "bi-arrow-down-up",
+    visual: {
+      title: "Lift status",
+      rows: ["B1 -> 9 floor order", "4 lift controller", "Queues + logs", "MySQL tables"]
+    }
+  },
+  {
+    title: "Pandurang Pratishthan NGO Website",
+    category: "Organization website",
+    period: "HTML / CSS / JavaScript / Vercel API",
+    status: "Live",
+    featured: true,
+    stack: ["HTML", "CSS", "JavaScript", "Razorpay API", "Vercel"],
+    problem:
+      "An NGO website needs clear public information, donation intent, volunteer contact paths, and trust-focused content.",
+    solution:
+      "A responsive static site with mission sections, gallery filters, donation flow hooks, volunteer/contact forms, and Vercel serverless API routes.",
+    implementation:
+      "Built the landing structure, interaction scripts, donation checkout integration files, form feedback, and deployment configuration.",
+    proof:
+      "Shows practical frontend execution, API integration awareness, and careful handling of launch placeholders.",
+    description:
+      "A mobile-first NGO website with donation, volunteer, contact, gallery, and mission-led content flows.",
+    github: "https://github.com/ash-krsna/Pandurang-Pratishthan",
+    live: "https://pandurang-pratishthan.vercel.app/",
+    icon: "bi-people",
+    visual: {
+      title: "Site paths",
+      rows: ["Mission", "Donation", "Volunteer", "Contact"]
+    }
   },
   {
     title: "Vehicle Tracker",
-    category: "Dashboard concept",
-    period: "Product UI",
-    status: "Prototype",
-    stack: ["JavaScript", "CSS", "Dashboard UI", "Maps thinking"],
-    impact: "Turns a technical tracking idea into scan-friendly cards, statuses, and movement-oriented UI.",
+    category: "Frontend concept",
+    period: "HTML / CSS / JavaScript",
+    status: "Static demo",
+    featured: false,
+    stack: ["HTML", "CSS", "JavaScript"],
+    impact:
+      "Turns a tracking idea into a responsive interface with vehicle information, dynamic UI states, and room for future map integration.",
     description:
-      "A tracking-oriented product concept focused on status visibility, responsive layout, and practical dashboard thinking.",
-    github: "https://github.com/ash-krsna",
+      "A compact static demo focused on vehicle information, status display, and responsive UI practice.",
+    github: "https://github.com/ash-krsna/codex-",
     live: "https://ash-krsna.github.io/codex-",
     icon: "bi-geo-alt"
   },
   {
-    title: "Gun Detection Project",
-    category: "Computer vision",
-    period: "Python / OpenCV",
-    status: "Research build",
-    stack: ["Python", "OpenCV", "Detection logic", "Security awareness"],
-    impact: "Connects Python learning with real-time safety and security use cases.",
-    description:
-      "An OpenCV-based project exploring object detection concepts and how software can support threat-awareness workflows.",
-    github: "https://github.com/ash-krsna",
-    live: "",
-    icon: "bi-camera-video"
-  },
-  {
     title: "Personal Portfolio",
-    category: "Personal brand system",
-    period: "React / Vite",
-    status: "Live",
+    category: "Developer profile",
+    period: "React / Vite / Tailwind",
+    status: "Current site",
+    featured: false,
     stack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-    impact: "Guides recruiters from identity to proof, projects, resume, and contact without clutter.",
+    impact:
+      "Presents identity, verified projects, skills, education, resume, and contact links in one focused recruiter journey.",
     description:
-      "A modern portfolio system designed to show who Akash is, what he builds, and where he is growing next.",
+      "This portfolio, rebuilt as a concise software developer profile with a verified project selection and cleaner positioning.",
     github: "https://github.com/ash-krsna/my-portfolio",
-    live: "https://ash-krsna.github.io/my-portfolio/",
+    live: "https://my-portfolio-ochre-xi-97.vercel.app/",
     icon: "bi-person-badge"
   }
 ];
 
-export const journeyItems = [
+export const experienceItems = [
   {
-    date: "BCA",
-    title: "Computer applications foundation",
+    date: "Jan 2026 - Present",
+    title: "Trainee HTML Programmer",
+    org: "Aptara, Pune",
     description:
-      "Built the base in programming, databases, web technology, and problem solving through a Bachelor of Computer Applications background.",
-    icon: "bi-journal-code"
-  },
-  {
-    date: "Aptara",
-    title: "Process associate discipline",
-    description:
-      "Gained workplace habits around accuracy, process, communication, and consistency that now support technical execution.",
+      "Works with structured HTML and digital content workflows, building accuracy, semantic organization, and production discipline.",
     icon: "bi-briefcase"
   },
   {
-    date: "Projects",
-    title: "Public web and product builds",
+    date: "2025 - Present",
+    title: "Independent software projects",
+    org: "Self-directed project work",
     description:
-      "Moved from learning concepts into public websites, dashboards, Flask/MySQL workflows, and portfolio systems with clearer user journeys.",
-    icon: "bi-rocket-takeoff"
+      "Building web and backend practice projects with Python, SQL/MySQL, JavaScript, API integrations, and deployment workflows.",
+    icon: "bi-window-stack"
+  }
+];
+
+export const educationItems = [
+  {
+    date: "2026 - Present",
+    title: "Master of Computer Applications",
+    org: "Dr. D.Y. Patil Vidyapeeth Online",
+    description:
+      "Currently pursuing postgraduate study while strengthening software development and backend fundamentals.",
+    icon: "bi-mortarboard"
   },
   {
-    date: "Now",
-    title: "Security-aware growth path",
+    date: "2022 - 2025",
+    title: "Bachelor of Computer Applications",
+    org: "Savitribai Phule Pune University",
     description:
-      "Learning networking, OWASP, Linux, Nmap, Wireshark, and Burp Suite basics to become a sharper, safer developer.",
-    icon: "bi-shield-check"
+      "Completed undergraduate study in computer applications, programming, databases, and web technologies.",
+    icon: "bi-journal-code"
   }
 ];
 
 export const resumeHighlights = [
-  "Frontend development with React.js, JavaScript, Tailwind CSS, HTML, and CSS.",
-  "Python, Flask, SQL, and MySQL foundations for full-stack project work.",
-  "Cyber security learning across OWASP, networking, Linux, and security tools.",
-  "BCA graduate with process experience and a practical project portfolio."
+  "Early-career software developer profile focused on Python, Flask, SQL, REST APIs, and web development.",
+  "Hands-on practice with Python, MySQL, JavaScript, HTML, CSS, Git, GitHub, and application workflows.",
+  "Current Trainee HTML Programmer experience at Aptara with structured digital content workflows.",
+  "BCA completed, MCA currently pursuing, and actively building project evidence for junior developer roles."
 ];
 
 export const contactLinks = [
   { label: "Email", value: identity.email, href: `mailto:${identity.email}`, icon: "bi-envelope" },
   { label: "GitHub", value: "github.com/ash-krsna", href: identity.github, icon: "bi-github" },
-  { label: "LinkedIn", value: "LinkedIn profile", href: identity.linkedin, icon: "bi-linkedin" },
-  { label: "Portfolio", value: "ash-krsna.github.io/my-portfolio", href: identity.portfolio, icon: "bi-globe2" }
+  { label: "Resume", value: "Download PDF", href: identity.resume, icon: "bi-file-earmark-text", download: true },
+  { label: "Portfolio", value: "Live portfolio", href: identity.portfolio, icon: "bi-globe2" }
 ];

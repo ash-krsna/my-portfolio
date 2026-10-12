@@ -7,12 +7,12 @@ export function Skills() {
       <div className="mx-auto max-w-7xl">
         <div className="section-heading-row">
           <div>
-            <p className="section-kicker">05 Toolkit</p>
-            <h2 className="section-title mt-4">A focused stack for UI, data, delivery, and security learning.</h2>
+            <p className="section-kicker">02 Technical Skills</p>
+            <h2 className="section-title mt-4">A focused stack for junior developer work.</h2>
           </div>
           <p className="section-copy">
-            The toolkit is grouped by the kind of problem it helps solve: screen design, backend logic, data structure,
-            shipping workflow, and safer product habits.
+            The stack is grouped by where each technology fits: backend, databases, frontend, tooling, and current
+            learning. No progress bars, no inflated percentages.
           </p>
         </div>
 

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { identity, navItems } from "../data/content";
 
 const mobileDockItems = [
-  { id: "home", label: "Intro", icon: "bi-house-door" },
   { id: "projects", label: "Work", icon: "bi-grid-1x2" },
+  { id: "about", label: "About", icon: "bi-person" },
   { id: "resume", label: "Resume", icon: "bi-file-earmark-text" },
   { id: "contact", label: "Contact", icon: "bi-send" }
 ];
@@ -25,7 +25,7 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           <span className="brand-mark">{identity.initials}</span>
           <span className="brand-copy hidden min-w-0 sm:block">
             <span>{identity.name}</span>
-            <small>Portfolio issue / 2026</small>
+            <small>{identity.role}</small>
           </span>
         </a>
 
@@ -58,6 +58,9 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
           >
             <i className="bi bi-github" />
           </a>
+          <a href={identity.resume} className="btn btn-compact btn-nav hidden md:inline-flex" download>
+            Resume
+          </a>
           <button
             type="button"
             onClick={onToggleTheme}
@@ -67,9 +70,6 @@ export function Navbar({ activeSection, theme, onToggleTheme }) {
             <span>{theme === "dark" ? "Day" : "Night"}</span>
             <i className={`bi ${theme === "dark" ? "bi-sun" : "bi-moon"}`} />
           </button>
-          <a href="#contact" className="btn btn-compact btn-nav hidden md:inline-flex">
-            Contact
-          </a>
           <button
             type="button"
             onClick={() => setOpen((current) => !current)}

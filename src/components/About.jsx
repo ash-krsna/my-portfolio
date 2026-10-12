@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { disciplineStrip, focusModes, proofPoints, profileVitals } from "../data/content";
+import { aboutHighlights, disciplineStrip, focusModes, profileVitals } from "../data/content";
 
 export function About() {
   return (
@@ -13,12 +13,12 @@ export function About() {
           className="section-heading-row"
         >
           <div>
-            <p className="section-kicker">01 Background</p>
-            <h2 className="section-title mt-4">A practical builder with momentum, taste, and patience.</h2>
+            <p className="section-kicker">03 About</p>
+            <h2 className="section-title mt-4">A practical developer profile with a clear next step.</h2>
           </div>
           <p className="section-copy">
-            The portfolio is designed to show the way Akash thinks: start with clarity, make the interface useful, connect
-            the data, and keep learning the security layer that makes products more trustworthy.
+            I am not presenting myself as a senior engineer. I am an early-career developer with a clear foundation,
+            project evidence, and room to grow inside a real team.
           </p>
         </motion.div>
 
@@ -39,19 +39,17 @@ export function About() {
             className="story-panel"
           >
             <p>
-              I am Akash Bhagwat, a BCA graduate from Maharashtra building toward frontend and junior developer roles. My
-              strongest lane is creating React and JavaScript interfaces that make information easy to scan, actions easy to
-              understand, and projects easier to trust.
+              I am Akash Ohalkar, a BCA graduate from Maharashtra and an MCA student building toward junior software
+              developer roles. I like work that has a real shape to it: forms that collect the right data, pages that are
+              easy to understand, and backend logic that turns ideas into useful workflows.
             </p>
             <p>
-              I also enjoy the system side of the work: Python, Flask, SQL, and MySQL help me think beyond the screen into
-              records, forms, admin workflows, and useful data. That mix is why my projects include public websites,
-              management flows, dashboard concepts, and computer-vision experiments.
+              My current center of gravity is Python, Flask, SQL, JavaScript, HTML, and CSS. I can work on the front of a
+              site, but I am especially interested in the connection between screen, route, database, and user action.
             </p>
             <p>
-              Cyber security is the direction I am intentionally growing into. I am not pretending to be a senior security
-              engineer; I am building the habits early: networking basics, OWASP thinking, Linux practice, and tool-based
-              learning with Nmap, Wireshark, and Burp Suite.
+              I am also strengthening React, Node.js, and Express at a foundational level. The goal is simple: keep
+              improving, build visible proof, and become useful inside a real engineering team.
             </p>
           </motion.div>
 
@@ -78,9 +76,9 @@ export function About() {
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {proofPoints.map((point, index) => (
+          {aboutHighlights.map((point, index) => (
             <motion.article
-              key={point.title}
+              key={point.label}
               initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -88,8 +86,8 @@ export function About() {
               className="proof-card"
             >
               <span>0{index + 1}</span>
-              <h3>{point.title}</h3>
-              <p>{point.copy}</p>
+              <h3>{point.label}</h3>
+              <p>{point.value}</p>
             </motion.article>
           ))}
         </div>
@@ -103,7 +101,7 @@ export function About() {
         >
           <div className="direction-board-head">
             <span>Working Direction</span>
-            <strong>Build / Connect / Protect</strong>
+            <strong>Web apps / Backend / Automation</strong>
           </div>
           <div className="direction-grid">
             {focusModes.map((mode) => (

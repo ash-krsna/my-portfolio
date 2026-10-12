@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { heroSignals, identity, impactMetrics, issueDetails, nowItems, profileVitals } from "../data/content";
+import { heroDetails, heroSignals, identity, profileVitals } from "../data/content";
+import { WordReveal } from "./WordReveal";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -7,6 +8,8 @@ const fadeUp = {
 };
 
 export function Hero() {
+  const [roleLead, roleRest] = identity.role.split(" ");
+
   return (
     <section id="home" className="hero-section relative min-h-screen overflow-hidden px-4 pt-28 sm:px-6">
       <div className="hero-grid-layer" />
@@ -28,7 +31,7 @@ export function Hero() {
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08 } } }}
           className="hero-issue-line"
         >
-          <motion.span variants={fadeUp}>Portfolio / Developer Profile / 2026</motion.span>
+          <motion.span variants={fadeUp}>{identity.name}</motion.span>
           <motion.span variants={fadeUp}>{identity.location}</motion.span>
         </motion.div>
 
@@ -44,33 +47,30 @@ export function Hero() {
               {identity.status}
             </motion.div>
 
-            <motion.h1 variants={fadeUp} className="hero-name font-display font-extrabold" aria-label={identity.name}>
-              <span aria-hidden="true">Akash</span>
-              <span aria-hidden="true">Bhagwat</span>
+            <motion.h1 variants={fadeUp} className="hero-name font-display font-extrabold" aria-label={identity.role}>
+              <span aria-hidden="true">{roleLead}</span>
+              <span aria-hidden="true">{roleRest}</span>
             </motion.h1>
 
-            <motion.p variants={fadeUp} className="hero-role">
-              {identity.role}
-            </motion.p>
+            <WordReveal as="p" text={identity.headline} className="hero-role" delay={0.22} stagger={0.045} />
 
-            <motion.p variants={fadeUp} className="hero-intro">
-              I build sharp, responsive web experiences with a practical developer mindset: clear UI, usable data flows,
-              Python and SQL foundations, and a growing cyber security lens. The goal is simple: make software feel useful,
-              trustworthy, and ready for real people.
-            </motion.p>
+            <WordReveal
+              as="p"
+              text="I build practical web applications and backend solutions using Python, Flask, databases, and APIs. I'm an early-career developer looking for opportunities to build useful software, solve real problems, and grow with a development team."
+              className="hero-intro"
+              delay={0.35}
+              stagger={0.018}
+              duration={0.45}
+            />
 
             <motion.div variants={fadeUp} className="hero-actions">
               <a href="#projects" className="btn btn-primary">
                 <i className="bi bi-grid-1x2" />
-                View Projects
-              </a>
-              <a href={identity.resume} className="btn btn-secondary" download>
-                <i className="bi bi-download" />
-                Download Resume
+                View My Work
               </a>
               <a href={`mailto:${identity.email}`} className="btn btn-ghost">
                 <i className="bi bi-send" />
-                Contact Me
+                Get in Touch
               </a>
             </motion.div>
 
@@ -91,25 +91,25 @@ export function Hero() {
           >
             <div className="profile-shell">
               <div className="profile-topline">
-                <span>Profile Signal</span>
+                <span>Profile</span>
                 <span>{identity.initials} / 01</span>
               </div>
               <div className="profile-portrait">
-                <img src="/media/photos/profile-main.jpeg" alt="Akash Bhagwat profile portrait" />
+                <img src="/media/photos/profile-main.jpeg" alt={`${identity.name} profile portrait`} />
                 <div className="portrait-overlay">
-                  <span>Frontend / Python / SQL / Cyber Security</span>
-                  <strong>Available for internships and junior developer roles</strong>
+                  <span>{identity.headline}</span>
+                  <strong>{identity.name}, based in Pune and open to junior software roles.</strong>
                 </div>
               </div>
             </div>
 
             <div className="now-panel">
               <div className="now-panel-head">
-                <span>Now</span>
-                <strong>What I am focused on</strong>
+                <span>Current focus</span>
+                <strong>Practical backend and web development</strong>
               </div>
               <div className="now-list">
-                {nowItems.map((item) => (
+                {profileVitals.map((item) => (
                   <div key={item.label}>
                     <span>{item.label}</span>
                     <p>{item.value}</p>
@@ -127,28 +127,10 @@ export function Hero() {
           className="hero-proof-board"
         >
           <div className="hero-detail-grid">
-            {issueDetails.map((detail) => (
+            {heroDetails.map((detail) => (
               <div key={detail.label}>
                 <span>{detail.label}</span>
                 <strong>{detail.value}</strong>
-              </div>
-            ))}
-          </div>
-
-          <div className="hero-vitals-grid">
-            {profileVitals.map((vital) => (
-              <div key={vital.label}>
-                <span>{vital.label}</span>
-                <strong>{vital.value}</strong>
-              </div>
-            ))}
-          </div>
-
-          <div className="hero-metric-strip">
-            {impactMetrics.slice(0, 3).map((metric) => (
-              <div key={`${metric.value}-${metric.label}`}>
-                <strong>{metric.value}</strong>
-                <span>{metric.label}</span>
               </div>
             ))}
           </div>

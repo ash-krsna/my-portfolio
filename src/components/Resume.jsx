@@ -1,17 +1,34 @@
 import { motion } from "framer-motion";
-import { identity, resumeHighlights } from "../data/content";
+import { educationItems, identity, resumeHighlights } from "../data/content";
 
 export function Resume() {
   return (
-    <section id="resume" className="section-band px-4 py-24 sm:px-6 lg:py-32">
-      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-center">
+    <section id="resume" className="section-band education-section px-4 py-24 sm:px-6 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-start">
         <div>
-          <p className="section-kicker">06 Resume</p>
-          <h2 className="section-title mt-4">A compact snapshot before the PDF.</h2>
+          <p className="section-kicker">05 Education & Resume</p>
+          <h2 className="section-title mt-4">Academic foundation, current learning, and a direct PDF.</h2>
           <p className="section-copy mt-6">
-            The resume supports the website rather than repeating it. This section gives recruiters the fast version and a
-            direct file download.
+            BCA is complete, MCA is in progress, and the resume is available as a direct download for screening and
+            follow-up conversations.
           </p>
+
+          <div className="education-list mt-8">
+            {educationItems.map((item) => (
+              <article key={item.title} className="education-item">
+                <div className="education-icon">
+                  <i className={`bi ${item.icon}`} />
+                </div>
+                <div>
+                  <span>{item.date}</span>
+                  <h3>{item.title}</h3>
+                  <strong>{item.org}</strong>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
           <a href={identity.resume} download className="btn btn-primary mt-8">
             <i className="bi bi-file-earmark-arrow-down" />
             Download Resume

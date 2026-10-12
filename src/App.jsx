@@ -3,7 +3,6 @@ import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
-import { Impact } from "./components/Impact";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/Projects";
 import { Resume } from "./components/Resume";
@@ -24,8 +23,8 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    const sections = navItems
-      .map((item) => document.getElementById(item.id))
+    const sections = ["home", ...navItems.map((item) => item.id), "skills", "experience", "resume"]
+      .map((id) => document.getElementById(id))
       .filter(Boolean);
 
     const observer = new IntersectionObserver(
@@ -54,11 +53,10 @@ function App() {
       />
       <main>
         <Hero />
-        <About />
-        <Impact />
         <Projects />
-        <Timeline />
         <Skills />
+        <About />
+        <Timeline />
         <Resume />
         <Contact />
       </main>

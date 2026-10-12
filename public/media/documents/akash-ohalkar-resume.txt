@@ -1,0 +1,79 @@
+AKASH OHALKAR
+Junior Software Developer - Python, Backend & Web Development
+
+LOCATION
+Pune, Maharashtra, India
+
+CONTACT
+Phone: +91 9699134688
+Email: akashohalkar300@gmail.com
+GitHub: https://github.com/ash-krsna
+Portfolio: https://ash-krsna.github.io/my-portfolio/
+
+PROFESSIONAL SUMMARY
+Junior software developer profile focused on Python, Flask, SQL, JavaScript, HTML5, CSS3, REST API basics, and practical web development.
+
+Currently working as a Trainee HTML Programmer at Aptara, Pune, while continuing MCA studies and building project evidence for entry-level software roles.
+
+CORE SKILLS
+- Python
+- JavaScript
+- SQL
+- HTML5
+- CSS3
+- Flask
+- REST APIs
+- Git
+- GitHub
+
+WORKING KNOWLEDGE
+- React.js basics
+- MySQL
+- MongoDB
+- Bootstrap
+- Tailwind CSS
+- Node.js basics
+- Express.js basics
+- Postman
+
+EXPLORING
+- GenAI and ChatGPT-assisted development
+- n8n
+- Ollama
+- AI automation basics
+
+EXPERIENCE
+Trainee HTML Programmer
+Aptara, Pune
+Jan 2026 - Present
+- Structured HTML and digital content workflows
+- Accuracy-focused production habits
+- Semantic organization and publishing discipline
+- Practical exposure to process-oriented technical work
+
+EDUCATION
+Master of Computer Applications
+Dr. D.Y. Patil Vidyapeeth Online
+2026 - Present
+
+Bachelor of Computer Applications
+Savitribai Phule Pune University
+2022 - 2025
+
+FEATURED PROJECTS
+NGO Management System
+- Python, Flask, MySQL, HTML, CSS, JavaScript
+- Full CRUD and relational database foundation for management workflows
+
+Lift Management System
+- Python, JavaScript
+- State-machine and scheduling logic practice
+
+Gun Detection & Data Integration
+- Python, REST APIs, JSON, OpenCV basics
+- Data integration and responsible experimental project presentation
+
+OTHER PROJECTS
+- Vehicle Tracker
+- BSB International School Website
+- Personal Portfolio
